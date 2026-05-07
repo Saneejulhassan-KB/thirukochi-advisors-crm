@@ -1,0 +1,25 @@
+{
+  "overview": "Enterprise-grade CRM for ThiruKochi Advisors, a Kerala-based finance/advisory company. Features role-based dashboards (Super Admin, Zonal Manager, Branch Manager, Staff), customer and employee management, advanced analytics, attendance tracking, transfer management, and a professional dark/light fintech UI.",
+  "features": [
+    "Role-based dashboards with 4 distinct user roles",
+    "Customer management with KYC, EMI schedules, and payment history",
+    "Employee management with attendance, performance, and transfer tracking",
+    "Advanced analytics with Recharts — revenue, collection, branch comparison charts",
+    "Smart notifications system with multiple categories",
+    "Dark/light mode with smooth fintech-themed transitions",
+    "Mock data with realistic Kerala zones, branches, employees, and customers",
+    "Responsive enterprise layout with collapsible sidebar and top navbar"
+  ],
+  "category": "productivity",
+  "tags": [
+    "crm",
+    "fintech",
+    "enterprise",
+    "dashboard",
+    "kerala",
+    "finance",
+    "role-based",
+    "analytics"
+  ],
+  "last_updated": "2026-05-07T12:04:43.269Z"
+}
