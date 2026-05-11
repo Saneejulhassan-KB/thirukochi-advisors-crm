@@ -12,12 +12,16 @@ import {
   AlertTriangle,
   Bell,
   BellOff,
+  BookOpen,
   Cake,
   Calendar,
   CheckCircle,
   Clock,
+  FileText,
   Info,
+  Megaphone,
   ShieldAlert,
+  Sparkles,
   Trash2,
   Trophy,
   Users,
@@ -34,7 +38,11 @@ type FilterTab =
   | "attendance"
   | "transfers"
   | "system"
-  | "alerts";
+  | "alerts"
+  | "memos"
+  | "programs"
+  | "events"
+  | "marketing";
 
 interface PrefRow {
   type: string;
@@ -100,6 +108,10 @@ const TYPE_ICON_MAP: Record<NotificationType, React.ReactNode> = {
   kyc_pending: <ShieldAlert className="w-5 h-5" />,
   birthday_reminder: <Cake className="w-5 h-5" />,
   system_alert: <Info className="w-5 h-5" />,
+  memo: <FileText className="w-5 h-5" />,
+  program: <BookOpen className="w-5 h-5" />,
+  event: <Sparkles className="w-5 h-5" />,
+  marketing_notice: <Megaphone className="w-5 h-5" />,
 };
 
 const TYPE_COLOR_MAP: Record<NotificationType, string> = {
@@ -114,6 +126,10 @@ const TYPE_COLOR_MAP: Record<NotificationType, string> = {
   kyc_pending: "bg-orange-500/15 text-orange-500",
   birthday_reminder: "bg-pink-500/15 text-pink-500",
   system_alert: "bg-blue-500/15 text-blue-500",
+  memo: "bg-yellow-500/15 text-yellow-600",
+  program: "bg-sky-500/15 text-sky-500",
+  event: "bg-violet-500/15 text-violet-500",
+  marketing_notice: "bg-orange-500/15 text-orange-500",
 };
 
 const PRIORITY_COLOR: Record<string, string> = {
@@ -159,6 +175,14 @@ function filterByTab(
       return notifications.filter(
         (n) => n.priority === "critical" || n.priority === "high",
       );
+    case "memos":
+      return notifications.filter((n) => n.type === "memo");
+    case "programs":
+      return notifications.filter((n) => n.type === "program");
+    case "events":
+      return notifications.filter((n) => n.type === "event");
+    case "marketing":
+      return notifications.filter((n) => n.type === "marketing_notice");
     default:
       return notifications;
   }
@@ -172,6 +196,10 @@ const TABS: { id: FilterTab; label: string }[] = [
   { id: "transfers", label: "Transfers" },
   { id: "system", label: "System" },
   { id: "alerts", label: "Alerts" },
+  { id: "memos", label: "Memos" },
+  { id: "programs", label: "Programs" },
+  { id: "events", label: "Events" },
+  { id: "marketing", label: "Marketing" },
 ];
 
 function NotificationItem({

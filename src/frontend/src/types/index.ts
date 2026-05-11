@@ -137,7 +137,11 @@ export type NotificationType =
   | "leave_request"
   | "kyc_pending"
   | "birthday_reminder"
-  | "system_alert";
+  | "system_alert"
+  | "memo"
+  | "program"
+  | "event"
+  | "marketing_notice";
 
 export type NotificationPriority = "low" | "medium" | "high" | "critical";
 

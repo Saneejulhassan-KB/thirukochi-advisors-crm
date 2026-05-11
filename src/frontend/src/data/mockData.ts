@@ -1415,6 +1415,186 @@ export const mockNotifications: Notification[] = [
     createdAt: "2026-04-23T09:00:00",
     priority: "high",
   },
+  // ─── Memo Notifications ───────────────────────────────────────────────────
+  {
+    id: "n16",
+    type: "memo",
+    title: "Annual Leave Policy Update 2026",
+    message:
+      "HR Department has issued a revised Annual Leave Policy effective from June 1, 2026. All employees are requested to review and acknowledge. Key changes: enhanced paternity leave (10 days) and mandatory leave encashment by December.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-28T10:00:00",
+    priority: "high",
+  },
+  {
+    id: "n17",
+    type: "memo",
+    title: "Salary Revision Circular — April 2026",
+    message:
+      "Management announces a 12% salary revision for all permanent staff effective from April 1, 2026. Increments will be reflected in May payroll. Performance-linked incentives enhanced by 15% for top quartile performers.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-25T11:30:00",
+    priority: "high",
+  },
+  {
+    id: "n18",
+    type: "memo",
+    title: "Office Conduct & Dress Code Guidelines",
+    message:
+      "Revised office conduct guidelines issued by Admin. Business formal attire is mandatory Monday–Wednesday. Smart casuals permitted Thursday–Friday. Casual Fridays re-introduced from May. Please ensure branch compliance.",
+    userId: "all",
+    isRead: true,
+    createdAt: "2026-04-20T09:00:00",
+    priority: "medium",
+  },
+  {
+    id: "n19",
+    type: "memo",
+    title: "New KYC Compliance Circular — RBI Directive",
+    message:
+      "Pursuant to RBI circular dated April 15, 2026, all customer KYC documents must be re-verified and updated before June 30, 2026. Branches with pending KYC counts above 10% will be flagged for audit. Immediate action required.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-17T14:00:00",
+    priority: "critical",
+  },
+  // ─── Program Notifications ────────────────────────────────────────────────
+  {
+    id: "n20",
+    type: "program",
+    title: "Customer Service Excellence Workshop",
+    message:
+      "A 2-day workshop on Customer Service Excellence will be conducted on May 10–11 at Kochi Main Branch training hall. All Relationship Officers and Loan Officers are required to attend. Facilitated by external trainer from ICICI Academy.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-29T10:00:00",
+    priority: "medium",
+  },
+  {
+    id: "n21",
+    type: "program",
+    title: "New Financial Products Orientation — May 2026",
+    message:
+      "Mandatory orientation session for all branch staff on new Gold Loan Plus and Home Equity schemes launching in May. Online session via Zoom on May 6, 2026 at 3 PM. Attendance will be tracked. Zonal managers to ensure 100% participation.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-26T09:00:00",
+    priority: "high",
+  },
+  {
+    id: "n22",
+    type: "program",
+    title: "Digital Banking & UPI Awareness Drive",
+    message:
+      "ThiruKochi Advisors is conducting a Digital Banking Awareness program across all 12 branches during May 15–25. Staff will conduct doorstep sessions with customers to promote digital payments. Training kit and demo phones will be provided to all field agents.",
+    userId: "all",
+    isRead: true,
+    createdAt: "2026-04-22T11:00:00",
+    priority: "medium",
+  },
+  {
+    id: "n23",
+    type: "program",
+    title: "Sales Target Achievers Recognition Program",
+    message:
+      "Q1 2026 top performers recognition ceremony scheduled for May 20 at Thrissur Central. 8 employees shortlisted for Star Performer Award. Branch managers to confirm attendance of nominees. Travel and accommodation arranged by HR.",
+    userId: "all",
+    isRead: true,
+    createdAt: "2026-04-18T15:00:00",
+    priority: "low",
+  },
+  // ─── Event Notifications ──────────────────────────────────────────────────
+  {
+    id: "n24",
+    type: "event",
+    title: "Thrissur Pooram 2026 — Near Thrissur Central Branch",
+    message:
+      "Thrissur Pooram, one of Kerala's grandest temple festivals, is scheduled for May 14–15 near our Thrissur Central branch. Massive crowd expected on MG Road. Branch will operate with modified timings (9 AM – 4 PM). Marketing team can leverage footfall for brand visibility.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-30T08:00:00",
+    priority: "high",
+  },
+  {
+    id: "n25",
+    type: "event",
+    title: "St. George Church Annual Feast — Fort Kochi",
+    message:
+      "The annual feast of St. George Forane Church, Edathua will be celebrated near the Fort Kochi branch area on May 5–6. High community gathering expected. Marketing team may set up awareness stall with prior permission. Coordinate with Branch Manager Meera Krishnan.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-27T09:30:00",
+    priority: "medium",
+  },
+  {
+    id: "n26",
+    type: "event",
+    title: "Onam Celebrations — Office Campus, Kochi HQ",
+    message:
+      "ThiruKochi Advisors Onam celebration will be held at Kochi HQ premises on September 3, 2026. All staff are invited to participate in cultural events, sadya, and team activities. Volunteers needed for decoration and coordination. Register with HR by August 20.",
+    userId: "all",
+    isRead: true,
+    createdAt: "2026-04-24T12:00:00",
+    priority: "low",
+  },
+  {
+    id: "n27",
+    type: "event",
+    title: "Eid Al-Adha Community Gathering — Calicut Branch Area",
+    message:
+      "Major Eid Al-Adha community celebrations expected near SM Street, Kozhikode on June 7, 2026. This is an excellent opportunity for community outreach. Calicut Main branch will remain open with full staff on June 8 to assist customers post-festival.",
+    userId: "e9",
+    isRead: false,
+    createdAt: "2026-04-21T10:00:00",
+    priority: "medium",
+  },
+  // ─── Marketing Notifications ──────────────────────────────────────────────
+  {
+    id: "n28",
+    type: "marketing_notice",
+    title: "Gold Loan Campaign Launch — Q2 2026",
+    message:
+      "Marketing team announces the Gold Loan Summer Campaign 2026. Lowest interest rate @ 9.5% per annum for loans above ₹1 lakh. Campaign runs May–June 2026 across all branches. Brochures, display banners, and WhatsApp templates available on the marketing portal. All branches to display campaign material by May 1.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-30T07:00:00",
+    priority: "high",
+  },
+  {
+    id: "n29",
+    type: "marketing_notice",
+    title: "New Home Loan Product — 8.5% Introductory Rate",
+    message:
+      "ThiruKochi Advisors launches Home Loan Plus at 8.5% p.a. (introductory, first 2 years). Maximum loan ₹50 lakhs, tenure up to 20 years. Target salaried professionals and NRI customers. Sales teams to identify leads. Product brochure and eligibility calculator shared on internal portal.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-28T08:00:00",
+    priority: "high",
+  },
+  {
+    id: "n30",
+    type: "marketing_notice",
+    title: "Diwali Special Financial Products Promotion 2026",
+    message:
+      "Marketing is preparing the Diwali 2026 campaign (October). Early planning: special personal loan and gold loan offers at festive rates. Branches invited to submit customer segment lists for targeted outreach by August 15. Creative assets will be shared in September.",
+    userId: "all",
+    isRead: true,
+    createdAt: "2026-04-24T11:00:00",
+    priority: "medium",
+  },
+  {
+    id: "n31",
+    type: "marketing_notice",
+    title: "Refer a Friend Program — Earn ₹500 Reward",
+    message:
+      "Launching 'Refer a Friend' campaign from May 1 to June 30, 2026. Every existing customer who refers a new customer who takes a loan gets ₹500 cashback via UPI. Branch staff to brief all walk-in customers. Referral tracking codes available in the CRM portal. Target: 200 new customers through referrals.",
+    userId: "all",
+    isRead: false,
+    createdAt: "2026-04-20T10:00:00",
+    priority: "medium",
+  },
 ];
 
 // ─── Attendance Records ───────────────────────────────────────────────────────
