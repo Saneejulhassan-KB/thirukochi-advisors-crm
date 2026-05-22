@@ -9,14 +9,18 @@ import {
   Bell,
   Building2,
   Calendar,
+  CheckSquare,
   ChevronLeft,
   ChevronRight,
   FileText,
   LayoutDashboard,
   Map as MapIcon,
+  Phone,
   Settings,
   TrendingUp,
+  User,
   UserCheck,
+  UserPlus,
   Users,
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
@@ -35,11 +39,49 @@ const navItems: NavItem[] = [
     icon: LayoutDashboard,
     roles: ["super_admin", "zonal_manager", "branch_manager", "staff"],
   },
+  // Staff-only pages
+  {
+    label: "My Profile",
+    path: "/staff/profile",
+    icon: User,
+    roles: ["staff"],
+  },
+  {
+    label: "Lead Management",
+    path: "/staff/leads",
+    icon: UserPlus,
+    roles: ["staff"],
+  },
+  {
+    label: "My Tasks",
+    path: "/staff/tasks",
+    icon: CheckSquare,
+    roles: ["staff"],
+  },
+  {
+    label: "My Customers",
+    path: "/staff/customers",
+    icon: Users,
+    roles: ["staff"],
+  },
+  {
+    label: "Follow-ups",
+    path: "/staff/followups",
+    icon: Phone,
+    roles: ["staff"],
+  },
+  {
+    label: "Attendance",
+    path: "/staff/attendance",
+    icon: Calendar,
+    roles: ["staff"],
+  },
+  // Admin/manager shared pages
   {
     label: "Customers",
     path: "/customers",
     icon: Users,
-    roles: ["super_admin", "zonal_manager", "branch_manager", "staff"],
+    roles: ["super_admin", "zonal_manager", "branch_manager"],
   },
   {
     label: "Employees",
@@ -64,7 +106,7 @@ const navItems: NavItem[] = [
     label: "Attendance",
     path: "/attendance",
     icon: Calendar,
-    roles: ["super_admin", "zonal_manager", "branch_manager", "staff"],
+    roles: ["super_admin", "zonal_manager", "branch_manager"],
   },
   {
     label: "Analytics",

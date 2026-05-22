@@ -1,22 +1,23 @@
 import { ChartWrapper, chartColors } from "@/components/shared/ChartWrapper";
 import { KPICard } from "@/components/shared/KPICard";
-import { mockCustomers } from "@/data/mockData";
+import { PageHeader } from "@/components/shared/PageHeader";
 import type { AuthUser } from "@/types";
+import { useRouter } from "@tanstack/react-router";
 import {
-  BarChart2,
-  Calendar,
+  CheckCircle2,
   CheckSquare,
-  Clock,
-  DollarSign,
+  CircleDot,
+  ClipboardList,
+  Plus,
   Target,
-  Users,
+  XCircle,
 } from "lucide-react";
 import { motion } from "motion/react";
 import {
   Bar,
   BarChart,
   CartesianGrid,
-  Cell,
+  Legend,
   Tooltip,
   XAxis,
   YAxis,
@@ -35,127 +36,108 @@ const cardVariants = {
   }),
 };
 
-const todaysTasks = [
-  {
-    id: "t1",
-    title: "Collect EMI from Gopalan Nair",
-    customer: "Gopalan Nair",
-    time: "10:00 AM",
-    amount: "₹15,000",
-    priority: "high",
-    done: false,
-  },
-  {
-    id: "t2",
-    title: "Follow-up: Thankam Varghese EMI",
-    customer: "Thankam Varghese",
-    time: "11:30 AM",
-    amount: "₹6,000",
-    priority: "medium",
-    done: false,
-  },
-  {
-    id: "t3",
-    title: "KYC verification: Babu Jose",
-    customer: "Babu Jose",
-    time: "2:00 PM",
-    amount: "—",
-    priority: "medium",
-    done: false,
-  },
-  {
-    id: "t4",
-    title: "Morning attendance marked",
-    customer: "—",
-    time: "09:05 AM",
-    amount: "—",
-    priority: "low",
-    done: true,
-  },
-  {
-    id: "t5",
-    title: "Submit daily activity report",
-    customer: "—",
-    time: "6:00 PM",
-    amount: "—",
-    priority: "high",
-    done: false,
-  },
+// Task performance: last 7 days
+const taskPerformanceData = [
+  { day: "Mon", assigned: 6, completed: 5, pending: 1 },
+  { day: "Tue", assigned: 8, completed: 6, pending: 2 },
+  { day: "Wed", assigned: 5, completed: 5, pending: 0 },
+  { day: "Thu", assigned: 9, completed: 7, pending: 2 },
+  { day: "Fri", assigned: 7, completed: 4, pending: 3 },
+  { day: "Sat", assigned: 4, completed: 4, pending: 0 },
+  { day: "Sun", assigned: 3, completed: 2, pending: 1 },
 ];
 
-const weeklyCollection = [
-  { day: "Mon", amount: 18 },
-  { day: "Tue", amount: 12 },
-  { day: "Wed", amount: 24 },
-  { day: "Thu", amount: 9 },
-  { day: "Fri", amount: 15 },
-  { day: "Sat", amount: 6 },
-  { day: "Sun", amount: 0 },
+// Target performance: last 4 weeks
+const targetPerformanceData = [
+  { week: "Week 1", assigned: 4, achieved: 3, pending: 1 },
+  { week: "Week 2", assigned: 5, achieved: 4, pending: 1 },
+  { week: "Week 3", assigned: 6, achieved: 5, pending: 1 },
+  { week: "Week 4", assigned: 5, achieved: 3, pending: 2 },
 ];
-
-const priorityColors: Record<string, string> = {
-  high: "text-red-500",
-  medium: "text-amber-500",
-  low: "text-muted-foreground",
-};
 
 export function StaffDashboard({ user }: Props) {
-  const myCustomers = mockCustomers
-    .filter((c) => c.assignedStaffId === user.id)
-    .slice(0, 10);
-  const totalTarget = 80000;
-  const collected = 52000;
-  const progressPct = Math.round((collected / totalTarget) * 100);
+  const router = useRouter();
 
   const kpiCards = [
     {
-      title: "Assigned Customers",
-      value: 23,
-      icon: <Users className="w-5 h-5" />,
+      title: "Assigned Tasks",
+      value: 42,
+      icon: <ClipboardList className="w-5 h-5" />,
       iconColor: "text-blue-500",
-      subtitle: "Active accounts",
+      subtitle: "This month",
+      trend: "up" as const,
+      trendValue: 12,
     },
     {
-      title: "Collections Today",
-      value: "₹12k",
-      icon: <DollarSign className="w-5 h-5" />,
+      title: "Completed Tasks",
+      value: 33,
+      icon: <CheckCircle2 className="w-5 h-5" />,
       iconColor: "text-emerald-500",
+      subtitle: "Tasks finished",
       trend: "up" as const,
       trendValue: 8,
-      subtitle: "vs yesterday",
     },
     {
-      title: "Pending Follow-ups",
-      value: 8,
-      icon: <Clock className="w-5 h-5" />,
+      title: "Pending Tasks",
+      value: 9,
+      icon: <CircleDot className="w-5 h-5" />,
       iconColor: "text-amber-500",
-      subtitle: "Action needed",
+      subtitle: "Awaiting action",
+      trend: "down" as const,
+      trendValue: -3,
     },
     {
-      title: "Tasks Completed",
-      value: "5/8",
-      icon: <CheckSquare className="w-5 h-5" />,
-      iconColor: "text-indigo-500",
-      subtitle: "Today's tasks",
-    },
-    {
-      title: "Attendance %",
-      value: "95%",
-      icon: <Calendar className="w-5 h-5" />,
-      iconColor: "text-teal-500",
+      title: "Assigned Targets",
+      value: 20,
+      icon: <Target className="w-5 h-5" />,
+      iconColor: "text-purple-500",
       subtitle: "This month",
     },
     {
-      title: "Target Progress",
-      value: `${progressPct}%`,
-      icon: <Target className="w-5 h-5" />,
-      iconColor: "text-purple-500",
-      subtitle: "Monthly target",
+      title: "Pending Targets",
+      value: 5,
+      icon: <CheckSquare className="w-5 h-5" />,
+      iconColor: "text-orange-500",
+      subtitle: "In progress",
+      trend: "neutral" as const,
+    },
+    {
+      title: "Closed Targets",
+      value: 15,
+      icon: <XCircle className="w-5 h-5" />,
+      iconColor: "text-teal-500",
+      subtitle: "Achieved & closed",
+      trend: "up" as const,
+      trendValue: 20,
     },
   ];
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
+      {/* Page Header */}
+      <PageHeader
+        title={`Welcome, ${user.name.split(" ")[0]}`}
+        subtitle={`${user.branchId ?? "ThiruKochi Advisors"} · ${new Date().toLocaleDateString("en-IN", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}`}
+        badge={user.role === "staff" ? "Staff" : "Employee"}
+      />
+
+      {/* Task & Target Overview Header */}
+      <div className="flex items-center justify-between">
+        <h2 className="text-lg font-semibold text-foreground">
+          Task &amp; Target Overview
+        </h2>
+        <button
+          type="button"
+          onClick={() => router.navigate({ to: "/staff/tasks" })}
+          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 text-sm font-medium transition-colors"
+          data-ocid="staff_dashboard.add_task_button"
+        >
+          <Plus className="w-4 h-4" />
+          Add Task
+        </button>
+      </div>
+
+      {/* 6 KPI Cards */}
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4">
         {kpiCards.map((card, i) => (
           <motion.div
@@ -164,250 +146,117 @@ export function StaffDashboard({ user }: Props) {
             variants={cardVariants}
             initial="hidden"
             animate="visible"
+            data-ocid={`staff_dashboard.kpi.${i + 1}`}
           >
             <KPICard {...card} />
           </motion.div>
         ))}
       </div>
 
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
-        {/* Target Progress */}
+      {/* Performance Charts */}
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+        {/* Task Performance Chart */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <div className="rounded-2xl border border-border bg-card p-5 shadow-glow">
-            <h3 className="font-display font-semibold text-base text-foreground mb-4">
-              Target Progress
-            </h3>
-            <div className="text-center mb-4">
-              <p className="text-4xl font-display font-bold text-foreground">
-                {progressPct}%
-              </p>
-              <p className="text-xs text-muted-foreground mt-1">
-                Monthly Collection Target
-              </p>
-            </div>
-            <div className="w-full h-3 bg-muted rounded-full overflow-hidden mb-3">
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: `${progressPct}%` }}
-                transition={{
-                  duration: 1.2,
-                  ease: [0.4, 0, 0.2, 1],
-                  delay: 0.6,
-                }}
-                className="h-full rounded-full bg-gradient-to-r from-primary to-secondary"
-              />
-            </div>
-            <div className="flex justify-between text-xs text-muted-foreground">
-              <span>
-                Collected:{" "}
-                <span className="text-foreground font-semibold">
-                  ₹{(collected / 1000).toFixed(0)}k
-                </span>
-              </span>
-              <span>
-                Target:{" "}
-                <span className="text-foreground font-semibold">
-                  ₹{(totalTarget / 1000).toFixed(0)}k
-                </span>
-              </span>
-            </div>
-            <div className="mt-4 p-3 rounded-xl bg-primary/10 border border-primary/20">
-              <p className="text-xs font-medium text-primary">
-                ₹{((totalTarget - collected) / 1000).toFixed(0)}k more to reach
-                target
-              </p>
-              <p className="text-[11px] text-muted-foreground mt-0.5">
-                Keep it up! You're doing great.
-              </p>
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Weekly Chart */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.55 }}
+          transition={{ delay: 0.5, duration: 0.4 }}
+          data-ocid="staff_dashboard.task_performance_chart"
         >
           <ChartWrapper
-            title="This Week's Collection"
-            subtitle="Daily amounts (₹ Thousands)"
-            height={200}
+            title="Task Performance"
+            subtitle="Assigned vs Completed vs Pending — last 7 days"
+            height={260}
           >
-            <BarChart data={weeklyCollection}>
-              <CartesianGrid
-                strokeDasharray="3 3"
-                stroke="currentColor"
-                strokeOpacity={0.07}
-              />
+            <BarChart data={taskPerformanceData} barCategoryGap="28%">
+              <CartesianGrid strokeDasharray="3 3" strokeOpacity={0.07} />
               <XAxis
                 dataKey="day"
                 tick={{ fontSize: 11 }}
                 stroke="transparent"
               />
-              <YAxis tick={{ fontSize: 11 }} stroke="transparent" unit="k" />
-              <Tooltip formatter={(v: number) => `₹${v}k`} />
-              <Bar dataKey="amount" name="Collection" radius={[4, 4, 0, 0]}>
-                {weeklyCollection.map((entry) => (
-                  <Cell
-                    key={`cell-${entry.day}`}
-                    fill={
-                      entry.amount > 15
-                        ? chartColors.success
-                        : entry.amount > 8
-                          ? chartColors.primary
-                          : chartColors.muted
-                    }
-                  />
-                ))}
-              </Bar>
+              <YAxis tick={{ fontSize: 11 }} stroke="transparent" />
+              <Tooltip
+                contentStyle={{
+                  background: "var(--card)",
+                  border: "1px solid var(--border)",
+                  borderRadius: 12,
+                  fontSize: 12,
+                }}
+              />
+              <Legend wrapperStyle={{ fontSize: 11, paddingTop: 8 }} />
+              <Bar
+                dataKey="assigned"
+                name="Assigned"
+                fill={chartColors.primary}
+                radius={[4, 4, 0, 0]}
+              />
+              <Bar
+                dataKey="completed"
+                name="Completed"
+                fill={chartColors.success}
+                radius={[4, 4, 0, 0]}
+              />
+              <Bar
+                dataKey="pending"
+                name="Pending"
+                fill={chartColors.warning}
+                radius={[4, 4, 0, 0]}
+              />
             </BarChart>
           </ChartWrapper>
         </motion.div>
 
-        {/* Today's Tasks */}
+        {/* Target Performance Chart */}
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.6, duration: 0.4 }}
+          data-ocid="staff_dashboard.target_performance_chart"
         >
-          <div className="rounded-2xl border border-border bg-card p-5 shadow-glow h-full">
-            <h3 className="font-display font-semibold text-base text-foreground mb-4">
-              Today's Tasks
-            </h3>
-            <div className="space-y-2.5">
-              {todaysTasks.map((task, i) => (
-                <div
-                  key={task.id}
-                  className={`flex items-start gap-2.5 p-2.5 rounded-xl border ${task.done ? "border-border/40 opacity-60" : "border-border"} bg-muted/20`}
-                  data-ocid={`dashboard.task.item.${i + 1}`}
-                >
-                  <div
-                    className={`w-3.5 h-3.5 rounded-full border-2 mt-0.5 shrink-0 ${task.done ? "bg-emerald-500 border-emerald-500" : "border-muted-foreground"}`}
-                  />
-                  <div className="flex-1 min-w-0">
-                    <p
-                      className={`text-xs leading-tight ${task.done ? "line-through text-muted-foreground" : "text-foreground"}`}
-                    >
-                      {task.title}
-                    </p>
-                    <div className="flex items-center gap-2 mt-1">
-                      <span className="text-[10px] text-muted-foreground">
-                        {task.time}
-                      </span>
-                      {task.amount !== "—" && (
-                        <span className="text-[10px] font-semibold text-emerald-500">
-                          {task.amount}
-                        </span>
-                      )}
-                      <span
-                        className={`text-[10px] font-semibold uppercase ${priorityColors[task.priority]}`}
-                      >
-                        {task.priority}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ChartWrapper
+            title="Target Performance"
+            subtitle="Assigned vs Achieved vs Pending — weekly view"
+            height={260}
+          >
+            <BarChart data={targetPerformanceData} barCategoryGap="28%">
+              <CartesianGrid strokeDasharray="3 3" strokeOpacity={0.07} />
+              <XAxis
+                dataKey="week"
+                tick={{ fontSize: 11 }}
+                stroke="transparent"
+              />
+              <YAxis tick={{ fontSize: 11 }} stroke="transparent" />
+              <Tooltip
+                contentStyle={{
+                  background: "var(--card)",
+                  border: "1px solid var(--border)",
+                  borderRadius: 12,
+                  fontSize: 12,
+                }}
+              />
+              <Legend wrapperStyle={{ fontSize: 11, paddingTop: 8 }} />
+              <Bar
+                dataKey="assigned"
+                name="Assigned"
+                fill={chartColors.secondary}
+                radius={[4, 4, 0, 0]}
+              />
+              <Bar
+                dataKey="achieved"
+                name="Achieved"
+                fill={chartColors.success}
+                radius={[4, 4, 0, 0]}
+              />
+              <Bar
+                dataKey="pending"
+                name="Pending"
+                fill={chartColors.danger}
+                radius={[4, 4, 0, 0]}
+              />
+            </BarChart>
+          </ChartWrapper>
         </motion.div>
       </div>
-
-      {/* Customer Follow-up List */}
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7 }}
-      >
-        <div className="rounded-2xl border border-border bg-card p-5 shadow-glow">
-          <div className="flex items-center justify-between mb-4">
-            <div>
-              <h3 className="font-display font-semibold text-base text-foreground">
-                Customer Follow-ups
-              </h3>
-              <p className="text-xs text-muted-foreground mt-0.5">
-                Prioritized by due date
-              </p>
-            </div>
-            <span className="text-xs bg-amber-500/15 text-amber-500 px-2 py-0.5 rounded-full font-semibold">
-              8 pending
-            </span>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-border">
-                  {[
-                    "Customer",
-                    "Last Contact",
-                    "Next Action",
-                    "Amount Due",
-                    "Risk",
-                  ].map((h) => (
-                    <th
-                      key={h}
-                      className="px-3 py-2 text-left text-xs font-semibold text-muted-foreground"
-                    >
-                      {h}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {myCustomers.slice(0, 8).map((c, i) => (
-                  <tr
-                    key={c.id}
-                    className="border-b border-border/40 hover:bg-muted/30 transition-colors"
-                    data-ocid={`dashboard.followup.item.${i + 1}`}
-                  >
-                    <td className="px-3 py-3">
-                      <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                          <span className="text-xs font-bold text-primary">
-                            {c.name.charAt(0)}
-                          </span>
-                        </div>
-                        <span className="font-medium text-foreground text-xs">
-                          {c.name}
-                        </span>
-                      </div>
-                    </td>
-                    <td className="px-3 py-3 text-xs text-muted-foreground">
-                      {c.lastPaymentDate}
-                    </td>
-                    <td className="px-3 py-3 text-xs text-muted-foreground">
-                      {c.nextDueDate}
-                    </td>
-                    <td className="px-3 py-3 font-mono text-xs text-foreground">
-                      ₹{c.emiAmount.toLocaleString()}
-                    </td>
-                    <td className="px-3 py-3">
-                      <span
-                        className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${
-                          c.riskLevel === "low"
-                            ? "bg-emerald-500/15 text-emerald-500"
-                            : c.riskLevel === "medium"
-                              ? "bg-amber-500/15 text-amber-500"
-                              : c.riskLevel === "critical"
-                                ? "bg-red-500/15 text-red-500"
-                                : "bg-orange-500/15 text-orange-500"
-                        }`}
-                      >
-                        {c.riskLevel}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </motion.div>
     </div>
   );
 }

@@ -24,6 +24,12 @@ import NotificationsPage from "@/pages/NotificationsPage";
 import SettingsPage from "@/pages/SettingsPage";
 import TransfersPage from "@/pages/TransfersPage";
 import ZonesPage from "@/pages/ZonesPage";
+import { StaffAttendancePage } from "@/pages/staff/StaffAttendancePage";
+import StaffCustomersPage from "@/pages/staff/StaffCustomersPage";
+import StaffFollowUpPage from "@/pages/staff/StaffFollowUpPage";
+import StaffLeadsPage from "@/pages/staff/StaffLeadsPage";
+import StaffProfilePage from "@/pages/staff/StaffProfilePage";
+import StaffTasksPage from "@/pages/staff/StaffTasksPage";
 
 // Root route
 const rootRoute = createRootRoute({
@@ -128,6 +134,42 @@ const activityLogsRoute = createRoute({
   component: ActivityLogsPage,
 });
 
+const staffProfileRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/profile",
+  component: StaffProfilePage,
+});
+
+const staffLeadsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/leads",
+  component: StaffLeadsPage,
+});
+
+const staffTasksRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/tasks",
+  component: StaffTasksPage,
+});
+
+const staffCustomersRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/customers",
+  component: StaffCustomersPage,
+});
+
+const staffFollowupsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/followups",
+  component: StaffFollowUpPage,
+});
+
+const staffAttendanceRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/attendance",
+  component: StaffAttendancePage,
+});
+
 const routeTree = rootRoute.addChildren([
   indexRoute,
   loginRoute,
@@ -144,6 +186,12 @@ const routeTree = rootRoute.addChildren([
   notificationsRoute,
   settingsRoute,
   activityLogsRoute,
+  staffProfileRoute,
+  staffLeadsRoute,
+  staffTasksRoute,
+  staffCustomersRoute,
+  staffFollowupsRoute,
+  staffAttendanceRoute,
 ]);
 
 const router = createRouter({ routeTree });

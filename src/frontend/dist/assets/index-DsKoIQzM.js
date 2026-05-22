@@ -23086,12 +23086,12 @@ function ClientOnly({ children, fallback = null }) {
 }
 function useHydrated() {
   return React$4.useSyncExternalStore(
-    subscribe,
+    subscribe$1,
     () => true,
     () => false
   );
 }
-function subscribe() {
+function subscribe$1() {
   return () => {
   };
 }
@@ -37905,7 +37905,7 @@ var Arrow$1 = reactExports.forwardRef((props, forwardedRef) => {
   );
 });
 Arrow$1.displayName = NAME$3;
-var Root$6 = Arrow$1;
+var Root$7 = Arrow$1;
 function useSize(element) {
   const [size2, setSize] = reactExports.useState(void 0);
   useLayoutEffect2(() => {
@@ -38152,7 +38152,7 @@ var PopperArrow = reactExports.forwardRef(function PopperArrow2(props, forwarded
           visibility: contentContext.shouldHideArrow ? "hidden" : void 0
         },
         children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-          Root$6,
+          Root$7,
           {
             ...arrowProps,
             ref: forwardedRef,
@@ -38551,7 +38551,7 @@ function focusFirst$1(candidates, preventScroll = false) {
 function wrapArray$2(array2, startIndex) {
   return array2.map((_2, index2) => array2[(startIndex + index2) % array2.length]);
 }
-var Root$5 = RovingFocusGroup;
+var Root$6 = RovingFocusGroup;
 var Item$1 = RovingFocusGroupItem;
 var getDefaultParent = function(originalTarget) {
   if (typeof document === "undefined") {
@@ -39584,7 +39584,7 @@ var MenuContentImpl = reactExports.forwardRef(
                 onInteractOutside,
                 onDismiss,
                 children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  Root$5,
+                  Root$6,
                   {
                     asChild: true,
                     ...rovingFocusGroupScope,
@@ -40464,77 +40464,77 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1k = [
+const __iconNode$1v = [
   ["path", { d: "M12 5v14", key: "s699le" }],
   ["path", { d: "m19 12-7 7-7-7", key: "1idqje" }]
 ];
-const ArrowDown = createLucideIcon("arrow-down", __iconNode$1k);
+const ArrowDown = createLucideIcon("arrow-down", __iconNode$1v);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1j = [
+const __iconNode$1u = [
   ["path", { d: "M8 3 4 7l4 4", key: "9rb6wj" }],
   ["path", { d: "M4 7h16", key: "6tx8e3" }],
   ["path", { d: "m16 21 4-4-4-4", key: "siv7j2" }],
   ["path", { d: "M20 17H4", key: "h6l3hr" }]
 ];
-const ArrowLeftRight = createLucideIcon("arrow-left-right", __iconNode$1j);
+const ArrowLeftRight = createLucideIcon("arrow-left-right", __iconNode$1u);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1i = [
+const __iconNode$1t = [
   ["path", { d: "m12 19-7-7 7-7", key: "1l729n" }],
   ["path", { d: "M19 12H5", key: "x3x0zl" }]
 ];
-const ArrowLeft = createLucideIcon("arrow-left", __iconNode$1i);
+const ArrowLeft = createLucideIcon("arrow-left", __iconNode$1t);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1h = [
+const __iconNode$1s = [
   ["path", { d: "m16 3 4 4-4 4", key: "1x1c3m" }],
   ["path", { d: "M20 7H4", key: "zbl0bi" }],
   ["path", { d: "m8 21-4-4 4-4", key: "h9nckh" }],
   ["path", { d: "M4 17h16", key: "g4d7ey" }]
 ];
-const ArrowRightLeft = createLucideIcon("arrow-right-left", __iconNode$1h);
+const ArrowRightLeft = createLucideIcon("arrow-right-left", __iconNode$1s);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1g = [
+const __iconNode$1r = [
   ["path", { d: "M5 12h14", key: "1ays0h" }],
   ["path", { d: "m12 5 7 7-7 7", key: "xquz4c" }]
 ];
-const ArrowRight = createLucideIcon("arrow-right", __iconNode$1g);
+const ArrowRight = createLucideIcon("arrow-right", __iconNode$1r);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1f = [
+const __iconNode$1q = [
   ["path", { d: "m5 12 7-7 7 7", key: "hav0vg" }],
   ["path", { d: "M12 19V5", key: "x0mq9r" }]
 ];
-const ArrowUp = createLucideIcon("arrow-up", __iconNode$1f);
+const ArrowUp = createLucideIcon("arrow-up", __iconNode$1q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1e = [
+const __iconNode$1p = [
   [
     "path",
     {
@@ -40544,14 +40544,14 @@ const __iconNode$1e = [
   ],
   ["circle", { cx: "12", cy: "8", r: "6", key: "1vp47v" }]
 ];
-const Award = createLucideIcon("award", __iconNode$1e);
+const Award = createLucideIcon("award", __iconNode$1p);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1d = [
+const __iconNode$1o = [
   ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0", key: "vwvbt9" }],
   [
     "path",
@@ -40563,14 +40563,14 @@ const __iconNode$1d = [
   ["path", { d: "m2 2 20 20", key: "1ooewy" }],
   ["path", { d: "M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05", key: "1hqiys" }]
 ];
-const BellOff = createLucideIcon("bell-off", __iconNode$1d);
+const BellOff = createLucideIcon("bell-off", __iconNode$1o);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1c = [
+const __iconNode$1n = [
   ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0", key: "vwvbt9" }],
   [
     "path",
@@ -40580,14 +40580,14 @@ const __iconNode$1c = [
     }
   ]
 ];
-const Bell = createLucideIcon("bell", __iconNode$1c);
+const Bell = createLucideIcon("bell", __iconNode$1n);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1b = [
+const __iconNode$1m = [
   ["path", { d: "M12 7v14", key: "1akyts" }],
   [
     "path",
@@ -40597,14 +40597,14 @@ const __iconNode$1b = [
     }
   ]
 ];
-const BookOpen = createLucideIcon("book-open", __iconNode$1b);
+const BookOpen = createLucideIcon("book-open", __iconNode$1m);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$1a = [
+const __iconNode$1l = [
   [
     "path",
     {
@@ -40627,14 +40627,14 @@ const __iconNode$1a = [
   ["path", { d: "M6 18a4 4 0 0 1-1.967-.516", key: "2e4loj" }],
   ["path", { d: "M19.967 17.484A4 4 0 0 1 18 18", key: "159ez6" }]
 ];
-const Brain = createLucideIcon("brain", __iconNode$1a);
+const Brain = createLucideIcon("brain", __iconNode$1l);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$19 = [
+const __iconNode$1k = [
   ["path", { d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z", key: "1b4qmf" }],
   ["path", { d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2", key: "i71pzd" }],
   ["path", { d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2", key: "10jefs" }],
@@ -40643,14 +40643,14 @@ const __iconNode$19 = [
   ["path", { d: "M10 14h4", key: "kelpxr" }],
   ["path", { d: "M10 18h4", key: "1ulq68" }]
 ];
-const Building2 = createLucideIcon("building-2", __iconNode$19);
+const Building2 = createLucideIcon("building-2", __iconNode$1k);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$18 = [
+const __iconNode$1j = [
   ["path", { d: "M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8", key: "1w3rig" }],
   ["path", { d: "M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1", key: "n2jgmb" }],
   ["path", { d: "M2 21h20", key: "1nyx9w" }],
@@ -40661,14 +40661,28 @@ const __iconNode$18 = [
   ["path", { d: "M12 4h.01", key: "1ujb9j" }],
   ["path", { d: "M17 4h.01", key: "1upcoc" }]
 ];
-const Cake = createLucideIcon("cake", __iconNode$18);
+const Cake = createLucideIcon("cake", __iconNode$1j);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$17 = [
+const __iconNode$1i = [
+  ["path", { d: "M8 2v4", key: "1cmpym" }],
+  ["path", { d: "M16 2v4", key: "4m81vk" }],
+  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
+  ["path", { d: "M3 10h18", key: "8toen8" }],
+  ["path", { d: "m9 16 2 2 4-4", key: "19s6y9" }]
+];
+const CalendarCheck = createLucideIcon("calendar-check", __iconNode$1i);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1h = [
   ["path", { d: "M8 2v4", key: "1cmpym" }],
   ["path", { d: "M16 2v4", key: "4m81vk" }],
   ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
@@ -40680,7 +40694,108 @@ const __iconNode$17 = [
   ["path", { d: "M12 18h.01", key: "mhygvu" }],
   ["path", { d: "M16 18h.01", key: "kzsmim" }]
 ];
-const CalendarDays = createLucideIcon("calendar-days", __iconNode$17);
+const CalendarDays = createLucideIcon("calendar-days", __iconNode$1h);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1g = [
+  ["path", { d: "M8 2v4", key: "1cmpym" }],
+  ["path", { d: "M16 2v4", key: "4m81vk" }],
+  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
+  ["path", { d: "M3 10h18", key: "8toen8" }]
+];
+const Calendar = createLucideIcon("calendar", __iconNode$1g);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1f = [
+  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
+  ["path", { d: "M18 17V9", key: "2bz60n" }],
+  ["path", { d: "M13 17V5", key: "1frdt8" }],
+  ["path", { d: "M8 17v-3", key: "17ska0" }]
+];
+const ChartColumn = createLucideIcon("chart-column", __iconNode$1f);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1e = [
+  ["line", { x1: "18", x2: "18", y1: "20", y2: "10", key: "1xfpm4" }],
+  ["line", { x1: "12", x2: "12", y1: "20", y2: "4", key: "be30l9" }],
+  ["line", { x1: "6", x2: "6", y1: "20", y2: "14", key: "1r4le6" }]
+];
+const ChartNoAxesColumn = createLucideIcon("chart-no-axes-column", __iconNode$1e);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1d = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
+const Check = createLucideIcon("check", __iconNode$1d);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1c = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
+const ChevronDown = createLucideIcon("chevron-down", __iconNode$1c);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1b = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
+const ChevronLeft = createLucideIcon("chevron-left", __iconNode$1b);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$1a = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+const ChevronRight = createLucideIcon("chevron-right", __iconNode$1a);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$19 = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
+const ChevronUp = createLucideIcon("chevron-up", __iconNode$19);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$18 = [
+  ["path", { d: "m7 15 5 5 5-5", key: "1hf1tw" }],
+  ["path", { d: "m7 9 5-5 5 5", key: "sgt6xg" }]
+];
+const ChevronsUpDown = createLucideIcon("chevrons-up-down", __iconNode$18);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$17 = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
+  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
+];
+const CircleAlert = createLucideIcon("circle-alert", __iconNode$17);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -40688,12 +40803,10 @@ const CalendarDays = createLucideIcon("calendar-days", __iconNode$17);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$16 = [
-  ["path", { d: "M8 2v4", key: "1cmpym" }],
-  ["path", { d: "M16 2v4", key: "4m81vk" }],
-  ["rect", { width: "18", height: "18", x: "3", y: "4", rx: "2", key: "1hopcy" }],
-  ["path", { d: "M3 10h18", key: "8toen8" }]
+  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
+  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
 ];
-const Calendar = createLucideIcon("calendar", __iconNode$16);
+const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$16);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -40701,12 +40814,10 @@ const Calendar = createLucideIcon("calendar", __iconNode$16);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$15 = [
-  ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
-  ["path", { d: "M18 17V9", key: "2bz60n" }],
-  ["path", { d: "M13 17V5", key: "1frdt8" }],
-  ["path", { d: "M8 17v-3", key: "17ska0" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
 ];
-const ChartColumn = createLucideIcon("chart-column", __iconNode$15);
+const CircleCheck = createLucideIcon("circle-check", __iconNode$15);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -40714,149 +40825,73 @@ const ChartColumn = createLucideIcon("chart-column", __iconNode$15);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$14 = [
-  ["line", { x1: "18", x2: "18", y1: "20", y2: "10", key: "1xfpm4" }],
-  ["line", { x1: "12", x2: "12", y1: "20", y2: "4", key: "be30l9" }],
-  ["line", { x1: "6", x2: "6", y1: "20", y2: "14", key: "1r4le6" }]
-];
-const ChartNoAxesColumn = createLucideIcon("chart-no-axes-column", __iconNode$14);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$13 = [["path", { d: "M20 6 9 17l-5-5", key: "1gmf2c" }]];
-const Check = createLucideIcon("check", __iconNode$13);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$12 = [["path", { d: "m6 9 6 6 6-6", key: "qrunsl" }]];
-const ChevronDown = createLucideIcon("chevron-down", __iconNode$12);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$11 = [["path", { d: "m15 18-6-6 6-6", key: "1wnfg3" }]];
-const ChevronLeft = createLucideIcon("chevron-left", __iconNode$11);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$10 = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
-const ChevronRight = createLucideIcon("chevron-right", __iconNode$10);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$$ = [["path", { d: "m18 15-6-6-6 6", key: "153udz" }]];
-const ChevronUp = createLucideIcon("chevron-up", __iconNode$$);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$_ = [
-  ["path", { d: "m7 15 5 5 5-5", key: "1hf1tw" }],
-  ["path", { d: "m7 9 5-5 5 5", key: "sgt6xg" }]
-];
-const ChevronsUpDown = createLucideIcon("chevrons-up-down", __iconNode$_);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$Z = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["line", { x1: "12", x2: "12", y1: "8", y2: "12", key: "1pkeuh" }],
-  ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16", key: "4dfq90" }]
+  ["circle", { cx: "12", cy: "12", r: "1", key: "41hilf" }]
 ];
-const CircleAlert = createLucideIcon("circle-alert", __iconNode$Z);
+const CircleDot = createLucideIcon("circle-dot", __iconNode$14);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$Y = [
-  ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
-  ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
-];
-const CircleCheckBig = createLucideIcon("circle-check-big", __iconNode$Y);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$X = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["path", { d: "m9 12 2 2 4-4", key: "dzmm74" }]
-];
-const CircleCheck = createLucideIcon("circle-check", __iconNode$X);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$W = [
+const __iconNode$13 = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "m15 9-6 6", key: "1uzhvr" }],
   ["path", { d: "m9 9 6 6", key: "z0biqf" }]
 ];
-const CircleX = createLucideIcon("circle-x", __iconNode$W);
+const CircleX = createLucideIcon("circle-x", __iconNode$13);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$V = [
+const __iconNode$12 = [
+  ["rect", { width: "8", height: "4", x: "8", y: "2", rx: "1", ry: "1", key: "tgr4d6" }],
+  [
+    "path",
+    {
+      d: "M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2",
+      key: "116196"
+    }
+  ],
+  ["path", { d: "M12 11h4", key: "1jrz19" }],
+  ["path", { d: "M12 16h4", key: "n85exb" }],
+  ["path", { d: "M8 11h.01", key: "1dfujw" }],
+  ["path", { d: "M8 16h.01", key: "18s6g9" }]
+];
+const ClipboardList = createLucideIcon("clipboard-list", __iconNode$12);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$11 = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
 ];
-const Clock = createLucideIcon("clock", __iconNode$V);
+const Clock = createLucideIcon("clock", __iconNode$11);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$U = [
-  ["line", { x1: "12", x2: "12", y1: "2", y2: "22", key: "7eqyqh" }],
-  ["path", { d: "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6", key: "1b0p4s" }]
-];
-const DollarSign = createLucideIcon("dollar-sign", __iconNode$U);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$T = [
+const __iconNode$10 = [
   ["path", { d: "M12 15V3", key: "m9g1x1" }],
   ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", key: "ih7n3h" }],
   ["path", { d: "m7 10 5 5 5-5", key: "brsn70" }]
 ];
-const Download = createLucideIcon("download", __iconNode$T);
+const Download = createLucideIcon("download", __iconNode$10);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$S = [
+const __iconNode$$ = [
   [
     "path",
     {
@@ -40874,14 +40909,14 @@ const __iconNode$S = [
   ],
   ["path", { d: "m2 2 20 20", key: "1ooewy" }]
 ];
-const EyeOff = createLucideIcon("eye-off", __iconNode$S);
+const EyeOff = createLucideIcon("eye-off", __iconNode$$);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$R = [
+const __iconNode$_ = [
   [
     "path",
     {
@@ -40891,28 +40926,44 @@ const __iconNode$R = [
   ],
   ["circle", { cx: "12", cy: "12", r: "3", key: "1v7zrd" }]
 ];
-const Eye = createLucideIcon("eye", __iconNode$R);
+const Eye = createLucideIcon("eye", __iconNode$_);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$Q = [
+const __iconNode$Z = [
   ["path", { d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z", key: "1rqfz7" }],
   ["path", { d: "M14 2v4a2 2 0 0 0 2 2h4", key: "tnqrlb" }],
   ["path", { d: "M10 9H8", key: "b1mrlr" }],
   ["path", { d: "M16 13H8", key: "t4e002" }],
   ["path", { d: "M16 17H8", key: "z1uh3a" }]
 ];
-const FileText = createLucideIcon("file-text", __iconNode$Q);
+const FileText = createLucideIcon("file-text", __iconNode$Z);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$P = [
+const __iconNode$Y = [
+  [
+    "path",
+    {
+      d: "M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z",
+      key: "96xj49"
+    }
+  ]
+];
+const Flame = createLucideIcon("flame", __iconNode$Y);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$X = [
   [
     "path",
     {
@@ -40921,64 +40972,92 @@ const __iconNode$P = [
     }
   ]
 ];
-const Funnel = createLucideIcon("funnel", __iconNode$P);
+const Funnel = createLucideIcon("funnel", __iconNode$X);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$O = [
+const __iconNode$W = [
   ["circle", { cx: "18", cy: "18", r: "3", key: "1xkwt0" }],
   ["circle", { cx: "6", cy: "6", r: "3", key: "1lh9wr" }],
   ["path", { d: "M6 21V9a9 9 0 0 0 9 9", key: "7kw0sc" }]
 ];
-const GitMerge = createLucideIcon("git-merge", __iconNode$O);
+const GitMerge = createLucideIcon("git-merge", __iconNode$W);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$N = [
+const __iconNode$V = [
+  ["path", { d: "M16 10h2", key: "8sgtl7" }],
+  ["path", { d: "M16 14h2", key: "epxaof" }],
+  ["path", { d: "M6.17 15a3 3 0 0 1 5.66 0", key: "n6f512" }],
+  ["circle", { cx: "9", cy: "11", r: "2", key: "yxgjnd" }],
+  ["rect", { x: "2", y: "5", width: "20", height: "14", rx: "2", key: "qneu4z" }]
+];
+const IdCard = createLucideIcon("id-card", __iconNode$V);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$U = [
+  ["path", { d: "M6 3h12", key: "ggurg9" }],
+  ["path", { d: "M6 8h12", key: "6g4wlu" }],
+  ["path", { d: "m6 13 8.5 8", key: "u1kupk" }],
+  ["path", { d: "M6 13h3", key: "wdp6ag" }],
+  ["path", { d: "M9 13c6.667 0 6.667-10 0-10", key: "1nkvk2" }]
+];
+const IndianRupee = createLucideIcon("indian-rupee", __iconNode$U);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$T = [
   ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
   ["path", { d: "M12 16v-4", key: "1dtifu" }],
   ["path", { d: "M12 8h.01", key: "e9boi3" }]
 ];
-const Info = createLucideIcon("info", __iconNode$N);
+const Info = createLucideIcon("info", __iconNode$T);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$M = [
+const __iconNode$S = [
   ["rect", { width: "7", height: "9", x: "3", y: "3", rx: "1", key: "10lvy0" }],
   ["rect", { width: "7", height: "5", x: "14", y: "3", rx: "1", key: "16une8" }],
   ["rect", { width: "7", height: "9", x: "14", y: "12", rx: "1", key: "1hutg5" }],
   ["rect", { width: "7", height: "5", x: "3", y: "16", rx: "1", key: "ldoo1y" }]
 ];
-const LayoutDashboard = createLucideIcon("layout-dashboard", __iconNode$M);
+const LayoutDashboard = createLucideIcon("layout-dashboard", __iconNode$S);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$L = [
+const __iconNode$R = [
   ["rect", { width: "7", height: "7", x: "3", y: "3", rx: "1", key: "1g98yp" }],
   ["rect", { width: "7", height: "7", x: "14", y: "3", rx: "1", key: "6d4xhi" }],
   ["rect", { width: "7", height: "7", x: "14", y: "14", rx: "1", key: "nxv5o0" }],
   ["rect", { width: "7", height: "7", x: "3", y: "14", rx: "1", key: "1bb6yr" }]
 ];
-const LayoutGrid = createLucideIcon("layout-grid", __iconNode$L);
+const LayoutGrid = createLucideIcon("layout-grid", __iconNode$R);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$K = [
+const __iconNode$Q = [
   [
     "path",
     {
@@ -40989,15 +41068,90 @@ const __iconNode$K = [
   ["path", { d: "M9 18h6", key: "x1upvd" }],
   ["path", { d: "M10 22h4", key: "ceow96" }]
 ];
-const Lightbulb = createLucideIcon("lightbulb", __iconNode$K);
+const Lightbulb = createLucideIcon("lightbulb", __iconNode$Q);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$J = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
-const LoaderCircle = createLucideIcon("loader-circle", __iconNode$J);
+const __iconNode$P = [
+  ["rect", { x: "3", y: "5", width: "6", height: "6", rx: "1", key: "1defrl" }],
+  ["path", { d: "m3 17 2 2 4-4", key: "1jhpwq" }],
+  ["path", { d: "M13 6h8", key: "15sg57" }],
+  ["path", { d: "M13 12h8", key: "h98zly" }],
+  ["path", { d: "M13 18h8", key: "oe0vm4" }]
+];
+const ListTodo = createLucideIcon("list-todo", __iconNode$P);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$O = [
+  ["path", { d: "M3 12h.01", key: "nlz23k" }],
+  ["path", { d: "M3 18h.01", key: "1tta3j" }],
+  ["path", { d: "M3 6h.01", key: "1rqtza" }],
+  ["path", { d: "M8 12h13", key: "1za7za" }],
+  ["path", { d: "M8 18h13", key: "1lx6n3" }],
+  ["path", { d: "M8 6h13", key: "ik3vkj" }]
+];
+const List$1 = createLucideIcon("list", __iconNode$O);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$N = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
+const LoaderCircle = createLucideIcon("loader-circle", __iconNode$N);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$M = [
+  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
+  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
+];
+const Lock = createLucideIcon("lock", __iconNode$M);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$L = [
+  ["path", { d: "m10 17 5-5-5-5", key: "1bsop3" }],
+  ["path", { d: "M15 12H3", key: "6jk70r" }],
+  ["path", { d: "M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4", key: "u53s6r" }]
+];
+const LogIn = createLucideIcon("log-in", __iconNode$L);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$K = [
+  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
+  ["path", { d: "M21 12H9", key: "dn1m92" }],
+  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
+];
+const LogOut = createLucideIcon("log-out", __iconNode$K);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$J = [
+  ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
+  ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
+];
+const Mail = createLucideIcon("mail", __iconNode$J);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -41005,40 +41159,6 @@ const LoaderCircle = createLucideIcon("loader-circle", __iconNode$J);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$I = [
-  ["rect", { width: "18", height: "11", x: "3", y: "11", rx: "2", ry: "2", key: "1w4ew1" }],
-  ["path", { d: "M7 11V7a5 5 0 0 1 10 0v4", key: "fwvmzm" }]
-];
-const Lock = createLucideIcon("lock", __iconNode$I);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$H = [
-  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
-  ["path", { d: "M21 12H9", key: "dn1m92" }],
-  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
-];
-const LogOut = createLucideIcon("log-out", __iconNode$H);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$G = [
-  ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7", key: "132q7q" }],
-  ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2", key: "izxlao" }]
-];
-const Mail = createLucideIcon("mail", __iconNode$G);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$F = [
   [
     "path",
     {
@@ -41048,14 +41168,14 @@ const __iconNode$F = [
   ],
   ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$F);
+const MapPin = createLucideIcon("map-pin", __iconNode$I);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$E = [
+const __iconNode$H = [
   [
     "path",
     {
@@ -41066,7 +41186,40 @@ const __iconNode$E = [
   ["path", { d: "M15 5.764v15", key: "1pn4in" }],
   ["path", { d: "M9 3.236v15", key: "1uimfh" }]
 ];
-const Map$5 = createLucideIcon("map", __iconNode$E);
+const Map$5 = createLucideIcon("map", __iconNode$H);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$G = [
+  ["path", { d: "m3 11 18-5v12L3 14v-3z", key: "n962bs" }],
+  ["path", { d: "M11.6 16.8a3 3 0 1 1-5.8-1.6", key: "1yl0tm" }]
+];
+const Megaphone = createLucideIcon("megaphone", __iconNode$G);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$F = [
+  ["path", { d: "M4 12h16", key: "1lakjw" }],
+  ["path", { d: "M4 18h16", key: "19g7jn" }],
+  ["path", { d: "M4 6h16", key: "1o0s65" }]
+];
+const Menu = createLucideIcon("menu", __iconNode$F);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$E = [
+  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
+];
+const MessageCircle = createLucideIcon("message-circle", __iconNode$E);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -41074,22 +41227,17 @@ const Map$5 = createLucideIcon("map", __iconNode$E);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$D = [
-  ["path", { d: "m3 11 18-5v12L3 14v-3z", key: "n962bs" }],
-  ["path", { d: "M11.6 16.8a3 3 0 1 1-5.8-1.6", key: "1yl0tm" }]
+  ["path", { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z", key: "1lielz" }]
 ];
-const Megaphone = createLucideIcon("megaphone", __iconNode$D);
+const MessageSquare = createLucideIcon("message-square", __iconNode$D);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$C = [
-  ["path", { d: "M4 12h16", key: "1lakjw" }],
-  ["path", { d: "M4 18h16", key: "19g7jn" }],
-  ["path", { d: "M4 6h16", key: "1o0s65" }]
-];
-const Menu = createLucideIcon("menu", __iconNode$C);
+const __iconNode$C = [["path", { d: "M5 12h14", key: "1ays0h" }]];
+const Minus = createLucideIcon("minus", __iconNode$C);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -41097,9 +41245,11 @@ const Menu = createLucideIcon("menu", __iconNode$C);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$B = [
-  ["path", { d: "M7.9 20A9 9 0 1 0 4 16.1L2 22Z", key: "vv11sd" }]
+  ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2", key: "48i651" }],
+  ["line", { x1: "8", x2: "16", y1: "21", y2: "21", key: "1svkeh" }],
+  ["line", { x1: "12", x2: "12", y1: "17", y2: "21", key: "vw1qmm" }]
 ];
-const MessageCircle = createLucideIcon("message-circle", __iconNode$B);
+const Monitor = createLucideIcon("monitor", __iconNode$B);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -41107,46 +41257,16 @@ const MessageCircle = createLucideIcon("message-circle", __iconNode$B);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$A = [
-  ["path", { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z", key: "1lielz" }]
-];
-const MessageSquare = createLucideIcon("message-square", __iconNode$A);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$z = [["path", { d: "M5 12h14", key: "1ays0h" }]];
-const Minus = createLucideIcon("minus", __iconNode$z);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$y = [
-  ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2", key: "48i651" }],
-  ["line", { x1: "8", x2: "16", y1: "21", y2: "21", key: "1svkeh" }],
-  ["line", { x1: "12", x2: "12", y1: "17", y2: "21", key: "vw1qmm" }]
-];
-const Monitor = createLucideIcon("monitor", __iconNode$y);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$x = [
   ["path", { d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z", key: "a7tn18" }]
 ];
-const Moon = createLucideIcon("moon", __iconNode$x);
+const Moon = createLucideIcon("moon", __iconNode$A);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$w = [
+const __iconNode$z = [
   [
     "path",
     {
@@ -41159,14 +41279,31 @@ const __iconNode$w = [
   ["circle", { cx: "6.5", cy: "12.5", r: ".5", fill: "currentColor", key: "qy21gx" }],
   ["circle", { cx: "8.5", cy: "7.5", r: ".5", fill: "currentColor", key: "fotxhn" }]
 ];
-const Palette = createLucideIcon("palette", __iconNode$w);
+const Palette = createLucideIcon("palette", __iconNode$z);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$v = [
+const __iconNode$y = [
+  ["path", { d: "M12 20h9", key: "t2du7b" }],
+  [
+    "path",
+    {
+      d: "M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z",
+      key: "1ykcvy"
+    }
+  ]
+];
+const PenLine = createLucideIcon("pen-line", __iconNode$y);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$x = [
   [
     "path",
     {
@@ -41176,14 +41313,14 @@ const __iconNode$v = [
   ],
   ["path", { d: "m15 5 4 4", key: "1mk7zo" }]
 ];
-const Pencil = createLucideIcon("pencil", __iconNode$v);
+const Pencil = createLucideIcon("pencil", __iconNode$x);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$u = [
+const __iconNode$w = [
   [
     "path",
     {
@@ -41192,7 +41329,31 @@ const __iconNode$u = [
     }
   ]
 ];
-const Phone = createLucideIcon("phone", __iconNode$u);
+const Phone = createLucideIcon("phone", __iconNode$w);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$v = [
+  ["path", { d: "M5 12h14", key: "1ays0h" }],
+  ["path", { d: "M12 5v14", key: "s699le" }]
+];
+const Plus = createLucideIcon("plus", __iconNode$v);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$u = [
+  ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", key: "v9h5vc" }],
+  ["path", { d: "M21 3v5h-5", key: "1q7to0" }],
+  ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", key: "3uifl3" }],
+  ["path", { d: "M8 16H3v5", key: "1cv678" }]
+];
+const RefreshCw = createLucideIcon("refresh-cw", __iconNode$u);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -41200,10 +41361,17 @@ const Phone = createLucideIcon("phone", __iconNode$u);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$t = [
-  ["path", { d: "M5 12h14", key: "1ays0h" }],
-  ["path", { d: "M12 5v14", key: "s699le" }]
+  [
+    "path",
+    {
+      d: "M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z",
+      key: "1c8476"
+    }
+  ],
+  ["path", { d: "M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7", key: "1ydtos" }],
+  ["path", { d: "M7 3v4a1 1 0 0 0 1 1h7", key: "t51u73" }]
 ];
-const Plus = createLucideIcon("plus", __iconNode$t);
+const Save = createLucideIcon("save", __iconNode$t);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -43764,11 +43932,49 @@ const navItems$1 = [
     icon: LayoutDashboard,
     roles: ["super_admin", "zonal_manager", "branch_manager", "staff"]
   },
+  // Staff-only pages
+  {
+    label: "My Profile",
+    path: "/staff/profile",
+    icon: User,
+    roles: ["staff"]
+  },
+  {
+    label: "Lead Management",
+    path: "/staff/leads",
+    icon: UserPlus,
+    roles: ["staff"]
+  },
+  {
+    label: "My Tasks",
+    path: "/staff/tasks",
+    icon: SquareCheckBig,
+    roles: ["staff"]
+  },
+  {
+    label: "My Customers",
+    path: "/staff/customers",
+    icon: Users,
+    roles: ["staff"]
+  },
+  {
+    label: "Follow-ups",
+    path: "/staff/followups",
+    icon: Phone,
+    roles: ["staff"]
+  },
+  {
+    label: "Attendance",
+    path: "/staff/attendance",
+    icon: Calendar,
+    roles: ["staff"]
+  },
+  // Admin/manager shared pages
   {
     label: "Customers",
     path: "/customers",
     icon: Users,
-    roles: ["super_admin", "zonal_manager", "branch_manager", "staff"]
+    roles: ["super_admin", "zonal_manager", "branch_manager"]
   },
   {
     label: "Employees",
@@ -43793,7 +43999,7 @@ const navItems$1 = [
     label: "Attendance",
     path: "/attendance",
     icon: Calendar,
-    roles: ["super_admin", "zonal_manager", "branch_manager", "staff"]
+    roles: ["super_admin", "zonal_manager", "branch_manager"]
   },
   {
     label: "Analytics",
@@ -44531,7 +44737,7 @@ var DescriptionWarning = ({ contentRef, descriptionId }) => {
   }, [MESSAGE, contentRef, descriptionId]);
   return null;
 };
-var Root$4 = Dialog$1;
+var Root$5 = Dialog$1;
 var Portal$1 = DialogPortal$1;
 var Overlay = DialogOverlay$1;
 var Content$1 = DialogContent$1;
@@ -44540,7 +44746,7 @@ var Close = DialogClose;
 function Dialog({
   ...props
 }) {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root$4, { "data-slot": "dialog", ...props });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Root$5, { "data-slot": "dialog", ...props });
 }
 function DialogPortal({
   ...props
@@ -72021,13 +72227,13 @@ var Label$1 = reactExports.forwardRef((props, forwardedRef) => {
   );
 });
 Label$1.displayName = NAME$1;
-var Root$3 = Label$1;
+var Root$4 = Label$1;
 function Label({
   className,
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Root$3,
+    Root$4,
     {
       "data-slot": "label",
       className: cn(
@@ -72139,9 +72345,9 @@ function CalendarHeatmap({
   onSelect
 }) {
   const weekdayHeaders = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const startOffset = 3;
+  const startOffset2 = 3;
   const allCells = [
-    ...Array.from({ length: startOffset }, (_2, i) => ({
+    ...Array.from({ length: startOffset2 }, (_2, i) => ({
       key: `pre-${i + 1}`,
       day: null
     })),
@@ -73033,7 +73239,7 @@ Separator$1.displayName = NAME;
 function isValidOrientation(orientation) {
   return ORIENTATIONS.includes(orientation);
 }
-var Root$2 = Separator$1;
+var Root$3 = Separator$1;
 function Separator({
   className,
   orientation = "horizontal",
@@ -73041,7 +73247,7 @@ function Separator({
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Root$2,
+    Root$3,
     {
       "data-slot": "separator",
       decorative,
@@ -74043,7 +74249,7 @@ var TabsList$1 = reactExports.forwardRef(
     const context = useTabsContext(TAB_LIST_NAME, __scopeTabs);
     const rovingFocusGroupScope = useRovingFocusGroupScope(__scopeTabs);
     return /* @__PURE__ */ jsxRuntimeExports.jsx(
-      Root$5,
+      Root$6,
       {
         asChild: true,
         ...rovingFocusGroupScope,
@@ -76217,119 +76423,101 @@ const cardVariants$2 = {
     transition: { delay: i * 0.07, duration: 0.4 }
   })
 };
-const todaysTasks = [
-  {
-    id: "t1",
-    title: "Collect EMI from Gopalan Nair",
-    customer: "Gopalan Nair",
-    time: "10:00 AM",
-    amount: "₹15,000",
-    priority: "high",
-    done: false
-  },
-  {
-    id: "t2",
-    title: "Follow-up: Thankam Varghese EMI",
-    customer: "Thankam Varghese",
-    time: "11:30 AM",
-    amount: "₹6,000",
-    priority: "medium",
-    done: false
-  },
-  {
-    id: "t3",
-    title: "KYC verification: Babu Jose",
-    customer: "Babu Jose",
-    time: "2:00 PM",
-    amount: "—",
-    priority: "medium",
-    done: false
-  },
-  {
-    id: "t4",
-    title: "Morning attendance marked",
-    customer: "—",
-    time: "09:05 AM",
-    amount: "—",
-    priority: "low",
-    done: true
-  },
-  {
-    id: "t5",
-    title: "Submit daily activity report",
-    customer: "—",
-    time: "6:00 PM",
-    amount: "—",
-    priority: "high",
-    done: false
-  }
+const taskPerformanceData = [
+  { day: "Mon", assigned: 6, completed: 5, pending: 1 },
+  { day: "Tue", assigned: 8, completed: 6, pending: 2 },
+  { day: "Wed", assigned: 5, completed: 5, pending: 0 },
+  { day: "Thu", assigned: 9, completed: 7, pending: 2 },
+  { day: "Fri", assigned: 7, completed: 4, pending: 3 },
+  { day: "Sat", assigned: 4, completed: 4, pending: 0 },
+  { day: "Sun", assigned: 3, completed: 2, pending: 1 }
 ];
-const weeklyCollection = [
-  { day: "Mon", amount: 18 },
-  { day: "Tue", amount: 12 },
-  { day: "Wed", amount: 24 },
-  { day: "Thu", amount: 9 },
-  { day: "Fri", amount: 15 },
-  { day: "Sat", amount: 6 },
-  { day: "Sun", amount: 0 }
+const targetPerformanceData = [
+  { week: "Week 1", assigned: 4, achieved: 3, pending: 1 },
+  { week: "Week 2", assigned: 5, achieved: 4, pending: 1 },
+  { week: "Week 3", assigned: 6, achieved: 5, pending: 1 },
+  { week: "Week 4", assigned: 5, achieved: 3, pending: 2 }
 ];
-const priorityColors = {
-  high: "text-red-500",
-  medium: "text-amber-500",
-  low: "text-muted-foreground"
-};
 function StaffDashboard({ user }) {
-  const myCustomers = mockCustomers.filter((c2) => c2.assignedStaffId === user.id).slice(0, 10);
-  const totalTarget = 8e4;
-  const collected = 52e3;
-  const progressPct = Math.round(collected / totalTarget * 100);
+  const router2 = useRouter();
   const kpiCards2 = [
     {
-      title: "Assigned Customers",
-      value: 23,
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Users, { className: "w-5 h-5" }),
+      title: "Assigned Tasks",
+      value: 42,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(ClipboardList, { className: "w-5 h-5" }),
       iconColor: "text-blue-500",
-      subtitle: "Active accounts"
-    },
-    {
-      title: "Collections Today",
-      value: "₹12k",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(DollarSign, { className: "w-5 h-5" }),
-      iconColor: "text-emerald-500",
+      subtitle: "This month",
       trend: "up",
-      trendValue: 8,
-      subtitle: "vs yesterday"
+      trendValue: 12
     },
     {
-      title: "Pending Follow-ups",
-      value: 8,
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5" }),
+      title: "Completed Tasks",
+      value: 33,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-5 h-5" }),
+      iconColor: "text-emerald-500",
+      subtitle: "Tasks finished",
+      trend: "up",
+      trendValue: 8
+    },
+    {
+      title: "Pending Tasks",
+      value: 9,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleDot, { className: "w-5 h-5" }),
       iconColor: "text-amber-500",
-      subtitle: "Action needed"
+      subtitle: "Awaiting action",
+      trend: "down",
+      trendValue: -3
     },
     {
-      title: "Tasks Completed",
-      value: "5/8",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(SquareCheckBig, { className: "w-5 h-5" }),
-      iconColor: "text-indigo-500",
-      subtitle: "Today's tasks"
-    },
-    {
-      title: "Attendance %",
-      value: "95%",
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-5 h-5" }),
-      iconColor: "text-teal-500",
+      title: "Assigned Targets",
+      value: 20,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Target, { className: "w-5 h-5" }),
+      iconColor: "text-purple-500",
       subtitle: "This month"
     },
     {
-      title: "Target Progress",
-      value: `${progressPct}%`,
-      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Target, { className: "w-5 h-5" }),
-      iconColor: "text-purple-500",
-      subtitle: "Monthly target"
+      title: "Pending Targets",
+      value: 5,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(SquareCheckBig, { className: "w-5 h-5" }),
+      iconColor: "text-orange-500",
+      subtitle: "In progress",
+      trend: "neutral"
+    },
+    {
+      title: "Closed Targets",
+      value: 15,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleX, { className: "w-5 h-5" }),
+      iconColor: "text-teal-500",
+      subtitle: "Achieved & closed",
+      trend: "up",
+      trendValue: 20
     }
   ];
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-6", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-8", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PageHeader,
+      {
+        title: `Welcome, ${user.name.split(" ")[0]}`,
+        subtitle: `${user.branchId ?? "ThiruKochi Advisors"} · ${(/* @__PURE__ */ new Date()).toLocaleDateString("en-IN", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}`,
+        badge: user.role === "staff" ? "Staff" : "Employee"
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-lg font-semibold text-foreground", children: "Task & Target Overview" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "button",
+        {
+          type: "button",
+          onClick: () => router2.navigate({ to: "/staff/tasks" }),
+          className: "bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 text-sm font-medium transition-colors",
+          "data-ocid": "staff_dashboard.add_task_button",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" }),
+            "Add Task"
+          ]
+        }
+      )
+    ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4", children: kpiCards2.map((card, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
       motion.div,
       {
@@ -76337,91 +76525,27 @@ function StaffDashboard({ user }) {
         variants: cardVariants$2,
         initial: "hidden",
         animate: "visible",
+        "data-ocid": `staff_dashboard.kpi.${i + 1}`,
         children: /* @__PURE__ */ jsxRuntimeExports.jsx(KPICard, { ...card })
       },
       card.title
     )) }),
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 xl:grid-cols-3 gap-4", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 xl:grid-cols-2 gap-6", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         motion.div,
         {
-          initial: { opacity: 0, y: 16 },
+          initial: { opacity: 0, y: 20 },
           animate: { opacity: 1, y: 0 },
-          transition: { delay: 0.5 },
-          children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-2xl border border-border bg-card p-5 shadow-glow", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-base text-foreground mb-4", children: "Target Progress" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-center mb-4", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-4xl font-display font-bold text-foreground", children: [
-                progressPct,
-                "%"
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-1", children: "Monthly Collection Target" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-3 bg-muted rounded-full overflow-hidden mb-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-              motion.div,
-              {
-                initial: { width: 0 },
-                animate: { width: `${progressPct}%` },
-                transition: {
-                  duration: 1.2,
-                  ease: [0.4, 0, 0.2, 1],
-                  delay: 0.6
-                },
-                className: "h-full rounded-full bg-gradient-to-r from-primary to-secondary"
-              }
-            ) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between text-xs text-muted-foreground", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
-                "Collected:",
-                " ",
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-foreground font-semibold", children: [
-                  "₹",
-                  (collected / 1e3).toFixed(0),
-                  "k"
-                ] })
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { children: [
-                "Target:",
-                " ",
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-foreground font-semibold", children: [
-                  "₹",
-                  (totalTarget / 1e3).toFixed(0),
-                  "k"
-                ] })
-              ] })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-4 p-3 rounded-xl bg-primary/10 border border-primary/20", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs font-medium text-primary", children: [
-                "₹",
-                ((totalTarget - collected) / 1e3).toFixed(0),
-                "k more to reach target"
-              ] }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-[11px] text-muted-foreground mt-0.5", children: "Keep it up! You're doing great." })
-            ] })
-          ] })
-        }
-      ),
-      /* @__PURE__ */ jsxRuntimeExports.jsx(
-        motion.div,
-        {
-          initial: { opacity: 0, y: 16 },
-          animate: { opacity: 1, y: 0 },
-          transition: { delay: 0.55 },
+          transition: { delay: 0.5, duration: 0.4 },
+          "data-ocid": "staff_dashboard.task_performance_chart",
           children: /* @__PURE__ */ jsxRuntimeExports.jsx(
             ChartWrapper,
             {
-              title: "This Week's Collection",
-              subtitle: "Daily amounts (₹ Thousands)",
-              height: 200,
-              children: /* @__PURE__ */ jsxRuntimeExports.jsxs(BarChart, { data: weeklyCollection, children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  CartesianGrid,
-                  {
-                    strokeDasharray: "3 3",
-                    stroke: "currentColor",
-                    strokeOpacity: 0.07
-                  }
-                ),
+              title: "Task Performance",
+              subtitle: "Assigned vs Completed vs Pending — last 7 days",
+              height: 260,
+              children: /* @__PURE__ */ jsxRuntimeExports.jsxs(BarChart, { data: taskPerformanceData, barCategoryGap: "28%", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(CartesianGrid, { strokeDasharray: "3 3", strokeOpacity: 0.07 }),
                 /* @__PURE__ */ jsxRuntimeExports.jsx(
                   XAxis,
                   {
@@ -76430,15 +76554,46 @@ function StaffDashboard({ user }) {
                     stroke: "transparent"
                   }
                 ),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(YAxis, { tick: { fontSize: 11 }, stroke: "transparent", unit: "k" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Tooltip, { formatter: (v2) => `₹${v2}k` }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Bar, { dataKey: "amount", name: "Collection", radius: [4, 4, 0, 0], children: weeklyCollection.map((entry) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  Cell,
+                /* @__PURE__ */ jsxRuntimeExports.jsx(YAxis, { tick: { fontSize: 11 }, stroke: "transparent" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Tooltip,
                   {
-                    fill: entry.amount > 15 ? chartColors.success : entry.amount > 8 ? chartColors.primary : chartColors.muted
-                  },
-                  `cell-${entry.day}`
-                )) })
+                    contentStyle: {
+                      background: "var(--card)",
+                      border: "1px solid var(--border)",
+                      borderRadius: 12,
+                      fontSize: 12
+                    }
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Legend, { wrapperStyle: { fontSize: 11, paddingTop: 8 } }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Bar,
+                  {
+                    dataKey: "assigned",
+                    name: "Assigned",
+                    fill: chartColors.primary,
+                    radius: [4, 4, 0, 0]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Bar,
+                  {
+                    dataKey: "completed",
+                    name: "Completed",
+                    fill: chartColors.success,
+                    radius: [4, 4, 0, 0]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Bar,
+                  {
+                    dataKey: "pending",
+                    name: "Pending",
+                    fill: chartColors.warning,
+                    radius: [4, 4, 0, 0]
+                  }
+                )
               ] })
             }
           )
@@ -76447,111 +76602,72 @@ function StaffDashboard({ user }) {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         motion.div,
         {
-          initial: { opacity: 0, y: 16 },
+          initial: { opacity: 0, y: 20 },
           animate: { opacity: 1, y: 0 },
-          transition: { delay: 0.6 },
-          children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-2xl border border-border bg-card p-5 shadow-glow h-full", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-base text-foreground mb-4", children: "Today's Tasks" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-2.5", children: todaysTasks.map((task, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "div",
-              {
-                className: `flex items-start gap-2.5 p-2.5 rounded-xl border ${task.done ? "border-border/40 opacity-60" : "border-border"} bg-muted/20`,
-                "data-ocid": `dashboard.task.item.${i + 1}`,
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "div",
-                    {
-                      className: `w-3.5 h-3.5 rounded-full border-2 mt-0.5 shrink-0 ${task.done ? "bg-emerald-500 border-emerald-500" : "border-muted-foreground"}`
+          transition: { delay: 0.6, duration: 0.4 },
+          "data-ocid": "staff_dashboard.target_performance_chart",
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            ChartWrapper,
+            {
+              title: "Target Performance",
+              subtitle: "Assigned vs Achieved vs Pending — weekly view",
+              height: 260,
+              children: /* @__PURE__ */ jsxRuntimeExports.jsxs(BarChart, { data: targetPerformanceData, barCategoryGap: "28%", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(CartesianGrid, { strokeDasharray: "3 3", strokeOpacity: 0.07 }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  XAxis,
+                  {
+                    dataKey: "week",
+                    tick: { fontSize: 11 },
+                    stroke: "transparent"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(YAxis, { tick: { fontSize: 11 }, stroke: "transparent" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Tooltip,
+                  {
+                    contentStyle: {
+                      background: "var(--card)",
+                      border: "1px solid var(--border)",
+                      borderRadius: 12,
+                      fontSize: 12
                     }
-                  ),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      "p",
-                      {
-                        className: `text-xs leading-tight ${task.done ? "line-through text-muted-foreground" : "text-foreground"}`,
-                        children: task.title
-                      }
-                    ),
-                    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mt-1", children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] text-muted-foreground", children: task.time }),
-                      task.amount !== "—" && /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[10px] font-semibold text-emerald-500", children: task.amount }),
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(
-                        "span",
-                        {
-                          className: `text-[10px] font-semibold uppercase ${priorityColors[task.priority]}`,
-                          children: task.priority
-                        }
-                      )
-                    ] })
-                  ] })
-                ]
-              },
-              task.id
-            )) })
-          ] })
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Legend, { wrapperStyle: { fontSize: 11, paddingTop: 8 } }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Bar,
+                  {
+                    dataKey: "assigned",
+                    name: "Assigned",
+                    fill: chartColors.secondary,
+                    radius: [4, 4, 0, 0]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Bar,
+                  {
+                    dataKey: "achieved",
+                    name: "Achieved",
+                    fill: chartColors.success,
+                    radius: [4, 4, 0, 0]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Bar,
+                  {
+                    dataKey: "pending",
+                    name: "Pending",
+                    fill: chartColors.danger,
+                    radius: [4, 4, 0, 0]
+                  }
+                )
+              ] })
+            }
+          )
         }
       )
-    ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
-      motion.div,
-      {
-        initial: { opacity: 0, y: 16 },
-        animate: { opacity: 1, y: 0 },
-        transition: { delay: 0.7 },
-        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-2xl border border-border bg-card p-5 shadow-glow", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-4", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-base text-foreground", children: "Customer Follow-ups" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: "Prioritized by due date" })
-            ] }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs bg-amber-500/15 text-amber-500 px-2 py-0.5 rounded-full font-semibold", children: "8 pending" })
-          ] }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("tr", { className: "border-b border-border", children: [
-              "Customer",
-              "Last Contact",
-              "Next Action",
-              "Amount Due",
-              "Risk"
-            ].map((h2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "th",
-              {
-                className: "px-3 py-2 text-left text-xs font-semibold text-muted-foreground",
-                children: h2
-              },
-              h2
-            )) }) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: myCustomers.slice(0, 8).map((c2, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-              "tr",
-              {
-                className: "border-b border-border/40 hover:bg-muted/30 transition-colors",
-                "data-ocid": `dashboard.followup.item.${i + 1}`,
-                children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-3 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-bold text-primary", children: c2.name.charAt(0) }) }),
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-foreground text-xs", children: c2.name })
-                  ] }) }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-3 py-3 text-xs text-muted-foreground", children: c2.lastPaymentDate }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-3 py-3 text-xs text-muted-foreground", children: c2.nextDueDate }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("td", { className: "px-3 py-3 font-mono text-xs text-foreground", children: [
-                    "₹",
-                    c2.emiAmount.toLocaleString()
-                  ] }),
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-3 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                    "span",
-                    {
-                      className: `text-[10px] font-semibold px-2 py-0.5 rounded-full ${c2.riskLevel === "low" ? "bg-emerald-500/15 text-emerald-500" : c2.riskLevel === "medium" ? "bg-amber-500/15 text-amber-500" : c2.riskLevel === "critical" ? "bg-red-500/15 text-red-500" : "bg-orange-500/15 text-orange-500"}`,
-                      children: c2.riskLevel
-                    }
-                  ) })
-                ]
-              },
-              c2.id
-            )) })
-          ] }) })
-        ] })
-      }
-    )
+    ] })
   ] });
 }
 const cardVariants$1 = {
@@ -77626,7 +77742,7 @@ function getInvalidValueError(propValue, componentName) {
 
 Defaulting to \`null\`.`;
 }
-var Root$1 = Progress$1;
+var Root$2 = Progress$1;
 var Indicator = ProgressIndicator;
 function Progress({
   className,
@@ -77634,7 +77750,7 @@ function Progress({
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Root$1,
+    Root$2,
     {
       "data-slot": "progress",
       className: cn(
@@ -80490,14 +80606,14 @@ SwitchBubbleInput.displayName = BUBBLE_INPUT_NAME;
 function getState(checked) {
   return checked ? "checked" : "unchecked";
 }
-var Root = Switch$1;
+var Root$1 = Switch$1;
 var Thumb = SwitchThumb;
 function Switch({
   className,
   ...props
 }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(
-    Root,
+    Root$1,
     {
       "data-slot": "switch",
       className: cn(
@@ -83430,6 +83546,3901 @@ function ZonesPage() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(AddZoneModal, { open: addOpen, onClose: () => setAddOpen(false) })
   ] }) });
 }
+const MONTH_DAYS = [
+  {
+    day: 1,
+    status: "present",
+    checkIn: "09:02",
+    checkOut: "18:05",
+    hours: 9
+  },
+  {
+    day: 2,
+    status: "present",
+    checkIn: "09:10",
+    checkOut: "18:00",
+    hours: 8.8
+  },
+  { day: 3, status: "weekend" },
+  { day: 4, status: "weekend" },
+  {
+    day: 5,
+    status: "present",
+    checkIn: "09:05",
+    checkOut: "18:10",
+    hours: 9.1
+  },
+  { day: 6, status: "late", checkIn: "09:45", checkOut: "18:30", hours: 8.7 },
+  {
+    day: 7,
+    status: "present",
+    checkIn: "09:00",
+    checkOut: "18:00",
+    hours: 9
+  },
+  {
+    day: 8,
+    status: "present",
+    checkIn: "08:58",
+    checkOut: "18:02",
+    hours: 9.1
+  },
+  {
+    day: 9,
+    status: "present",
+    checkIn: "09:03",
+    checkOut: "18:00",
+    hours: 9
+  },
+  { day: 10, status: "weekend" },
+  { day: 11, status: "weekend" },
+  { day: 12, status: "leave", checkIn: void 0, checkOut: void 0 },
+  {
+    day: 13,
+    status: "present",
+    checkIn: "09:00",
+    checkOut: "18:05",
+    hours: 9.1
+  },
+  {
+    day: 14,
+    status: "present",
+    checkIn: "09:08",
+    checkOut: "18:00",
+    hours: 8.9
+  },
+  {
+    day: 15,
+    status: "present",
+    checkIn: "09:01",
+    checkOut: "18:00",
+    hours: 9
+  },
+  {
+    day: 16,
+    status: "present",
+    checkIn: "09:04",
+    checkOut: "18:10",
+    hours: 9.1
+  },
+  { day: 17, status: "weekend" },
+  { day: 18, status: "weekend" },
+  {
+    day: 19,
+    status: "present",
+    checkIn: "09:02",
+    checkOut: "18:00",
+    hours: 9
+  },
+  {
+    day: 20,
+    status: "present",
+    checkIn: "09:10",
+    checkOut: "18:15",
+    hours: 9.1
+  },
+  {
+    day: 21,
+    status: "present",
+    checkIn: "09:05",
+    checkOut: "18:00",
+    hours: 8.9
+  },
+  { day: 22, status: "absent" },
+  {
+    day: 23,
+    status: "present",
+    checkIn: "09:00",
+    checkOut: "18:00",
+    hours: 9
+  },
+  { day: 24, status: "weekend" },
+  { day: 25, status: "weekend" },
+  { day: 26, status: "late", checkIn: "09:50", checkOut: "18:30", hours: 8.7 },
+  {
+    day: 27,
+    status: "present",
+    checkIn: "09:02",
+    checkOut: "18:05",
+    hours: 9
+  },
+  {
+    day: 28,
+    status: "present",
+    checkIn: "09:00",
+    checkOut: "18:00",
+    hours: 9
+  },
+  {
+    day: 29,
+    status: "present",
+    checkIn: "09:03",
+    checkOut: "18:02",
+    hours: 9
+  },
+  {
+    day: 30,
+    status: "present",
+    checkIn: "09:01",
+    checkOut: "18:00",
+    hours: 9
+  },
+  { day: 31, status: "future" }
+];
+const LOG_ROWS = MONTH_DAYS.filter(
+  (d2) => d2.status !== "weekend" && d2.status !== "future"
+);
+const LEAVE_HISTORY = [
+  {
+    id: "l1",
+    type: "Casual Leave",
+    from: "2026-05-12",
+    to: "2026-05-12",
+    days: 1,
+    reason: "Personal work",
+    status: "approved"
+  },
+  {
+    id: "l2",
+    type: "Sick Leave",
+    from: "2026-04-03",
+    to: "2026-04-04",
+    days: 2,
+    reason: "Fever and cold",
+    status: "approved"
+  },
+  {
+    id: "l3",
+    type: "Earned Leave",
+    from: "2026-03-25",
+    to: "2026-03-26",
+    days: 2,
+    reason: "Family function in Thrissur",
+    status: "approved"
+  },
+  {
+    id: "l4",
+    type: "Medical Leave",
+    from: "2026-06-02",
+    to: "2026-06-03",
+    days: 2,
+    reason: "Planned surgery follow-up",
+    status: "pending"
+  }
+];
+const statusStyles = {
+  present: "bg-emerald-500/80 text-white",
+  absent: "bg-red-500/80 text-white",
+  late: "bg-amber-400/80 text-black",
+  weekend: "bg-muted text-muted-foreground",
+  leave: "bg-blue-500/80 text-white",
+  future: "bg-muted/40 text-muted-foreground/40"
+};
+const leaveStatusBadge = {
+  approved: "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/30",
+  rejected: "bg-red-500/15 text-red-600 dark:text-red-400 border-red-500/30",
+  pending: "bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30"
+};
+const dayLabels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const startOffset = 5;
+function StaffAttendancePage() {
+  const [checkedIn, setCheckedIn] = reactExports.useState(false);
+  const [checkInTime, setCheckInTime] = reactExports.useState(null);
+  const [showLeaveModal, setShowLeaveModal] = reactExports.useState(false);
+  const [leaveType, setLeaveType] = reactExports.useState("");
+  const [leaveFrom, setLeaveFrom] = reactExports.useState("");
+  const [leaveTo, setLeaveTo] = reactExports.useState("");
+  const [leaveReason, setLeaveReason] = reactExports.useState("");
+  const [submitted, setSubmitted] = reactExports.useState(false);
+  const now2 = /* @__PURE__ */ new Date();
+  const timeStr = now2.toLocaleTimeString("en-IN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true
+  });
+  function handleCheckIn() {
+    setCheckedIn(true);
+    setCheckInTime(timeStr);
+  }
+  function handleCheckOut() {
+    setCheckedIn(false);
+  }
+  function handleLeaveSubmit(e3) {
+    e3.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => {
+      setShowLeaveModal(false);
+      setSubmitted(false);
+      setLeaveType("");
+      setLeaveFrom("");
+      setLeaveTo("");
+      setLeaveReason("");
+    }, 1200);
+  }
+  const kpiCards2 = [
+    {
+      title: "Present Days",
+      value: 22,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-5 h-5" }),
+      iconColor: "text-emerald-500",
+      subtitle: "May 2026",
+      trend: "up",
+      trendValue: 5
+    },
+    {
+      title: "Absent Days",
+      value: 1,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleX, { className: "w-5 h-5" }),
+      iconColor: "text-red-500",
+      subtitle: "This month",
+      trend: "down",
+      trendValue: -2
+    },
+    {
+      title: "Late Count",
+      value: 2,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5" }),
+      iconColor: "text-amber-500",
+      subtitle: "Late check-ins",
+      trend: "neutral"
+    },
+    {
+      title: "Leave Balance",
+      value: 8,
+      icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-5 h-5" }),
+      iconColor: "text-blue-500",
+      subtitle: "Days remaining"
+    }
+  ];
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(ProtectedRoute, { allowedRoles: ["staff"], children: /* @__PURE__ */ jsxRuntimeExports.jsx(AppLayout, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-8", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PageHeader,
+      {
+        title: "Attendance",
+        subtitle: "May 2026 · Manage check-in, leave requests, and attendance records",
+        badge: "Staff",
+        actions: [
+          {
+            label: "Apply Leave",
+            onClick: () => setShowLeaveModal(true),
+            variant: "outline",
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(FileText, { className: "w-4 h-4" })
+          }
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      motion.div,
+      {
+        initial: { opacity: 0, y: 16 },
+        animate: { opacity: 1, y: 0 },
+        transition: { duration: 0.4 },
+        className: "rounded-2xl border border-border bg-card p-6 flex flex-col sm:flex-row items-center gap-6 shadow-sm",
+        "data-ocid": "attendance.checkin_panel",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 space-y-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold uppercase tracking-wider text-muted-foreground", children: "Today's Status" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display text-2xl font-bold text-foreground", children: checkedIn ? "Checked In" : "Not Checked In" }),
+            checkInTime && /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm text-muted-foreground", children: [
+              "Check-in recorded at",
+              " ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-emerald-500", children: checkInTime })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground", children: [
+              "Current time:",
+              " ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium text-foreground", children: timeStr })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-3", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              Button,
+              {
+                type: "button",
+                variant: checkedIn ? "outline" : "default",
+                disabled: checkedIn,
+                onClick: handleCheckIn,
+                className: "gap-2",
+                "data-ocid": "attendance.checkin_button",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(LogIn, { className: "w-4 h-4" }),
+                  "Check In"
+                ]
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              Button,
+              {
+                type: "button",
+                variant: !checkedIn ? "outline" : "default",
+                disabled: !checkedIn,
+                onClick: handleCheckOut,
+                className: "gap-2",
+                "data-ocid": "attendance.checkout_button",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(LogOut, { className: "w-4 h-4" }),
+                  "Check Out"
+                ]
+              }
+            )
+          ] })
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-2 xl:grid-cols-4 gap-4", children: kpiCards2.map((card, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      motion.div,
+      {
+        initial: { opacity: 0, y: 16 },
+        animate: { opacity: 1, y: 0 },
+        transition: { delay: i * 0.07, duration: 0.4 },
+        "data-ocid": `attendance.kpi.${i + 1}`,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(KPICard, { ...card })
+      },
+      card.title
+    )) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      motion.div,
+      {
+        initial: { opacity: 0, y: 16 },
+        animate: { opacity: 1, y: 0 },
+        transition: { delay: 0.3, duration: 0.4 },
+        className: "rounded-2xl border border-border bg-card p-6",
+        "data-ocid": "attendance.calendar",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-5", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground text-lg", children: "May 2026 — Attendance Calendar" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-wrap gap-3 text-xs", children: [
+              { label: "Present", cls: "bg-emerald-500/80" },
+              { label: "Absent", cls: "bg-red-500/80" },
+              { label: "Late", cls: "bg-amber-400/80" },
+              { label: "Leave", cls: "bg-blue-500/80" },
+              { label: "Weekend", cls: "bg-muted" }
+            ].map((l2) => /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "flex items-center gap-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: cn("w-3 h-3 rounded-full inline-block", l2.cls)
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: l2.label })
+            ] }, l2.label)) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-7 gap-2", children: [
+            dayLabels.map((d2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: "text-center text-xs font-semibold text-muted-foreground pb-1",
+                children: d2
+              },
+              d2
+            )),
+            Array.from(
+              { length: startOffset },
+              (_2, idx) => `offset-${idx + 1}-${startOffset}`
+            ).map((key) => /* @__PURE__ */ jsxRuntimeExports.jsx("div", {}, key)),
+            MONTH_DAYS.map((rec) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: cn(
+                  "rounded-xl aspect-square flex items-center justify-center text-sm font-bold transition-all cursor-default",
+                  statusStyles[rec.status],
+                  rec.status === "future" ? "opacity-30" : ""
+                ),
+                title: rec.status.charAt(0).toUpperCase() + rec.status.slice(1),
+                children: rec.day
+              },
+              rec.day
+            ))
+          ] })
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      motion.div,
+      {
+        initial: { opacity: 0, y: 16 },
+        animate: { opacity: 1, y: 0 },
+        transition: { delay: 0.4, duration: 0.4 },
+        className: "rounded-2xl border border-border bg-card overflow-hidden",
+        "data-ocid": "attendance.log_table",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-6 py-4 border-b border-border", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground", children: "This Month's Attendance Log" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: "Daily check-in/out record for May 2026" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "bg-muted/40 text-muted-foreground text-xs uppercase tracking-wider", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "Date" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "Check In" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "Check Out" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-right font-semibold", children: "Hours" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "Status" })
+            ] }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: LOG_ROWS.map((rec, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "tr",
+              {
+                className: "border-t border-border/50 hover:bg-muted/30 transition-colors",
+                "data-ocid": `attendance.log_row.${i + 1}`,
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 font-medium text-foreground", children: `2026-05-${String(rec.day).padStart(2, "0")}` }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 text-muted-foreground", children: rec.checkIn ?? /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/50", children: "—" }) }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 text-muted-foreground", children: rec.checkOut ?? /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground/50", children: "—" }) }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 text-right font-mono text-foreground", children: rec.hours ? `${rec.hours}h` : "—" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: cn(
+                        "px-2.5 py-1 rounded-full text-xs font-semibold border",
+                        rec.status === "present" && "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/30",
+                        rec.status === "absent" && "bg-red-500/15 text-red-600 dark:text-red-400 border-red-500/30",
+                        rec.status === "late" && "bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30",
+                        rec.status === "leave" && "bg-blue-500/15 text-blue-600 dark:text-blue-400 border-blue-500/30"
+                      ),
+                      children: rec.status.charAt(0).toUpperCase() + rec.status.slice(1)
+                    }
+                  ) })
+                ]
+              },
+              rec.day
+            )) })
+          ] }) })
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      motion.div,
+      {
+        initial: { opacity: 0, y: 16 },
+        animate: { opacity: 1, y: 0 },
+        transition: { delay: 0.5, duration: 0.4 },
+        className: "rounded-2xl border border-border bg-card overflow-hidden",
+        "data-ocid": "attendance.leave_history",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "px-6 py-4 border-b border-border flex items-center justify-between", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-display font-semibold text-foreground", children: "Leave Request History" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5", children: "All leave applications submitted" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              Button,
+              {
+                type: "button",
+                variant: "outline",
+                size: "sm",
+                onClick: () => setShowLeaveModal(true),
+                className: "gap-1.5 text-xs",
+                "data-ocid": "attendance.apply_leave_button",
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(FileText, { className: "w-3.5 h-3.5" }),
+                  "Apply Leave"
+                ]
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("table", { className: "w-full text-sm", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("thead", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("tr", { className: "bg-muted/40 text-muted-foreground text-xs uppercase tracking-wider", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "Type" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "From" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "To" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-right font-semibold", children: "Days" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "Reason" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("th", { className: "px-6 py-3 text-left font-semibold", children: "Status" })
+            ] }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("tbody", { children: LEAVE_HISTORY.map((lv, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "tr",
+              {
+                className: "border-t border-border/50 hover:bg-muted/30 transition-colors",
+                "data-ocid": `attendance.leave_row.${i + 1}`,
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 font-medium text-foreground", children: lv.type }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 text-muted-foreground", children: lv.from }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 text-muted-foreground", children: lv.to }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 text-right font-mono text-foreground", children: lv.days }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3 text-muted-foreground max-w-[180px] truncate", children: lv.reason }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("td", { className: "px-6 py-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: cn(
+                        "px-2.5 py-1 rounded-full text-xs font-semibold border",
+                        leaveStatusBadge[lv.status]
+                      ),
+                      children: lv.status.charAt(0).toUpperCase() + lv.status.slice(1)
+                    }
+                  ) })
+                ]
+              },
+              lv.id
+            )) })
+          ] }) })
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Dialog, { open: showLeaveModal, onOpenChange: setShowLeaveModal, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      DialogContent,
+      {
+        className: "sm:max-w-md",
+        "data-ocid": "attendance.leave_dialog",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { className: "font-display text-lg", children: "Apply for Leave" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleLeaveSubmit, className: "space-y-4 pt-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "leaveType", children: "Leave Type" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                Select,
+                {
+                  value: leaveType,
+                  onValueChange: setLeaveType,
+                  required: true,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      SelectTrigger,
+                      {
+                        id: "leaveType",
+                        "data-ocid": "attendance.leave_type_select",
+                        children: /* @__PURE__ */ jsxRuntimeExports.jsx(SelectValue, { placeholder: "Select leave type" })
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(SelectContent, { children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "casual", children: "Casual Leave" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "sick", children: "Sick Leave" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "earned", children: "Earned Leave" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(SelectItem, { value: "medical", children: "Medical Leave" })
+                    ] })
+                  ]
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-4", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "leaveFrom", children: "From Date" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Input,
+                  {
+                    id: "leaveFrom",
+                    type: "date",
+                    value: leaveFrom,
+                    onChange: (e3) => setLeaveFrom(e3.target.value),
+                    required: true,
+                    "data-ocid": "attendance.leave_from_input"
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "leaveTo", children: "To Date" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Input,
+                  {
+                    id: "leaveTo",
+                    type: "date",
+                    value: leaveTo,
+                    onChange: (e3) => setLeaveTo(e3.target.value),
+                    required: true,
+                    "data-ocid": "attendance.leave_to_input"
+                  }
+                )
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "leaveReason", children: "Reason" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Textarea,
+                {
+                  id: "leaveReason",
+                  placeholder: "Briefly describe the reason for leave...",
+                  value: leaveReason,
+                  onChange: (e3) => setLeaveReason(e3.target.value),
+                  rows: 3,
+                  required: true,
+                  "data-ocid": "attendance.leave_reason_textarea"
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-3 pt-1", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Button,
+                {
+                  type: "submit",
+                  className: "flex-1",
+                  disabled: submitted,
+                  "data-ocid": "attendance.leave_submit_button",
+                  children: submitted ? "Submitting…" : "Submit Request"
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Button,
+                {
+                  type: "button",
+                  variant: "outline",
+                  onClick: () => setShowLeaveModal(false),
+                  "data-ocid": "attendance.leave_cancel_button",
+                  children: "Cancel"
+                }
+              )
+            ] })
+          ] })
+        ]
+      }
+    ) })
+  ] }) }) });
+}
+const DUMMY_CUSTOMERS = [
+  {
+    id: "C001",
+    name: "Ramachandran Nair",
+    phone: "+91 9447201345",
+    occupation: "Farmer",
+    loanType: "Gold Loan",
+    loanAmount: 25e4,
+    emiAmount: 8500,
+    outstandingAmount: 185e3,
+    nextDueDate: "2026-05-25",
+    lastPaymentDate: "2026-04-25",
+    riskLevel: "low",
+    status: "active",
+    notes: "Reliable payer, always on time"
+  },
+  {
+    id: "C002",
+    name: "Sunitha Thomas",
+    phone: "+91 9846523112",
+    occupation: "Teacher",
+    loanType: "Personal Loan",
+    loanAmount: 15e4,
+    emiAmount: 5200,
+    outstandingAmount: 112e3,
+    nextDueDate: "2026-05-22",
+    lastPaymentDate: "2026-04-22",
+    riskLevel: "low",
+    status: "active",
+    notes: "Teaching in Govt. school, stable income"
+  },
+  {
+    id: "C003",
+    name: "Biju Mathew",
+    phone: "+91 9895001234",
+    occupation: "Auto Driver",
+    loanType: "Vehicle Loan",
+    loanAmount: 35e4,
+    emiAmount: 11e3,
+    outstandingAmount: 29e4,
+    nextDueDate: "2026-05-20",
+    lastPaymentDate: "2026-03-20",
+    riskLevel: "high",
+    status: "overdue",
+    notes: "Missed 2 consecutive EMIs, needs follow-up"
+  },
+  {
+    id: "C004",
+    name: "Sheeba Antony",
+    phone: "+91 9562341090",
+    occupation: "Nurse",
+    loanType: "Personal Loan",
+    loanAmount: 2e5,
+    emiAmount: 6800,
+    outstandingAmount: 156e3,
+    nextDueDate: "2026-05-28",
+    lastPaymentDate: "2026-04-28",
+    riskLevel: "medium",
+    status: "active",
+    notes: "Hospital employee, regular payment"
+  },
+  {
+    id: "C005",
+    name: "Pradeep Kumar",
+    phone: "+91 9745678901",
+    occupation: "Business",
+    loanType: "Business Loan",
+    loanAmount: 8e5,
+    emiAmount: 22e3,
+    outstandingAmount: 68e4,
+    nextDueDate: "2026-05-21",
+    lastPaymentDate: "2026-04-15",
+    riskLevel: "critical",
+    status: "overdue",
+    notes: "Business slowdown, requested restructuring"
+  },
+  {
+    id: "C006",
+    name: "Meenakshi Iyer",
+    phone: "+91 9847230567",
+    occupation: "Housewife",
+    loanType: "Gold Loan",
+    loanAmount: 12e4,
+    emiAmount: 4200,
+    outstandingAmount: 78e3,
+    nextDueDate: "2026-06-05",
+    lastPaymentDate: "2026-05-05",
+    riskLevel: "low",
+    status: "active",
+    notes: "Recently renewed loan"
+  },
+  {
+    id: "C007",
+    name: "Vineeth Gopalan",
+    phone: "+91 9946781234",
+    occupation: "IT Professional",
+    loanType: "Home Loan",
+    loanAmount: 25e5,
+    emiAmount: 21e3,
+    outstandingAmount: 218e4,
+    nextDueDate: "2026-05-30",
+    lastPaymentDate: "2026-04-30",
+    riskLevel: "low",
+    status: "active",
+    notes: "Software engineer, excellent track record"
+  },
+  {
+    id: "C008",
+    name: "Saji Varghese",
+    phone: "+91 9895234089",
+    occupation: "Contractor",
+    loanType: "Business Loan",
+    loanAmount: 5e5,
+    emiAmount: 15500,
+    outstandingAmount: 42e4,
+    nextDueDate: "2026-05-22",
+    lastPaymentDate: "2026-04-22",
+    riskLevel: "medium",
+    status: "active",
+    notes: "Construction business, seasonal income"
+  },
+  {
+    id: "C009",
+    name: "Anilkumar P",
+    phone: "+91 9447890123",
+    occupation: "Tailor",
+    loanType: "Personal Loan",
+    loanAmount: 1e5,
+    emiAmount: 3800,
+    outstandingAmount: 45e3,
+    nextDueDate: "2026-05-18",
+    lastPaymentDate: "2026-03-18",
+    riskLevel: "high",
+    status: "overdue",
+    notes: "Shop income reduced post floods"
+  },
+  {
+    id: "C010",
+    name: "Resmi Rajesh",
+    phone: "+91 9946012345",
+    occupation: "Beautician",
+    loanType: "Personal Loan",
+    loanAmount: 8e4,
+    emiAmount: 2900,
+    outstandingAmount: 32e3,
+    nextDueDate: "2026-06-10",
+    lastPaymentDate: "2026-05-10",
+    riskLevel: "low",
+    status: "active",
+    notes: "Parlor business, steady income"
+  },
+  {
+    id: "C011",
+    name: "Jose Kurian",
+    phone: "+91 9895678012",
+    occupation: "Fisherman",
+    loanType: "Kisan Loan",
+    loanAmount: 18e4,
+    emiAmount: 6200,
+    outstandingAmount: 144e3,
+    nextDueDate: "2026-05-20",
+    lastPaymentDate: "2026-04-20",
+    riskLevel: "medium",
+    status: "active",
+    notes: "Seasonal income, payments during off-season may delay"
+  },
+  {
+    id: "C012",
+    name: "Aswathy Menon",
+    phone: "+91 9562098765",
+    occupation: "Govt Employee",
+    loanType: "Personal Loan",
+    loanAmount: 4e5,
+    emiAmount: 13500,
+    outstandingAmount: 31e4,
+    nextDueDate: "2026-06-01",
+    lastPaymentDate: "2026-05-01",
+    riskLevel: "low",
+    status: "active",
+    notes: "State PSC employee, salary deduction"
+  },
+  {
+    id: "C013",
+    name: "Sudheer Namboodiri",
+    phone: "+91 9447123890",
+    occupation: "Temple Priest",
+    loanType: "Gold Loan",
+    loanAmount: 75e3,
+    emiAmount: 2800,
+    outstandingAmount: 52e3,
+    nextDueDate: "2026-05-25",
+    lastPaymentDate: "2026-04-25",
+    riskLevel: "low",
+    status: "active",
+    notes: "Temple income, consistent payer"
+  },
+  {
+    id: "C014",
+    name: "Manju Krishnakumar",
+    phone: "+91 9745012678",
+    occupation: "ASHA Worker",
+    loanType: "Personal Loan",
+    loanAmount: 6e4,
+    emiAmount: 2100,
+    outstandingAmount: 38e3,
+    nextDueDate: "2026-05-22",
+    lastPaymentDate: "2026-04-22",
+    riskLevel: "medium",
+    status: "active",
+    notes: "Incentive-based income, slight irregularity possible"
+  },
+  {
+    id: "C015",
+    name: "Chandran Velliyambalam",
+    phone: "+91 9895567234",
+    occupation: "Retired",
+    loanType: "Gold Loan",
+    loanAmount: 3e5,
+    emiAmount: 9500,
+    outstandingAmount: 22e4,
+    nextDueDate: "2026-05-31",
+    lastPaymentDate: "2026-04-30",
+    riskLevel: "low",
+    status: "active",
+    notes: "Pension income, very reliable"
+  }
+];
+const RISK_CFG = {
+  low: {
+    label: "Low",
+    className: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
+  },
+  medium: {
+    label: "Medium",
+    className: "bg-yellow-500/10 text-yellow-600 border-yellow-500/20"
+  },
+  high: {
+    label: "High",
+    className: "bg-orange-500/10 text-orange-600 border-orange-500/20"
+  },
+  critical: {
+    label: "Critical",
+    className: "bg-red-500/10 text-red-600 border-red-500/20"
+  }
+};
+const STATUS_CFG$2 = {
+  active: {
+    label: "Active",
+    className: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
+  },
+  inactive: {
+    label: "Inactive",
+    className: "bg-muted text-muted-foreground border-border"
+  },
+  overdue: {
+    label: "Overdue",
+    className: "bg-red-500/10 text-red-600 border-red-500/20"
+  },
+  closed: {
+    label: "Closed",
+    className: "bg-muted text-muted-foreground border-border"
+  }
+};
+const fmtCurrency = (n2) => `₹${n2.toLocaleString("en-IN")}`;
+function StaffCustomersPage() {
+  const [search, setSearch] = reactExports.useState("");
+  const [filters, setFilters] = reactExports.useState({});
+  const [selectedCustomer, setSelectedCustomer] = reactExports.useState(null);
+  const [note, setNote] = reactExports.useState("");
+  const [noteSaved, setNoteSaved] = reactExports.useState(false);
+  const today = (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
+  const thisWeekEnd = new Date(Date.now() + 7 * 864e5).toISOString().split("T")[0];
+  const filtered = DUMMY_CUSTOMERS.filter((c2) => {
+    const q2 = search.toLowerCase();
+    const ms = !search || c2.name.toLowerCase().includes(q2) || c2.phone.includes(q2);
+    const mr = !filters.riskLevel || c2.riskLevel === filters.riskLevel;
+    const mst = !filters.status || c2.status === filters.status;
+    return ms && mr && mst;
+  });
+  const kpis = {
+    total: DUMMY_CUSTOMERS.length,
+    emiDue: DUMMY_CUSTOMERS.filter(
+      (c2) => c2.nextDueDate <= thisWeekEnd && c2.status !== "closed"
+    ).length,
+    overdue: DUMMY_CUSTOMERS.filter((c2) => c2.status === "overdue").length,
+    paid: DUMMY_CUSTOMERS.filter(
+      (c2) => c2.lastPaymentDate >= new Date(Date.now() - 30 * 864e5).toISOString().split("T")[0]
+    ).length
+  };
+  const columns = [
+    {
+      key: "name",
+      header: "Customer",
+      render: (_2, row) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium text-foreground", children: row.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: row.phone })
+      ] })
+    },
+    {
+      key: "loanType",
+      header: "Loan Type",
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-sm", children: String(v2) })
+    },
+    {
+      key: "emiAmount",
+      header: "EMI",
+      numeric: true,
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-mono text-sm", children: fmtCurrency(v2) })
+    },
+    {
+      key: "nextDueDate",
+      header: "Due Date",
+      render: (v2) => {
+        const isNear2 = String(v2) <= thisWeekEnd && String(v2) >= today;
+        return /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "span",
+          {
+            className: cn(
+              "text-xs font-medium",
+              isNear2 ? "text-orange-500" : "text-muted-foreground"
+            ),
+            children: String(v2)
+          }
+        );
+      }
+    },
+    {
+      key: "riskLevel",
+      header: "Risk",
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Badge,
+        {
+          variant: "outline",
+          className: cn("text-xs", RISK_CFG[v2].className),
+          children: RISK_CFG[v2].label
+        }
+      )
+    },
+    {
+      key: "status",
+      header: "Status",
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Badge,
+        {
+          variant: "outline",
+          className: cn("text-xs", STATUS_CFG$2[v2].className),
+          children: STATUS_CFG$2[v2].label
+        }
+      )
+    }
+  ];
+  const handleSaveNote = () => {
+    setNoteSaved(true);
+    setTimeout(() => setNoteSaved(false), 2e3);
+    setNote("");
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(ProtectedRoute, { allowedRoles: ["staff"], children: /* @__PURE__ */ jsxRuntimeExports.jsx(AppLayout, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PageHeader,
+      {
+        title: "My Customers",
+        subtitle: "Assigned customers, EMI status, and loan details",
+        badge: `${DUMMY_CUSTOMERS.length} Assigned`
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "My Customers",
+          value: kpis.total,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(User, { className: "w-5 h-5" }),
+          iconColor: "text-primary"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "EMI Due This Week",
+          value: kpis.emiDue,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CalendarCheck, { className: "w-5 h-5" }),
+          iconColor: "text-yellow-500"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Overdue",
+          value: kpis.overdue,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(TriangleAlert, { className: "w-5 h-5" }),
+          iconColor: "text-red-500",
+          trend: "down"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Paid This Month",
+          value: kpis.paid,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(IndianRupee, { className: "w-5 h-5" }),
+          iconColor: "text-emerald-500",
+          trend: "up"
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-border bg-card shadow-glow", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "pt-4 space-y-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        SearchFilter,
+        {
+          searchValue: search,
+          onSearch: setSearch,
+          filters: [
+            {
+              key: "riskLevel",
+              label: "Risk",
+              options: [
+                { label: "Low", value: "low" },
+                { label: "Medium", value: "medium" },
+                { label: "High", value: "high" },
+                { label: "Critical", value: "critical" }
+              ]
+            },
+            {
+              key: "status",
+              label: "Status",
+              options: [
+                { label: "Active", value: "active" },
+                { label: "Overdue", value: "overdue" },
+                { label: "Inactive", value: "inactive" },
+                { label: "Closed", value: "closed" }
+              ]
+            }
+          ],
+          filterValues: filters,
+          onFilter: (k2, v2) => setFilters((prev) => ({ ...prev, [k2]: v2 })),
+          onClear: () => {
+            setSearch("");
+            setFilters({});
+          }
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        DataTable,
+        {
+          columns,
+          data: filtered,
+          keyExtractor: (r2) => r2.id,
+          onRowClick: setSelectedCustomer
+        }
+      )
+    ] }) }),
+    selectedCustomer && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Dialog,
+      {
+        open: !!selectedCustomer,
+        onOpenChange: () => setSelectedCustomer(null),
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          DialogContent,
+          {
+            className: "max-w-lg",
+            "data-ocid": "customers.detail_dialog",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogTitle, { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(User, { className: "w-5 h-5 text-primary" }),
+                selectedCustomer.name
+              ] }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 py-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-3 text-sm", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Phone" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedCustomer.phone })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Occupation" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedCustomer.occupation })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Loan Type" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedCustomer.loanType })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Loan Amount" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: fmtCurrency(selectedCustomer.loanAmount) })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "EMI Amount" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium text-primary", children: fmtCurrency(selectedCustomer.emiAmount) })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Outstanding" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: fmtCurrency(selectedCustomer.outstandingAmount) })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Next Due Date" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedCustomer.nextDueDate })
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Last Payment" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedCustomer.lastPaymentDate })
+                  ] })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    Badge,
+                    {
+                      variant: "outline",
+                      className: cn(
+                        "text-xs",
+                        RISK_CFG[selectedCustomer.riskLevel].className
+                      ),
+                      children: [
+                        "Risk: ",
+                        RISK_CFG[selectedCustomer.riskLevel].label
+                      ]
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Badge,
+                    {
+                      variant: "outline",
+                      className: cn(
+                        "text-xs",
+                        STATUS_CFG$2[selectedCustomer.status].className
+                      ),
+                      children: STATUS_CFG$2[selectedCustomer.status].label
+                    }
+                  )
+                ] }),
+                selectedCustomer.notes && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-lg bg-muted/60 border border-border p-3", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground mb-1 flex items-center gap-1", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(FileText, { className: "w-3 h-3" }),
+                    " Notes"
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm", children: selectedCustomer.notes })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { className: "text-xs text-muted-foreground", children: "Add Note" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Textarea,
+                    {
+                      rows: 2,
+                      placeholder: "Add a note about this customer interaction...",
+                      value: note,
+                      onChange: (e3) => setNote(e3.target.value),
+                      "data-ocid": "customers.add_note_textarea"
+                    }
+                  ),
+                  noteSaved && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-emerald-500", children: "✓ Note saved" })
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-end gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Button,
+                  {
+                    variant: "outline",
+                    onClick: () => setSelectedCustomer(null),
+                    "data-ocid": "customers.detail_close_button",
+                    children: "Close"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Button,
+                  {
+                    onClick: handleSaveNote,
+                    disabled: !note,
+                    "data-ocid": "customers.save_note_button",
+                    children: "Save Note"
+                  }
+                )
+              ] })
+            ]
+          }
+        )
+      }
+    )
+  ] }) }) });
+}
+const DUMMY_FOLLOWUPS = [
+  {
+    id: "F001",
+    customerId: "C001",
+    customerName: "Ramachandran Nair",
+    phone: "+91 9447201345",
+    lastContactDate: "2026-05-19",
+    nextAction: "Remind about EMI due on May 25",
+    dueDate: "2026-05-22",
+    remarks: "Spoke on phone, will pay by 25th",
+    status: "pending",
+    urgency: "urgent",
+    loanType: "Gold Loan"
+  },
+  {
+    id: "F002",
+    customerId: "C003",
+    customerName: "Biju Mathew",
+    phone: "+91 9895001234",
+    lastContactDate: "2026-05-10",
+    nextAction: "Visit home for payment collection",
+    dueDate: "2026-05-22",
+    remarks: "Missed 2 EMIs, needs home visit",
+    status: "pending",
+    urgency: "urgent",
+    loanType: "Vehicle Loan"
+  },
+  {
+    id: "F003",
+    customerId: "C005",
+    customerName: "Pradeep Kumar",
+    phone: "+91 9745678901",
+    lastContactDate: "2026-05-15",
+    nextAction: "Meeting with business partner for loan restructure",
+    dueDate: "2026-05-22",
+    remarks: "Business slowdown, awaiting bank decision",
+    status: "pending",
+    urgency: "urgent",
+    loanType: "Business Loan"
+  },
+  {
+    id: "F004",
+    customerId: "C002",
+    customerName: "Sunitha Thomas",
+    phone: "+91 9846523112",
+    lastContactDate: "2026-05-18",
+    nextAction: "Confirm May EMI receipt",
+    dueDate: "2026-05-22",
+    remarks: "Regular payer, just confirming",
+    status: "called",
+    urgency: "normal",
+    loanType: "Personal Loan"
+  },
+  {
+    id: "F005",
+    customerId: "C009",
+    customerName: "Anilkumar P",
+    phone: "+91 9447890123",
+    lastContactDate: "2026-05-08",
+    nextAction: "Field visit to assess business status",
+    dueDate: "2026-05-23",
+    remarks: "Shop income fell after floods",
+    status: "pending",
+    urgency: "urgent",
+    loanType: "Personal Loan"
+  },
+  {
+    id: "F006",
+    customerId: "C004",
+    customerName: "Sheeba Antony",
+    phone: "+91 9562341090",
+    lastContactDate: "2026-05-17",
+    nextAction: "Send payment confirmation SMS",
+    dueDate: "2026-05-24",
+    remarks: "Paid on time this month",
+    status: "resolved",
+    urgency: "low",
+    loanType: "Personal Loan"
+  },
+  {
+    id: "F007",
+    customerId: "C008",
+    customerName: "Saji Varghese",
+    phone: "+91 9895234089",
+    lastContactDate: "2026-05-14",
+    nextAction: "Discuss seasonal payment plan",
+    dueDate: "2026-05-23",
+    remarks: "Construction project delayed, may need grace period",
+    status: "pending",
+    urgency: "normal",
+    loanType: "Business Loan"
+  },
+  {
+    id: "F008",
+    customerId: "C011",
+    customerName: "Jose Kurian",
+    phone: "+91 9895678012",
+    lastContactDate: "2026-05-16",
+    nextAction: "Remind for May EMI",
+    dueDate: "2026-05-22",
+    remarks: "Fishing season started, income expected",
+    status: "pending",
+    urgency: "normal",
+    loanType: "Kisan Loan"
+  },
+  {
+    id: "F009",
+    customerId: "C006",
+    customerName: "Meenakshi Iyer",
+    phone: "+91 9847230567",
+    lastContactDate: "2026-05-05",
+    nextAction: "Update loan details after renewal",
+    dueDate: "2026-05-25",
+    remarks: "Loan renewed last month",
+    status: "visited",
+    urgency: "low",
+    loanType: "Gold Loan"
+  },
+  {
+    id: "F010",
+    customerId: "C014",
+    customerName: "Manju Krishnakumar",
+    phone: "+91 9745012678",
+    lastContactDate: "2026-05-12",
+    nextAction: "Call about June EMI date change",
+    dueDate: "2026-05-24",
+    remarks: "Requested date change to 5th",
+    status: "pending",
+    urgency: "normal",
+    loanType: "Personal Loan"
+  },
+  {
+    id: "F011",
+    customerId: "C007",
+    customerName: "Vineeth Gopalan",
+    phone: "+91 9946781234",
+    lastContactDate: "2026-05-20",
+    nextAction: "No action needed, check-in next month",
+    dueDate: "2026-06-01",
+    remarks: "Excellent payment history",
+    status: "resolved",
+    urgency: "low",
+    loanType: "Home Loan"
+  },
+  {
+    id: "F012",
+    customerId: "C013",
+    customerName: "Sudheer Namboodiri",
+    phone: "+91 9447123890",
+    lastContactDate: "2026-05-15",
+    nextAction: "Collect May EMI",
+    dueDate: "2026-05-25",
+    remarks: "Prefer cash collection",
+    status: "pending",
+    urgency: "normal",
+    loanType: "Gold Loan"
+  },
+  {
+    id: "F013",
+    customerId: "C010",
+    customerName: "Resmi Rajesh",
+    phone: "+91 9946012345",
+    lastContactDate: "2026-05-10",
+    nextAction: "Discuss loan enhancement",
+    dueDate: "2026-05-27",
+    remarks: "Interested in increasing loan limit",
+    status: "called",
+    urgency: "low",
+    loanType: "Personal Loan"
+  },
+  {
+    id: "F014",
+    customerId: "C012",
+    customerName: "Aswathy Menon",
+    phone: "+91 9562098765",
+    lastContactDate: "2026-05-18",
+    nextAction: "Confirm salary deduction processed",
+    dueDate: "2026-05-28",
+    remarks: "Salary deduction mandate submitted",
+    status: "pending",
+    urgency: "low",
+    loanType: "Personal Loan"
+  },
+  {
+    id: "F015",
+    customerId: "C015",
+    customerName: "Chandran Velliyambalam",
+    phone: "+91 9895567234",
+    lastContactDate: "2026-05-19",
+    nextAction: "Confirm EMI before month end",
+    dueDate: "2026-05-31",
+    remarks: "Pension credit date is 30th",
+    status: "pending",
+    urgency: "normal",
+    loanType: "Gold Loan"
+  },
+  {
+    id: "F016",
+    customerId: "C003",
+    customerName: "Biju Mathew",
+    phone: "+91 9895001234",
+    lastContactDate: "2026-05-05",
+    nextAction: "Legal notice preparation if no payment",
+    dueDate: "2026-05-23",
+    remarks: "3rd attempt at collection",
+    status: "pending",
+    urgency: "urgent",
+    loanType: "Vehicle Loan"
+  },
+  {
+    id: "F017",
+    customerId: "C008",
+    customerName: "Saji Varghese",
+    phone: "+91 9895234089",
+    lastContactDate: "2026-05-20",
+    nextAction: "Review project payment timeline",
+    dueDate: "2026-05-26",
+    remarks: "Client payment delayed, cascading effect",
+    status: "pending",
+    urgency: "normal",
+    loanType: "Business Loan"
+  },
+  {
+    id: "F018",
+    customerId: "C002",
+    customerName: "Sunitha Thomas",
+    phone: "+91 9846523112",
+    lastContactDate: "2026-05-21",
+    nextAction: "Process May receipt and close",
+    dueDate: "2026-05-22",
+    remarks: "Payment done, update record",
+    status: "resolved",
+    urgency: "low",
+    loanType: "Personal Loan"
+  }
+];
+const STATUS_CFG$1 = {
+  pending: {
+    label: "Pending",
+    className: "bg-yellow-500/10 text-yellow-600 border-yellow-500/20",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-3 h-3" })
+  },
+  called: {
+    label: "Called",
+    className: "bg-blue-500/10 text-blue-600 border-blue-500/20",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-3 h-3" })
+  },
+  visited: {
+    label: "Visited",
+    className: "bg-purple-500/10 text-purple-600 border-purple-500/20",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-3 h-3" })
+  },
+  resolved: {
+    label: "Resolved",
+    className: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-3 h-3" })
+  }
+};
+const URGENCY_CFG = {
+  urgent: {
+    label: "Urgent",
+    className: "bg-red-500/15 text-red-600 border-red-500/30"
+  },
+  normal: {
+    label: "Normal",
+    className: "bg-yellow-500/10 text-yellow-600 border-yellow-500/20"
+  },
+  low: {
+    label: "Low",
+    className: "bg-muted text-muted-foreground border-border"
+  }
+};
+const TODAY = (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
+const WEEK_DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+function WeeklyCalendar({ followups }) {
+  const today = /* @__PURE__ */ new Date();
+  const startOfWeek = new Date(today);
+  startOfWeek.setDate(today.getDate() - today.getDay());
+  const days = Array.from({ length: 7 }, (_2, i) => {
+    const d2 = new Date(startOfWeek);
+    d2.setDate(startOfWeek.getDate() + i);
+    return d2;
+  });
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-7 gap-1", children: days.map((day) => {
+    const dateStr = day.toISOString().split("T")[0];
+    const dayFollowups = followups.filter((f2) => f2.dueDate === dateStr);
+    const isToday = dateStr === TODAY;
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      "div",
+      {
+        className: cn(
+          "rounded-lg p-2 border text-center min-h-[72px]",
+          isToday ? "border-primary bg-primary/5" : "border-border bg-card"
+        ),
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-muted-foreground", children: WEEK_DAYS[day.getDay()] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "p",
+            {
+              className: cn(
+                "text-sm font-bold mb-1",
+                isToday ? "text-primary" : "text-foreground"
+              ),
+              children: day.getDate()
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-0.5", children: [
+            dayFollowups.slice(0, 2).map((f2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "div",
+              {
+                className: cn(
+                  "text-xs rounded px-1 py-0.5 truncate",
+                  URGENCY_CFG[f2.urgency].className
+                ),
+                children: f2.customerName.split(" ")[0]
+              },
+              f2.id
+            )),
+            dayFollowups.length > 2 && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-xs text-muted-foreground", children: [
+              "+",
+              dayFollowups.length - 2,
+              " more"
+            ] })
+          ] })
+        ]
+      },
+      dateStr
+    );
+  }) });
+}
+function StaffFollowUpPage() {
+  const [followups, setFollowups] = reactExports.useState(DUMMY_FOLLOWUPS);
+  const [search, setSearch] = reactExports.useState("");
+  const [filters, setFilters] = reactExports.useState({});
+  const [selectedFollowUp, setSelectedFollowUp] = reactExports.useState(
+    null
+  );
+  const [outcomeModal, setOutcomeModal] = reactExports.useState(false);
+  const [outcomeForm, setOutcomeForm] = reactExports.useState({ outcome: "call_answered", notes: "", nextDate: "" });
+  const today = (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
+  const tomorrow = new Date(Date.now() + 864e5).toISOString().split("T")[0];
+  const filtered = followups.filter((f2) => {
+    const q2 = search.toLowerCase();
+    const ms = !search || f2.customerName.toLowerCase().includes(q2) || f2.phone.includes(q2);
+    const mst = !filters.status || f2.status === filters.status;
+    const mu = !filters.urgency || f2.urgency === filters.urgency;
+    return ms && mst && mu;
+  });
+  const todayFollowups = followups.filter(
+    (f2) => f2.dueDate === today && f2.status !== "resolved"
+  );
+  const tomorrowFollowups = followups.filter(
+    (f2) => f2.dueDate === tomorrow && f2.status !== "resolved"
+  );
+  const stats = {
+    pending: followups.filter((f2) => f2.status === "pending").length,
+    overdue: followups.filter(
+      (f2) => f2.dueDate < today && f2.status !== "resolved"
+    ).length,
+    completedToday: followups.filter(
+      (f2) => f2.dueDate === today && f2.status === "resolved"
+    ).length,
+    scheduledTomorrow: tomorrowFollowups.length
+  };
+  const handleOutcomeSave = () => {
+    if (!selectedFollowUp) return;
+    const newStatus = outcomeForm.outcome === "rescheduled" ? "pending" : outcomeForm.outcome === "visited" ? "visited" : "called";
+    setFollowups(
+      (prev) => prev.map(
+        (f2) => f2.id === selectedFollowUp.id ? {
+          ...f2,
+          status: newStatus,
+          lastContactDate: today,
+          remarks: outcomeForm.notes || f2.remarks
+        } : f2
+      )
+    );
+    setOutcomeModal(false);
+    setSelectedFollowUp(null);
+    setOutcomeForm({ outcome: "call_answered", notes: "", nextDate: "" });
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(ProtectedRoute, { allowedRoles: ["staff"], children: /* @__PURE__ */ jsxRuntimeExports.jsx(AppLayout, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PageHeader,
+      {
+        title: "Follow-up Management",
+        subtitle: "Track and manage all customer follow-ups",
+        badge: `${stats.pending} Pending`
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Total Pending",
+          value: stats.pending,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5" }),
+          iconColor: "text-yellow-500"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Overdue",
+          value: stats.overdue,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleAlert, { className: "w-5 h-5" }),
+          iconColor: "text-red-500",
+          trend: "down"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Completed Today",
+          value: stats.completedToday,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-5 h-5" }),
+          iconColor: "text-emerald-500",
+          trend: "up"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Due Tomorrow",
+          value: stats.scheduledTomorrow,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CalendarDays, { className: "w-5 h-5" }),
+          iconColor: "text-primary"
+        }
+      )
+    ] }),
+    todayFollowups.length > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-orange-500/30 bg-orange-500/5", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "pt-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-sm font-semibold text-orange-600 mb-3 flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(CircleAlert, { className: "w-4 h-4" }),
+        "Today's Follow-Ups (",
+        todayFollowups.length,
+        ")"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-2", children: todayFollowups.map((f2) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "button",
+        {
+          type: "button",
+          className: "flex items-center justify-between bg-card rounded-lg border border-border px-4 py-2.5 cursor-pointer hover:border-primary/30 transition-smooth w-full text-left",
+          onClick: () => setSelectedFollowUp(f2),
+          "data-ocid": `followup.today_card.${f2.id}`,
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium text-sm", children: f2.customerName }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: f2.nextAction })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Badge,
+                {
+                  variant: "outline",
+                  className: cn(
+                    "text-xs",
+                    URGENCY_CFG[f2.urgency].className
+                  ),
+                  children: f2.urgency
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                Button,
+                {
+                  size: "sm",
+                  variant: "outline",
+                  className: "h-7 text-xs gap-1",
+                  onClick: (e3) => {
+                    e3.stopPropagation();
+                    setSelectedFollowUp(f2);
+                    setOutcomeModal(true);
+                  },
+                  "data-ocid": `followup.log_outcome_button.${f2.id}`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(RefreshCw, { className: "w-3 h-3" }),
+                    " Log"
+                  ]
+                }
+              )
+            ] })
+          ]
+        },
+        f2.id
+      )) })
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Tabs, { defaultValue: "list", "data-ocid": "followup.view_tabs", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsList, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsTrigger, { value: "list", "data-ocid": "followup.list_tab", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(List$1, { className: "w-4 h-4 mr-1.5" }),
+          "List View"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsTrigger, { value: "calendar", "data-ocid": "followup.calendar_tab", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(CalendarDays, { className: "w-4 h-4 mr-1.5" }),
+          "Weekly Calendar"
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "list", className: "mt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-border bg-card", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "pt-4 space-y-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          SearchFilter,
+          {
+            searchValue: search,
+            onSearch: setSearch,
+            filters: [
+              {
+                key: "status",
+                label: "Status",
+                options: [
+                  { label: "Pending", value: "pending" },
+                  { label: "Called", value: "called" },
+                  { label: "Visited", value: "visited" },
+                  { label: "Resolved", value: "resolved" }
+                ]
+              },
+              {
+                key: "urgency",
+                label: "Urgency",
+                options: [
+                  { label: "Urgent", value: "urgent" },
+                  { label: "Normal", value: "normal" },
+                  { label: "Low", value: "low" }
+                ]
+              }
+            ],
+            filterValues: filters,
+            onFilter: (k2, v2) => setFilters((prev) => ({ ...prev, [k2]: v2 })),
+            onClear: () => {
+              setSearch("");
+              setFilters({});
+            }
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-2", children: filtered.map((f2, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+          motion.div,
+          {
+            initial: { opacity: 0 },
+            animate: { opacity: 1 },
+            transition: { delay: i * 0.03 },
+            className: "rounded-xl border border-border bg-card p-4 cursor-pointer hover:border-primary/30 transition-smooth",
+            onClick: () => setSelectedFollowUp(f2),
+            "data-ocid": `followup.list_item.${i + 1}`,
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-wrap mb-1", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium text-sm text-foreground", children: f2.customerName }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Badge,
+                    {
+                      variant: "outline",
+                      className: cn(
+                        "text-xs",
+                        URGENCY_CFG[f2.urgency].className
+                      ),
+                      children: URGENCY_CFG[f2.urgency].label
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Badge,
+                    {
+                      variant: "outline",
+                      className: cn(
+                        "text-xs",
+                        STATUS_CFG$1[f2.status].className
+                      ),
+                      children: STATUS_CFG$1[f2.status].label
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground", children: [
+                  f2.phone,
+                  " • ",
+                  f2.loanType
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-foreground/80 mt-1", children: f2.nextAction }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground mt-0.5", children: [
+                  "Last: ",
+                  f2.lastContactDate,
+                  " • Due: ",
+                  f2.dueDate
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                Button,
+                {
+                  size: "sm",
+                  variant: "outline",
+                  className: "h-7 text-xs gap-1 shrink-0",
+                  onClick: (e3) => {
+                    e3.stopPropagation();
+                    setSelectedFollowUp(f2);
+                    setOutcomeModal(true);
+                  },
+                  "data-ocid": `followup.log_button.${i + 1}`,
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(RefreshCw, { className: "w-3 h-3" }),
+                    " Log Outcome"
+                  ]
+                }
+              )
+            ] })
+          },
+          f2.id
+        )) })
+      ] }) }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "calendar", className: "mt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-border bg-card", children: /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "pt-4", children: /* @__PURE__ */ jsxRuntimeExports.jsx(WeeklyCalendar, { followups }) }) }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Dialog,
+      {
+        open: outcomeModal,
+        onOpenChange: () => setOutcomeModal(false),
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          DialogContent,
+          {
+            className: "max-w-md",
+            "data-ocid": "followup.log_outcome_dialog",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { children: "Log Follow-up Outcome" }) }),
+              selectedFollowUp && /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 py-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-lg bg-muted/60 p-3 text-sm", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedFollowUp.customerName }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: selectedFollowUp.nextAction })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Outcome" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "select",
+                    {
+                      className: "w-full h-9 rounded-lg border border-input bg-background px-3 text-sm text-foreground",
+                      value: outcomeForm.outcome,
+                      onChange: (e3) => setOutcomeForm({
+                        ...outcomeForm,
+                        outcome: e3.target.value
+                      }),
+                      "data-ocid": "followup.outcome_select",
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "call_answered", children: "Call Answered" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "no_answer", children: "No Answer" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "visited", children: "Visited" }),
+                        /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "rescheduled", children: "Rescheduled" })
+                      ]
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Notes" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Textarea,
+                    {
+                      rows: 3,
+                      placeholder: "What happened during this follow-up?",
+                      value: outcomeForm.notes,
+                      onChange: (e3) => setOutcomeForm({
+                        ...outcomeForm,
+                        notes: e3.target.value
+                      }),
+                      "data-ocid": "followup.outcome_notes_textarea"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Next Follow-up Date" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Input,
+                    {
+                      type: "date",
+                      value: outcomeForm.nextDate,
+                      onChange: (e3) => setOutcomeForm({
+                        ...outcomeForm,
+                        nextDate: e3.target.value
+                      }),
+                      "data-ocid": "followup.next_date_input"
+                    }
+                  )
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-end gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Button,
+                  {
+                    variant: "outline",
+                    onClick: () => setOutcomeModal(false),
+                    "data-ocid": "followup.outcome_cancel_button",
+                    children: "Cancel"
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Button,
+                  {
+                    onClick: handleOutcomeSave,
+                    "data-ocid": "followup.outcome_save_button",
+                    children: "Save Outcome"
+                  }
+                )
+              ] })
+            ]
+          }
+        )
+      }
+    ),
+    selectedFollowUp && !outcomeModal && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Dialog,
+      {
+        open: !!selectedFollowUp && !outcomeModal,
+        onOpenChange: () => setSelectedFollowUp(null),
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogContent, { "data-ocid": "followup.detail_dialog", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogTitle, { children: [
+            selectedFollowUp.customerName,
+            " — Follow-up Detail"
+          ] }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3 py-2 text-sm", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Phone" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedFollowUp.phone })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Loan Type" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedFollowUp.loanType })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Due Date" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedFollowUp.dueDate })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: "Last Contact" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium", children: selectedFollowUp.lastContactDate })
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Badge,
+                {
+                  variant: "outline",
+                  className: cn(
+                    "text-xs",
+                    STATUS_CFG$1[selectedFollowUp.status].className
+                  ),
+                  children: selectedFollowUp.status
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Badge,
+                {
+                  variant: "outline",
+                  className: cn(
+                    "text-xs",
+                    URGENCY_CFG[selectedFollowUp.urgency].className
+                  ),
+                  children: selectedFollowUp.urgency
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-lg bg-muted/60 p-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mb-1", children: "Next Action" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: selectedFollowUp.nextAction })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-lg bg-muted/60 p-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mb-1", children: "Remarks" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: selectedFollowUp.remarks })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-end gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Button,
+              {
+                variant: "outline",
+                onClick: () => setSelectedFollowUp(null),
+                "data-ocid": "followup.detail_close_button",
+                children: "Close"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Button,
+              {
+                onClick: () => setOutcomeModal(true),
+                "data-ocid": "followup.detail_log_button",
+                children: "Log Outcome"
+              }
+            )
+          ] })
+        ] })
+      }
+    )
+  ] }) }) });
+}
+const DUMMY_LEADS = [
+  {
+    id: "L001",
+    name: "Sreekumar Pillai",
+    phone: "+91 9847201345",
+    email: "sreekumar.p@gmail.com",
+    address: "Vyttila, Kochi",
+    interestType: "loan",
+    source: "walk-in",
+    priority: "hot",
+    status: "contacted",
+    notes: "Interested in gold loan, asked for 5L",
+    createdAt: "2026-05-01",
+    lastContact: "2026-05-18"
+  },
+  {
+    id: "L002",
+    name: "Lekha Menon",
+    phone: "+91 9562341120",
+    email: "lekha.m@yahoo.com",
+    address: "Palakkad",
+    interestType: "investment",
+    source: "referral",
+    priority: "warm",
+    status: "qualified",
+    notes: "Looking for SIP options",
+    createdAt: "2026-05-03",
+    lastContact: "2026-05-19"
+  },
+  {
+    id: "L003",
+    name: "Binu Jose",
+    phone: "+91 9895120034",
+    email: "binu.jose@gmail.com",
+    address: "Thrissur",
+    interestType: "insurance",
+    source: "online",
+    priority: "cold",
+    status: "new",
+    notes: "Term plan inquiry",
+    createdAt: "2026-05-05",
+    lastContact: "2026-05-05"
+  },
+  {
+    id: "L004",
+    name: "Divya Suresh",
+    phone: "+91 9446231987",
+    email: "divya.s@gmail.com",
+    address: "Angamaly",
+    interestType: "loan",
+    source: "cold-call",
+    priority: "hot",
+    status: "qualified",
+    notes: "Personal loan 3L for medical",
+    createdAt: "2026-05-06",
+    lastContact: "2026-05-20"
+  },
+  {
+    id: "L005",
+    name: "Rajan Varghese",
+    phone: "+91 9961234567",
+    email: "rajan.v@rediffmail.com",
+    address: "Kothamangalam",
+    interestType: "loan",
+    source: "referral",
+    priority: "warm",
+    status: "new",
+    notes: "Vehicle loan inquiry",
+    createdAt: "2026-05-07",
+    lastContact: "2026-05-07"
+  },
+  {
+    id: "L006",
+    name: "Anitha Krishnan",
+    phone: "+91 8547890231",
+    email: "anitha.k@gmail.com",
+    address: "Perumbavoor",
+    interestType: "investment",
+    source: "walk-in",
+    priority: "hot",
+    status: "converted",
+    notes: "Opened FD account",
+    createdAt: "2026-04-20",
+    lastContact: "2026-05-10"
+  },
+  {
+    id: "L007",
+    name: "Suresh Kumar Nair",
+    phone: "+91 9745123098",
+    email: "suresh.nair@gmail.com",
+    address: "Muvattupuzha",
+    interestType: "insurance",
+    source: "online",
+    priority: "cold",
+    status: "lost",
+    notes: "Not interested, went with competitor",
+    createdAt: "2026-04-25",
+    lastContact: "2026-05-02"
+  },
+  {
+    id: "L008",
+    name: "Meera Babu",
+    phone: "+91 9447891234",
+    email: "meera.babu@gmail.com",
+    address: "Thodupuzha",
+    interestType: "loan",
+    source: "walk-in",
+    priority: "hot",
+    status: "contacted",
+    notes: "Business loan 10L",
+    createdAt: "2026-05-08",
+    lastContact: "2026-05-21"
+  },
+  {
+    id: "L009",
+    name: "Arun Mohan",
+    phone: "+91 9895671230",
+    email: "arun.m@gmail.com",
+    address: "Irinjalakuda",
+    interestType: "investment",
+    source: "referral",
+    priority: "warm",
+    status: "qualified",
+    notes: "Mutual fund SIP",
+    createdAt: "2026-05-09",
+    lastContact: "2026-05-20"
+  },
+  {
+    id: "L010",
+    name: "Priya Nambiar",
+    phone: "+91 9746123890",
+    email: "priya.n@gmail.com",
+    address: "Chalakudy",
+    interestType: "insurance",
+    source: "cold-call",
+    priority: "warm",
+    status: "new",
+    notes: "Health insurance for family",
+    createdAt: "2026-05-10",
+    lastContact: "2026-05-10"
+  },
+  {
+    id: "L011",
+    name: "George Thomas",
+    phone: "+91 9562890456",
+    email: "george.t@gmail.com",
+    address: "Aluva",
+    interestType: "loan",
+    source: "referral",
+    priority: "hot",
+    status: "contacted",
+    notes: "Home loan pre-approval",
+    createdAt: "2026-05-11",
+    lastContact: "2026-05-21"
+  },
+  {
+    id: "L012",
+    name: "Sindhu Rajan",
+    phone: "+91 9847234560",
+    email: "sindhu.r@gmail.com",
+    address: "North Paravur",
+    interestType: "investment",
+    source: "walk-in",
+    priority: "cold",
+    status: "new",
+    notes: "Just browsing options",
+    createdAt: "2026-05-12",
+    lastContact: "2026-05-12"
+  },
+  {
+    id: "L013",
+    name: "Rajeev Chandrasekharan",
+    phone: "+91 9446012345",
+    email: "rajeev.c@gmail.com",
+    address: "Paravur",
+    interestType: "loan",
+    source: "online",
+    priority: "warm",
+    status: "qualified",
+    notes: "Education loan for son",
+    createdAt: "2026-05-13",
+    lastContact: "2026-05-19"
+  },
+  {
+    id: "L014",
+    name: "Jiji Mathew",
+    phone: "+91 9895234009",
+    email: "jiji.m@gmail.com",
+    address: "Piravom",
+    interestType: "insurance",
+    source: "referral",
+    priority: "hot",
+    status: "contacted",
+    notes: "Life insurance 50L cover",
+    createdAt: "2026-05-14",
+    lastContact: "2026-05-20"
+  },
+  {
+    id: "L015",
+    name: "Vinitha Gopinath",
+    phone: "+91 9562341978",
+    email: "vinitha.g@gmail.com",
+    address: "Tripunithura",
+    interestType: "loan",
+    source: "cold-call",
+    priority: "cold",
+    status: "lost",
+    notes: "Budget constraint",
+    createdAt: "2026-05-15",
+    lastContact: "2026-05-16"
+  }
+];
+const STATUS_CONFIG = {
+  new: {
+    label: "New",
+    className: "bg-blue-500/10 text-blue-600 border-blue-500/20"
+  },
+  contacted: {
+    label: "Contacted",
+    className: "bg-yellow-500/10 text-yellow-600 border-yellow-500/20"
+  },
+  qualified: {
+    label: "Qualified",
+    className: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
+  },
+  converted: {
+    label: "Converted",
+    className: "bg-purple-500/10 text-purple-600 border-purple-500/20"
+  },
+  lost: {
+    label: "Lost",
+    className: "bg-red-500/10 text-red-600 border-red-500/20"
+  }
+};
+const PRIORITY_CONFIG = {
+  hot: {
+    label: "Hot",
+    className: "bg-red-500/15 text-red-600 border-red-500/30"
+  },
+  warm: {
+    label: "Warm",
+    className: "bg-orange-500/15 text-orange-600 border-orange-500/30"
+  },
+  cold: {
+    label: "Cold",
+    className: "bg-blue-500/15 text-blue-600 border-blue-500/30"
+  }
+};
+const STATUSES = [
+  "new",
+  "contacted",
+  "qualified",
+  "converted",
+  "lost"
+];
+function StaffLeadsPage() {
+  const [leads, setLeads] = reactExports.useState(DUMMY_LEADS);
+  const [search, setSearch] = reactExports.useState("");
+  const [filters, setFilters] = reactExports.useState({});
+  const [showForm, setShowForm] = reactExports.useState(false);
+  const [convertingId, setConvertingId] = reactExports.useState(null);
+  const [newLead, setNewLead] = reactExports.useState({
+    priority: "warm",
+    source: "walk-in",
+    interestType: "loan",
+    status: "new"
+  });
+  const filtered = leads.filter((l2) => {
+    const q2 = search.toLowerCase();
+    const matchSearch = !search || l2.name.toLowerCase().includes(q2) || l2.phone.includes(q2);
+    const matchStatus = !filters.status || l2.status === filters.status;
+    const matchPriority = !filters.priority || l2.priority === filters.priority;
+    return matchSearch && matchStatus && matchPriority;
+  });
+  const kpis = {
+    total: leads.length,
+    hot: leads.filter((l2) => l2.priority === "hot").length,
+    converted: leads.filter((l2) => l2.status === "converted").length,
+    lost: leads.filter((l2) => l2.status === "lost").length
+  };
+  const columns = [
+    {
+      key: "name",
+      header: "Customer",
+      render: (_2, row) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium text-foreground", children: row.name }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground", children: row.phone })
+      ] })
+    },
+    {
+      key: "priority",
+      header: "Priority",
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Badge,
+        {
+          variant: "outline",
+          className: cn(
+            "text-xs",
+            PRIORITY_CONFIG[v2].className
+          ),
+          children: PRIORITY_CONFIG[v2].label
+        }
+      )
+    },
+    {
+      key: "interestType",
+      header: "Interest",
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "capitalize text-sm", children: String(v2) })
+    },
+    {
+      key: "status",
+      header: "Status",
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        Badge,
+        {
+          variant: "outline",
+          className: cn("text-xs", STATUS_CONFIG[v2].className),
+          children: STATUS_CONFIG[v2].label
+        }
+      )
+    },
+    {
+      key: "source",
+      header: "Source",
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "capitalize text-sm text-muted-foreground", children: String(v2) })
+    },
+    {
+      key: "lastContact",
+      header: "Last Contact",
+      render: (v2) => /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground", children: String(v2) })
+    }
+  ];
+  const handleStatusChange = (id2, status) => {
+    setLeads((prev) => prev.map((l2) => l2.id === id2 ? { ...l2, status } : l2));
+  };
+  const handleConvert = (id2) => {
+    handleStatusChange(id2, "converted");
+    setConvertingId(null);
+  };
+  const handleAddLead = () => {
+    const id2 = `L${String(leads.length + 1).padStart(3, "0")}`;
+    setLeads((prev) => [
+      {
+        ...newLead,
+        id: id2,
+        createdAt: (/* @__PURE__ */ new Date()).toISOString().split("T")[0],
+        lastContact: (/* @__PURE__ */ new Date()).toISOString().split("T")[0]
+      },
+      ...prev
+    ]);
+    setShowForm(false);
+    setNewLead({
+      priority: "warm",
+      source: "walk-in",
+      interestType: "loan",
+      status: "new"
+    });
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(ProtectedRoute, { allowedRoles: ["staff"], children: /* @__PURE__ */ jsxRuntimeExports.jsx(AppLayout, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PageHeader,
+      {
+        title: "Lead Management",
+        subtitle: "Create and manage your customer leads",
+        actions: [
+          {
+            label: "Add Lead",
+            onClick: () => setShowForm(true),
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" })
+          }
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Total Leads",
+          value: kpis.total,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Users, { className: "w-5 h-5" }),
+          iconColor: "text-primary"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Hot Leads",
+          value: kpis.hot,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Flame, { className: "w-5 h-5" }),
+          iconColor: "text-red-500"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Converted",
+          value: kpis.converted,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Target, { className: "w-5 h-5" }),
+          iconColor: "text-emerald-500",
+          trend: "up"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Lost",
+          value: kpis.lost,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(TrendingDown, { className: "w-5 h-5" }),
+          iconColor: "text-muted-foreground",
+          trend: "down"
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-border bg-card shadow-glow", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "pt-4 space-y-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        SearchFilter,
+        {
+          searchValue: search,
+          onSearch: setSearch,
+          filters: [
+            {
+              key: "status",
+              label: "Status",
+              options: STATUSES.map((s2) => ({
+                label: STATUS_CONFIG[s2].label,
+                value: s2
+              }))
+            },
+            {
+              key: "priority",
+              label: "Priority",
+              options: [
+                { label: "Hot", value: "hot" },
+                { label: "Warm", value: "warm" },
+                { label: "Cold", value: "cold" }
+              ]
+            }
+          ],
+          filterValues: filters,
+          onFilter: (k2, v2) => setFilters((prev) => ({ ...prev, [k2]: v2 })),
+          onClear: () => {
+            setSearch("");
+            setFilters({});
+          }
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        DataTable,
+        {
+          columns,
+          data: filtered,
+          keyExtractor: (r2) => r2.id,
+          searchable: false,
+          actions: (row) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-1 justify-end", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "select",
+              {
+                value: row.status,
+                onChange: (e3) => handleStatusChange(row.id, e3.target.value),
+                onKeyDown: (e3) => {
+                  if (e3.key === "Enter" || e3.key === " ") {
+                    handleStatusChange(
+                      row.id,
+                      e3.target.value
+                    );
+                  }
+                },
+                className: "text-xs h-7 rounded border border-input bg-background px-1.5 text-foreground",
+                onClick: (e3) => e3.stopPropagation(),
+                "aria-label": "Update status",
+                "data-ocid": `leads.status_select.${row.id}`,
+                children: STATUSES.map((s2) => /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: s2, children: STATUS_CONFIG[s2].label }, s2))
+              }
+            ),
+            row.status !== "converted" && row.status !== "lost" && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              Button,
+              {
+                size: "sm",
+                variant: "outline",
+                className: "h-7 text-xs gap-1 border-emerald-500/40 text-emerald-600 hover:bg-emerald-500/10",
+                onClick: () => setConvertingId(row.id),
+                "data-ocid": `leads.convert_button.${row.id}`,
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(ArrowRightLeft, { className: "w-3 h-3" }),
+                  " Convert"
+                ]
+              }
+            )
+          ] })
+        }
+      )
+    ] }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Dialog, { open: showForm, onOpenChange: setShowForm, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      DialogContent,
+      {
+        className: "max-w-lg",
+        "data-ocid": "leads.add_lead_dialog",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { children: "Add New Lead" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-4 py-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "col-span-2 space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Customer Name" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Input,
+                {
+                  placeholder: "Full name",
+                  value: newLead.name ?? "",
+                  onChange: (e3) => setNewLead({ ...newLead, name: e3.target.value }),
+                  "data-ocid": "leads.add_name_input"
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Phone" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Input,
+                {
+                  placeholder: "+91 XXXXX XXXXX",
+                  value: newLead.phone ?? "",
+                  onChange: (e3) => setNewLead({ ...newLead, phone: e3.target.value }),
+                  "data-ocid": "leads.add_phone_input"
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Email" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Input,
+                {
+                  placeholder: "email@example.com",
+                  value: newLead.email ?? "",
+                  onChange: (e3) => setNewLead({ ...newLead, email: e3.target.value }),
+                  "data-ocid": "leads.add_email_input"
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Interest Type" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "select",
+                {
+                  className: "w-full h-9 rounded-lg border border-input bg-background px-3 text-sm text-foreground",
+                  value: newLead.interestType,
+                  onChange: (e3) => setNewLead({
+                    ...newLead,
+                    interestType: e3.target.value
+                  }),
+                  "data-ocid": "leads.add_interest_select",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "loan", children: "Loan" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "investment", children: "Investment" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "insurance", children: "Insurance" })
+                  ]
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Source" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "select",
+                {
+                  className: "w-full h-9 rounded-lg border border-input bg-background px-3 text-sm text-foreground",
+                  value: newLead.source,
+                  onChange: (e3) => setNewLead({
+                    ...newLead,
+                    source: e3.target.value
+                  }),
+                  "data-ocid": "leads.add_source_select",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "walk-in", children: "Walk-in" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "referral", children: "Referral" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "online", children: "Online" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "cold-call", children: "Cold Call" })
+                  ]
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Priority" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "select",
+                {
+                  className: "w-full h-9 rounded-lg border border-input bg-background px-3 text-sm text-foreground",
+                  value: newLead.priority,
+                  onChange: (e3) => setNewLead({
+                    ...newLead,
+                    priority: e3.target.value
+                  }),
+                  "data-ocid": "leads.add_priority_select",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "hot", children: "Hot" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "warm", children: "Warm" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "cold", children: "Cold" })
+                  ]
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "col-span-2 space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Address" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Input,
+                {
+                  placeholder: "City, District",
+                  value: newLead.address ?? "",
+                  onChange: (e3) => setNewLead({ ...newLead, address: e3.target.value }),
+                  "data-ocid": "leads.add_address_input"
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "col-span-2 space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Notes" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Textarea,
+                {
+                  rows: 2,
+                  placeholder: "Additional notes...",
+                  value: newLead.notes ?? "",
+                  onChange: (e3) => setNewLead({ ...newLead, notes: e3.target.value }),
+                  "data-ocid": "leads.add_notes_textarea"
+                }
+              )
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-end gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Button,
+              {
+                variant: "outline",
+                onClick: () => setShowForm(false),
+                "data-ocid": "leads.add_cancel_button",
+                children: "Cancel"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Button,
+              {
+                onClick: handleAddLead,
+                disabled: !newLead.name || !newLead.phone,
+                "data-ocid": "leads.add_submit_button",
+                children: "Add Lead"
+              }
+            )
+          ] })
+        ]
+      }
+    ) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Dialog,
+      {
+        open: !!convertingId,
+        onOpenChange: () => setConvertingId(null),
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogContent, { "data-ocid": "leads.convert_dialog", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { children: "Convert Lead to Customer" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground py-2", children: "Are you sure you want to convert this lead to an active customer? This action will mark the lead as converted." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-end gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Button,
+              {
+                variant: "outline",
+                onClick: () => setConvertingId(null),
+                "data-ocid": "leads.convert_cancel_button",
+                children: "Cancel"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Button,
+              {
+                onClick: () => convertingId && handleConvert(convertingId),
+                className: "bg-emerald-600 hover:bg-emerald-700",
+                "data-ocid": "leads.convert_confirm_button",
+                children: "Yes, Convert"
+              }
+            )
+          ] })
+        ] })
+      }
+    )
+  ] }) }) });
+}
+function useIsHydrated() {
+  return shimExports.useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false
+  );
+}
+function subscribe() {
+  return () => {
+  };
+}
+var AVATAR_NAME = "Avatar";
+var [createAvatarContext] = createContextScope(AVATAR_NAME);
+var [AvatarProvider, useAvatarContext] = createAvatarContext(AVATAR_NAME);
+var Avatar$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAvatar, ...avatarProps } = props;
+    const [imageLoadingStatus, setImageLoadingStatus] = reactExports.useState("idle");
+    return /* @__PURE__ */ jsxRuntimeExports.jsx(
+      AvatarProvider,
+      {
+        scope: __scopeAvatar,
+        imageLoadingStatus,
+        onImageLoadingStatusChange: setImageLoadingStatus,
+        children: /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.span, { ...avatarProps, ref: forwardedRef })
+      }
+    );
+  }
+);
+Avatar$1.displayName = AVATAR_NAME;
+var IMAGE_NAME = "AvatarImage";
+var AvatarImage$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAvatar, src, onLoadingStatusChange = () => {
+    }, ...imageProps } = props;
+    const context = useAvatarContext(IMAGE_NAME, __scopeAvatar);
+    const imageLoadingStatus = useImageLoadingStatus(src, imageProps);
+    const handleLoadingStatusChange = useCallbackRef$1((status) => {
+      onLoadingStatusChange(status);
+      context.onImageLoadingStatusChange(status);
+    });
+    useLayoutEffect2(() => {
+      if (imageLoadingStatus !== "idle") {
+        handleLoadingStatusChange(imageLoadingStatus);
+      }
+    }, [imageLoadingStatus, handleLoadingStatusChange]);
+    return imageLoadingStatus === "loaded" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.img, { ...imageProps, ref: forwardedRef, src }) : null;
+  }
+);
+AvatarImage$1.displayName = IMAGE_NAME;
+var FALLBACK_NAME = "AvatarFallback";
+var AvatarFallback$1 = reactExports.forwardRef(
+  (props, forwardedRef) => {
+    const { __scopeAvatar, delayMs, ...fallbackProps } = props;
+    const context = useAvatarContext(FALLBACK_NAME, __scopeAvatar);
+    const [canRender, setCanRender] = reactExports.useState(delayMs === void 0);
+    reactExports.useEffect(() => {
+      if (delayMs !== void 0) {
+        const timerId = window.setTimeout(() => setCanRender(true), delayMs);
+        return () => window.clearTimeout(timerId);
+      }
+    }, [delayMs]);
+    return canRender && context.imageLoadingStatus !== "loaded" ? /* @__PURE__ */ jsxRuntimeExports.jsx(Primitive.span, { ...fallbackProps, ref: forwardedRef }) : null;
+  }
+);
+AvatarFallback$1.displayName = FALLBACK_NAME;
+function resolveLoadingStatus(image, src) {
+  if (!image) {
+    return "idle";
+  }
+  if (!src) {
+    return "error";
+  }
+  if (image.src !== src) {
+    image.src = src;
+  }
+  return image.complete && image.naturalWidth > 0 ? "loaded" : "loading";
+}
+function useImageLoadingStatus(src, { referrerPolicy, crossOrigin }) {
+  const isHydrated = useIsHydrated();
+  const imageRef = reactExports.useRef(null);
+  const image = (() => {
+    if (!isHydrated) return null;
+    if (!imageRef.current) {
+      imageRef.current = new window.Image();
+    }
+    return imageRef.current;
+  })();
+  const [loadingStatus, setLoadingStatus] = reactExports.useState(
+    () => resolveLoadingStatus(image, src)
+  );
+  useLayoutEffect2(() => {
+    setLoadingStatus(resolveLoadingStatus(image, src));
+  }, [image, src]);
+  useLayoutEffect2(() => {
+    const updateStatus = (status) => () => {
+      setLoadingStatus(status);
+    };
+    if (!image) return;
+    const handleLoad = updateStatus("loaded");
+    const handleError = updateStatus("error");
+    image.addEventListener("load", handleLoad);
+    image.addEventListener("error", handleError);
+    if (referrerPolicy) {
+      image.referrerPolicy = referrerPolicy;
+    }
+    if (typeof crossOrigin === "string") {
+      image.crossOrigin = crossOrigin;
+    }
+    return () => {
+      image.removeEventListener("load", handleLoad);
+      image.removeEventListener("error", handleError);
+    };
+  }, [image, crossOrigin, referrerPolicy]);
+  return loadingStatus;
+}
+var Root = Avatar$1;
+var Image = AvatarImage$1;
+var Fallback = AvatarFallback$1;
+function Avatar({
+  className,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Root,
+    {
+      "data-slot": "avatar",
+      className: cn(
+        "relative flex size-8 shrink-0 overflow-hidden rounded-full",
+        className
+      ),
+      ...props
+    }
+  );
+}
+function AvatarImage({
+  className,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Image,
+    {
+      "data-slot": "avatar-image",
+      className: cn("aspect-square size-full", className),
+      ...props
+    }
+  );
+}
+function AvatarFallback({
+  className,
+  ...props
+}) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Fallback,
+    {
+      "data-slot": "avatar-fallback",
+      className: cn(
+        "bg-muted flex size-full items-center justify-center rounded-full",
+        className
+      ),
+      ...props
+    }
+  );
+}
+const ROLE_LABELS = {
+  staff: "Staff",
+  branch_manager: "Branch Manager",
+  zonal_manager: "Zonal Manager",
+  super_admin: "Super Admin"
+};
+function StaffProfilePage() {
+  var _a2;
+  const { user } = useAuthStore();
+  const [editing, setEditing] = reactExports.useState(false);
+  const [changingPassword, setChangingPassword] = reactExports.useState(false);
+  const [form, setForm] = reactExports.useState({
+    name: (user == null ? void 0 : user.name) ?? "Arjun Nair",
+    phone: "+91 9876543210",
+    email: (user == null ? void 0 : user.email) ?? "arjun.nair@thirukochi.com",
+    address: "Flat 3B, Panampilly Nagar, Kochi – 682036",
+    bio: "Finance advisory specialist with 3 years of experience in personal loan processing and customer relationship management."
+  });
+  const [notifications, setNotifications] = reactExports.useState({
+    email: true,
+    sms: true,
+    push: false,
+    taskReminders: true,
+    paymentAlerts: true,
+    announcements: true
+  });
+  const [pwForm, setPwForm] = reactExports.useState({ current: "", newPw: "", confirm: "" });
+  const [pwSuccess, setPwSuccess] = reactExports.useState(false);
+  const completionFields = [
+    !!form.name,
+    !!form.phone,
+    !!form.email,
+    !!form.address,
+    !!form.bio,
+    true
+    // role always filled
+  ];
+  const completionPct = Math.round(
+    completionFields.filter(Boolean).length / completionFields.length * 100
+  );
+  const handleSave = () => setEditing(false);
+  const handlePwSave = () => {
+    setPwSuccess(true);
+    setTimeout(() => {
+      setPwSuccess(false);
+      setChangingPassword(false);
+      setPwForm({ current: "", newPw: "", confirm: "" });
+    }, 1800);
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(ProtectedRoute, { allowedRoles: ["staff"], children: /* @__PURE__ */ jsxRuntimeExports.jsx(AppLayout, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6 max-w-5xl mx-auto", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PageHeader,
+      {
+        title: "My Profile",
+        subtitle: "View and update your personal information and preferences",
+        badge: ROLE_LABELS[(user == null ? void 0 : user.role) ?? "staff"],
+        actions: [
+          editing ? {
+            label: "Cancel",
+            onClick: () => setEditing(false),
+            variant: "outline",
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-4 h-4" })
+          } : {
+            label: "Edit Profile",
+            onClick: () => setEditing(true),
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(PenLine, { className: "w-4 h-4" })
+          }
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      motion.div,
+      {
+        initial: { opacity: 0, y: 12 },
+        animate: { opacity: 1, y: 0 },
+        className: "rounded-2xl border border-border bg-card p-4 flex items-center gap-4",
+        "data-ocid": "profile.completion_card",
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-between text-sm mb-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-foreground", children: "Profile Completion" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-primary font-bold", children: [
+              completionPct,
+              "%"
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-2 rounded-full bg-muted overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            motion.div,
+            {
+              initial: { width: 0 },
+              animate: { width: `${completionPct}%` },
+              transition: { duration: 0.8, ease: "easeOut" },
+              className: "h-full bg-gradient-to-r from-primary to-primary/60 rounded-full"
+            }
+          ) }),
+          completionPct < 100 && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-1", children: "Complete all fields to reach 100%" })
+        ] })
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 lg:grid-cols-3 gap-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        motion.div,
+        {
+          initial: { opacity: 0, x: -16 },
+          animate: { opacity: 1, x: 0 },
+          transition: { delay: 0.1 },
+          className: "space-y-4",
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(Card, { className: "border-border bg-card shadow-glow", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "pt-6 flex flex-col items-center text-center gap-4", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(Avatar, { className: "w-24 h-24 ring-4 ring-primary/20", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(AvatarImage, { src: user == null ? void 0 : user.avatar, alt: form.name }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(AvatarFallback, { className: "bg-primary/10 text-primary font-bold text-2xl", children: form.name.split(" ").map((n2) => n2[0]).join("").slice(0, 2) })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-display font-bold text-lg text-foreground", children: form.name }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { variant: "secondary", className: "mt-1", children: ROLE_LABELS[(user == null ? void 0 : user.role) ?? "staff"] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "w-full space-y-2 text-sm", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-muted-foreground", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(IdCard, { className: "w-4 h-4 text-primary" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "font-mono text-xs", children: [
+                  "EMP-",
+                  ((_a2 = user == null ? void 0 : user.id) == null ? void 0 : _a2.slice(-6).toUpperCase()) ?? "001234"
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-muted-foreground", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Building2, { className: "w-4 h-4 text-primary" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Kochi – Ernakulam Branch" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-muted-foreground", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Calendar, { className: "w-4 h-4 text-primary" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Joined Jan 15, 2022" })
+              ] })
+            ] })
+          ] }) })
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        motion.div,
+        {
+          initial: { opacity: 0, x: 16 },
+          animate: { opacity: 1, x: 0 },
+          transition: { delay: 0.15 },
+          className: "lg:col-span-2 space-y-4",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-border bg-card shadow-glow", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "text-base flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(User, { className: "w-4 h-4 text-primary" }),
+                "Personal Information"
+              ] }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-4", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "name", children: "Full Name" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Input,
+                      {
+                        id: "name",
+                        value: form.name,
+                        onChange: (e3) => setForm({ ...form, name: e3.target.value }),
+                        disabled: !editing,
+                        "data-ocid": "profile.name_input"
+                      }
+                    )
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(Label, { htmlFor: "phone", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-3.5 h-3.5 inline mr-1" }),
+                      "Phone"
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Input,
+                      {
+                        id: "phone",
+                        value: form.phone,
+                        onChange: (e3) => setForm({ ...form, phone: e3.target.value }),
+                        disabled: !editing,
+                        "data-ocid": "profile.phone_input"
+                      }
+                    )
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsxs(Label, { htmlFor: "email", children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "w-3.5 h-3.5 inline mr-1" }),
+                      "Email"
+                    ] }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Input,
+                      {
+                        id: "email",
+                        value: form.email,
+                        onChange: (e3) => setForm({ ...form, email: e3.target.value }),
+                        disabled: !editing,
+                        "data-ocid": "profile.email_input"
+                      }
+                    )
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "address", children: "Address" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Input,
+                      {
+                        id: "address",
+                        value: form.address,
+                        onChange: (e3) => setForm({ ...form, address: e3.target.value }),
+                        disabled: !editing,
+                        "data-ocid": "profile.address_input"
+                      }
+                    )
+                  ] })
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "bio", children: "Bio / About" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Textarea,
+                    {
+                      id: "bio",
+                      value: form.bio,
+                      onChange: (e3) => setForm({ ...form, bio: e3.target.value }),
+                      disabled: !editing,
+                      rows: 3,
+                      "data-ocid": "profile.bio_textarea"
+                    }
+                  )
+                ] }),
+                editing && /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  Button,
+                  {
+                    onClick: handleSave,
+                    className: "gap-2",
+                    "data-ocid": "profile.save_button",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(Save, { className: "w-4 h-4" }),
+                      "Save Changes"
+                    ]
+                  }
+                )
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-border bg-card shadow-glow", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(CardTitle, { className: "text-base flex items-center gap-2", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Lock, { className: "w-4 h-4 text-primary" }),
+                  "Account Security"
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Button,
+                  {
+                    variant: "outline",
+                    size: "sm",
+                    onClick: () => setChangingPassword(!changingPassword),
+                    "data-ocid": "profile.change_password_button",
+                    children: changingPassword ? "Cancel" : "Change Password"
+                  }
+                )
+              ] }) }),
+              changingPassword && /* @__PURE__ */ jsxRuntimeExports.jsxs(CardContent, { className: "space-y-4", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "curpw", children: "Current Password" }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    Input,
+                    {
+                      id: "curpw",
+                      type: "password",
+                      value: pwForm.current,
+                      onChange: (e3) => setPwForm({ ...pwForm, current: e3.target.value }),
+                      "data-ocid": "profile.current_password_input"
+                    }
+                  )
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-4", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "newpw", children: "New Password" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Input,
+                      {
+                        id: "newpw",
+                        type: "password",
+                        value: pwForm.newPw,
+                        onChange: (e3) => setPwForm({ ...pwForm, newPw: e3.target.value }),
+                        "data-ocid": "profile.new_password_input"
+                      }
+                    )
+                  ] }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { htmlFor: "confpw", children: "Confirm Password" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Input,
+                      {
+                        id: "confpw",
+                        type: "password",
+                        value: pwForm.confirm,
+                        onChange: (e3) => setPwForm({ ...pwForm, confirm: e3.target.value }),
+                        "data-ocid": "profile.confirm_password_input"
+                      }
+                    )
+                  ] })
+                ] }),
+                pwSuccess && /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-emerald-500 font-medium", children: "✓ Password updated successfully!" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Button,
+                  {
+                    onClick: handlePwSave,
+                    size: "sm",
+                    "data-ocid": "profile.save_password_button",
+                    children: "Update Password"
+                  }
+                )
+              ] })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(Card, { className: "border-border bg-card shadow-glow", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(CardHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(CardTitle, { className: "text-base", children: "Notification Preferences" }) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(CardContent, { className: "space-y-4", children: [
+                ["email", "Email Notifications"],
+                ["sms", "SMS Alerts"],
+                ["push", "Push Notifications"],
+                ["taskReminders", "Task Reminders"],
+                ["paymentAlerts", "Payment Due Alerts"],
+                ["announcements", "Announcements & Memos"]
+              ].map(([key, label]) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  className: "flex items-center justify-between",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Label,
+                      {
+                        htmlFor: `notif-${key}`,
+                        className: "cursor-pointer text-sm font-normal",
+                        children: label
+                      }
+                    ),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      Switch,
+                      {
+                        id: `notif-${key}`,
+                        checked: notifications[key],
+                        onCheckedChange: (v2) => setNotifications({ ...notifications, [key]: v2 }),
+                        "data-ocid": `profile.notif_${key}_switch`
+                      }
+                    )
+                  ]
+                },
+                key
+              )) })
+            ] })
+          ]
+        }
+      )
+    ] })
+  ] }) }) });
+}
+const DUMMY_TASKS = [
+  {
+    id: "T001",
+    title: "Call Sreekumar Pillai for loan follow-up",
+    description: "Discuss gold loan terms and documentation requirements",
+    dueDate: "2026-05-22",
+    priority: "high",
+    category: "call",
+    status: "pending",
+    isPersonal: false,
+    assignedBy: "Branch Manager"
+  },
+  {
+    id: "T002",
+    title: "Visit Meera Babu for document collection",
+    description: "Collect KYC documents and income proof for business loan",
+    dueDate: "2026-05-22",
+    priority: "high",
+    category: "visit",
+    status: "in_progress",
+    isPersonal: false,
+    assignedBy: "Branch Manager"
+  },
+  {
+    id: "T003",
+    title: "Update EMI records for May batch",
+    description: "Enter all May EMI payments into the system",
+    dueDate: "2026-05-23",
+    priority: "medium",
+    category: "document",
+    status: "pending",
+    isPersonal: false,
+    assignedBy: "Branch Manager"
+  },
+  {
+    id: "T004",
+    title: "Follow up with Divya Suresh on personal loan",
+    description: "Check if she has decided on loan amount",
+    dueDate: "2026-05-21",
+    priority: "high",
+    category: "follow-up",
+    status: "completed",
+    isPersonal: false,
+    assignedBy: "Branch Manager"
+  },
+  {
+    id: "T005",
+    title: "Attend weekly team meeting",
+    description: "Branch performance review and target discussion",
+    dueDate: "2026-05-24",
+    priority: "medium",
+    category: "other",
+    status: "pending",
+    isPersonal: false,
+    assignedBy: "Zonal Manager"
+  },
+  {
+    id: "T006",
+    title: "Prepare customer report for April",
+    description: "Compile monthly customer interaction report",
+    dueDate: "2026-05-20",
+    priority: "low",
+    category: "document",
+    status: "completed",
+    isPersonal: false,
+    assignedBy: "Branch Manager"
+  },
+  {
+    id: "T007",
+    title: "Self-learning: IRDAI insurance module",
+    description: "Complete online certification for insurance products",
+    dueDate: "2026-05-28",
+    priority: "low",
+    category: "other",
+    status: "pending",
+    isPersonal: true
+  },
+  {
+    id: "T008",
+    title: "Update personal CRM notes",
+    description: "Log all customer interactions from this week",
+    dueDate: "2026-05-22",
+    priority: "medium",
+    category: "document",
+    status: "in_progress",
+    isPersonal: true
+  },
+  {
+    id: "T009",
+    title: "Prepare Thrissur branch visit report",
+    description: "Summary of customer visits during Thrissur trip",
+    dueDate: "2026-05-25",
+    priority: "medium",
+    category: "document",
+    status: "pending",
+    isPersonal: true
+  },
+  {
+    id: "T010",
+    title: "Review George Thomas home loan file",
+    description: "Check documents and run credit eligibility",
+    dueDate: "2026-05-23",
+    priority: "high",
+    category: "document",
+    status: "pending",
+    isPersonal: false,
+    assignedBy: "Branch Manager"
+  },
+  {
+    id: "T011",
+    title: "Send payment reminder to Rajeev",
+    description: "Call and send WhatsApp reminder for EMI due",
+    dueDate: "2026-05-22",
+    priority: "high",
+    category: "call",
+    status: "in_progress",
+    isPersonal: false,
+    assignedBy: "Branch Manager"
+  },
+  {
+    id: "T012",
+    title: "Plan June prospecting calls",
+    description: "Build list of new prospects for June cold calling",
+    dueDate: "2026-05-29",
+    priority: "low",
+    category: "call",
+    status: "pending",
+    isPersonal: true
+  }
+];
+const DUMMY_TARGETS = [
+  {
+    id: "TR001",
+    title: "Monthly Loan Disbursals",
+    goal: 10,
+    achieved: 7,
+    unit: "disbursals",
+    deadline: "2026-05-31",
+    isPersonal: false
+  },
+  {
+    id: "TR002",
+    title: "New Customer Acquisition",
+    goal: 15,
+    achieved: 9,
+    unit: "customers",
+    deadline: "2026-05-31",
+    isPersonal: false
+  },
+  {
+    id: "TR003",
+    title: "EMI Collection Rate",
+    goal: 95,
+    achieved: 88,
+    unit: "%",
+    deadline: "2026-05-31",
+    isPersonal: false
+  },
+  {
+    id: "TR004",
+    title: "Personal Lead Generation",
+    goal: 20,
+    achieved: 15,
+    unit: "leads",
+    deadline: "2026-05-31",
+    isPersonal: true
+  }
+];
+const PRIORITY_CFG = {
+  high: {
+    label: "High",
+    className: "bg-red-500/10 text-red-600 border-red-500/20"
+  },
+  medium: {
+    label: "Medium",
+    className: "bg-yellow-500/10 text-yellow-600 border-yellow-500/20"
+  },
+  low: {
+    label: "Low",
+    className: "bg-blue-500/10 text-blue-600 border-blue-500/20"
+  }
+};
+const STATUS_CFG = {
+  pending: {
+    label: "Pending",
+    next: "in_progress",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-3 h-3" })
+  },
+  in_progress: {
+    label: "In Progress",
+    next: "completed",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleAlert, { className: "w-3 h-3" })
+  },
+  completed: {
+    label: "Completed",
+    next: "pending",
+    icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-3 h-3" })
+  }
+};
+const STATUS_BADGE = {
+  pending: "bg-yellow-500/10 text-yellow-600 border-yellow-500/20",
+  in_progress: "bg-blue-500/10 text-blue-600 border-blue-500/20",
+  completed: "bg-emerald-500/10 text-emerald-600 border-emerald-500/20"
+};
+function TaskCard({
+  task,
+  onStatusChange,
+  onClick
+}) {
+  const today = (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
+  const isOverdue2 = task.status !== "completed" && task.dueDate < today;
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+    motion.div,
+    {
+      whileHover: { scale: 1.005 },
+      onClick,
+      className: cn(
+        "rounded-xl border bg-card p-4 cursor-pointer transition-smooth hover:border-primary/30",
+        isOverdue2 ? "border-red-500/30" : "border-border"
+      ),
+      "data-ocid": `tasks.task_card.${task.id}`,
+      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-start justify-between gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 min-w-0", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 flex-wrap", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "p",
+              {
+                className: cn(
+                  "font-medium text-sm",
+                  task.status === "completed" && "line-through text-muted-foreground"
+                ),
+                children: task.title
+              }
+            ),
+            isOverdue2 && /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Badge,
+              {
+                variant: "outline",
+                className: "text-xs bg-red-500/10 text-red-600 border-red-500/20",
+                children: "Overdue"
+              }
+            )
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-0.5 truncate", children: task.description }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 mt-2 flex-wrap", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Badge,
+              {
+                variant: "outline",
+                className: cn("text-xs", PRIORITY_CFG[task.priority].className),
+                children: PRIORITY_CFG[task.priority].label
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Badge,
+              {
+                variant: "outline",
+                className: cn("text-xs", STATUS_BADGE[task.status]),
+                children: task.status.replace("_", " ")
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-muted-foreground capitalize", children: task.category }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
+              "Due: ",
+              task.dueDate
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          Button,
+          {
+            size: "sm",
+            variant: "outline",
+            className: "text-xs h-7 shrink-0",
+            onClick: (e3) => {
+              e3.stopPropagation();
+              onStatusChange(task.id);
+            },
+            "data-ocid": `tasks.status_toggle.${task.id}`,
+            children: [
+              STATUS_CFG[task.status].icon,
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "ml-1", children: STATUS_CFG[STATUS_CFG[task.status].next].label })
+            ]
+          }
+        )
+      ] })
+    }
+  );
+}
+function StaffTasksPage() {
+  const [tasks, setTasks] = reactExports.useState(DUMMY_TASKS);
+  const [targets] = reactExports.useState(DUMMY_TARGETS);
+  const [showAddTask, setShowAddTask] = reactExports.useState(false);
+  const [selectedTask, setSelectedTask] = reactExports.useState(null);
+  const [filterStatus, setFilterStatus] = reactExports.useState("");
+  const [filterPriority, setFilterPriority] = reactExports.useState("");
+  const [newTask, setNewTask] = reactExports.useState({
+    priority: "medium",
+    category: "call",
+    status: "pending",
+    isPersonal: true
+  });
+  const today = (/* @__PURE__ */ new Date()).toISOString().split("T")[0];
+  const summary = {
+    total: tasks.length,
+    completed: tasks.filter((t2) => t2.status === "completed").length,
+    pending: tasks.filter((t2) => t2.status === "pending").length,
+    overdue: tasks.filter((t2) => t2.status !== "completed" && t2.dueDate < today).length
+  };
+  const advanceStatus = (id2) => {
+    setTasks(
+      (prev) => prev.map(
+        (t2) => t2.id === id2 ? { ...t2, status: STATUS_CFG[t2.status].next } : t2
+      )
+    );
+  };
+  const applyFilters = (list) => list.filter((t2) => {
+    const ms = !filterStatus || t2.status === filterStatus;
+    const mp = !filterPriority || t2.priority === filterPriority;
+    return ms && mp;
+  });
+  const handleAddTask = () => {
+    const id2 = `T${String(tasks.length + 1).padStart(3, "0")}`;
+    setTasks((prev) => [{ ...newTask, id: id2 }, ...prev]);
+    setShowAddTask(false);
+    setNewTask({
+      priority: "medium",
+      category: "call",
+      status: "pending",
+      isPersonal: true
+    });
+  };
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(ProtectedRoute, { allowedRoles: ["staff"], children: /* @__PURE__ */ jsxRuntimeExports.jsx(AppLayout, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "p-6 space-y-6", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      PageHeader,
+      {
+        title: "Tasks & Targets",
+        subtitle: "Manage your assigned and personal tasks, track your targets",
+        actions: [
+          {
+            label: "Add Task",
+            onClick: () => setShowAddTask(true),
+            icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-4 h-4" })
+          }
+        ]
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 lg:grid-cols-4 gap-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Total Tasks",
+          value: summary.total,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(ListTodo, { className: "w-5 h-5" }),
+          iconColor: "text-primary"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Completed",
+          value: summary.completed,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleCheck, { className: "w-5 h-5" }),
+          iconColor: "text-emerald-500",
+          trend: "up"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Pending",
+          value: summary.pending,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(Clock, { className: "w-5 h-5" }),
+          iconColor: "text-yellow-500"
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        KPICard,
+        {
+          title: "Overdue",
+          value: summary.overdue,
+          icon: /* @__PURE__ */ jsxRuntimeExports.jsx(CircleAlert, { className: "w-5 h-5" }),
+          iconColor: "text-red-500",
+          trend: "down"
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2 flex-wrap", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "select",
+        {
+          className: "h-9 rounded-lg border border-input bg-background px-3 text-sm text-foreground",
+          value: filterStatus,
+          onChange: (e3) => setFilterStatus(e3.target.value),
+          "aria-label": "Filter by status",
+          "data-ocid": "tasks.filter_status_select",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "", children: "Status: All" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "pending", children: "Pending" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "in_progress", children: "In Progress" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "completed", children: "Completed" })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "select",
+        {
+          className: "h-9 rounded-lg border border-input bg-background px-3 text-sm text-foreground",
+          value: filterPriority,
+          onChange: (e3) => setFilterPriority(e3.target.value),
+          "aria-label": "Filter by priority",
+          "data-ocid": "tasks.filter_priority_select",
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "", children: "Priority: All" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "high", children: "High" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "medium", children: "Medium" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "low", children: "Low" })
+          ]
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Tabs, { defaultValue: "assigned", "data-ocid": "tasks.tabs", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsList, { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsTrigger, { value: "assigned", "data-ocid": "tasks.assigned_tab", children: [
+          "Assigned Tasks (",
+          applyFilters(tasks.filter((t2) => !t2.isPersonal)).length,
+          ")"
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(TabsTrigger, { value: "personal", "data-ocid": "tasks.personal_tab", children: [
+          "My Tasks (",
+          applyFilters(tasks.filter((t2) => t2.isPersonal)).length,
+          ")"
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "assigned", className: "mt-4 space-y-3", children: applyFilters(tasks.filter((t2) => !t2.isPersonal)).map((task) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        TaskCard,
+        {
+          task,
+          onStatusChange: advanceStatus,
+          onClick: () => setSelectedTask(task)
+        },
+        task.id
+      )) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(TabsContent, { value: "personal", className: "mt-4 space-y-3", children: applyFilters(tasks.filter((t2) => t2.isPersonal)).map((task) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+        TaskCard,
+        {
+          task,
+          onStatusChange: advanceStatus,
+          onClick: () => setSelectedTask(task)
+        },
+        task.id
+      )) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-display font-bold text-lg text-foreground flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Target, { className: "w-5 h-5 text-primary" }),
+        " Targets"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-4", children: targets.map((t2, i) => {
+        const pct = Math.min(
+          100,
+          Math.round(t2.achieved / t2.goal * 100)
+        );
+        return /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.div,
+          {
+            initial: { opacity: 0, y: 12 },
+            animate: { opacity: 1, y: 0 },
+            transition: { delay: i * 0.08 },
+            className: "rounded-xl border border-border bg-card p-4",
+            "data-ocid": `tasks.target_card.${i + 1}`,
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between mb-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-medium text-sm text-foreground", children: t2.title }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { variant: "outline", className: "text-xs", children: t2.isPersonal ? "Personal" : "Assigned" })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-end justify-between mb-1", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "text-xs text-muted-foreground", children: [
+                  t2.achieved,
+                  " / ",
+                  t2.goal,
+                  " ",
+                  t2.unit
+                ] }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "span",
+                  {
+                    className: cn(
+                      "text-sm font-bold",
+                      pct >= 100 ? "text-emerald-500" : pct >= 70 ? "text-primary" : "text-yellow-500"
+                    ),
+                    children: [
+                      pct,
+                      "%"
+                    ]
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-2 rounded-full bg-muted overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                motion.div,
+                {
+                  initial: { width: 0 },
+                  animate: { width: `${pct}%` },
+                  transition: {
+                    duration: 0.8,
+                    ease: "easeOut",
+                    delay: i * 0.1
+                  },
+                  className: cn(
+                    "h-full rounded-full",
+                    pct >= 100 ? "bg-emerald-500" : pct >= 70 ? "bg-primary" : "bg-yellow-500"
+                  )
+                }
+              ) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "text-xs text-muted-foreground mt-1.5", children: [
+                "Deadline: ",
+                t2.deadline
+              ] })
+            ]
+          },
+          t2.id
+        );
+      }) })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Dialog, { open: showAddTask, onOpenChange: setShowAddTask, children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      DialogContent,
+      {
+        className: "max-w-md",
+        "data-ocid": "tasks.add_task_dialog",
+        children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { children: "Add New Task" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-4 py-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Title" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Input,
+                {
+                  placeholder: "Task title",
+                  value: newTask.title ?? "",
+                  onChange: (e3) => setNewTask({ ...newTask, title: e3.target.value }),
+                  "data-ocid": "tasks.add_title_input"
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Description" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Textarea,
+                {
+                  rows: 2,
+                  placeholder: "Task description",
+                  value: newTask.description ?? "",
+                  onChange: (e3) => setNewTask({ ...newTask, description: e3.target.value }),
+                  "data-ocid": "tasks.add_desc_textarea"
+                }
+              )
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 gap-3", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Due Date" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  Input,
+                  {
+                    type: "date",
+                    value: newTask.dueDate ?? "",
+                    onChange: (e3) => setNewTask({ ...newTask, dueDate: e3.target.value }),
+                    "data-ocid": "tasks.add_date_input"
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Priority" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "select",
+                  {
+                    className: "w-full h-9 rounded-lg border border-input bg-background px-3 text-sm text-foreground",
+                    value: newTask.priority,
+                    onChange: (e3) => setNewTask({
+                      ...newTask,
+                      priority: e3.target.value
+                    }),
+                    "data-ocid": "tasks.add_priority_select",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "high", children: "High" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "medium", children: "Medium" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "low", children: "Low" })
+                    ]
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-1.5", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx(Label, { children: "Category" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "select",
+                  {
+                    className: "w-full h-9 rounded-lg border border-input bg-background px-3 text-sm text-foreground",
+                    value: newTask.category,
+                    onChange: (e3) => setNewTask({
+                      ...newTask,
+                      category: e3.target.value
+                    }),
+                    "data-ocid": "tasks.add_category_select",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "call", children: "Call" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "visit", children: "Visit" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "follow-up", children: "Follow-up" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "document", children: "Document" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("option", { value: "other", children: "Other" })
+                    ]
+                  }
+                )
+              ] })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-end gap-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Button,
+              {
+                variant: "outline",
+                onClick: () => setShowAddTask(false),
+                "data-ocid": "tasks.add_cancel_button",
+                children: "Cancel"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              Button,
+              {
+                onClick: handleAddTask,
+                disabled: !newTask.title || !newTask.dueDate,
+                "data-ocid": "tasks.add_submit_button",
+                children: "Add Task"
+              }
+            )
+          ] })
+        ]
+      }
+    ) }),
+    selectedTask && /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Dialog,
+      {
+        open: !!selectedTask,
+        onOpenChange: () => setSelectedTask(null),
+        children: /* @__PURE__ */ jsxRuntimeExports.jsxs(DialogContent, { "data-ocid": "tasks.task_detail_dialog", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(DialogHeader, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(DialogTitle, { children: selectedTask.title }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-3 py-2", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground", children: selectedTask.description }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-2 flex-wrap", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Badge,
+                {
+                  variant: "outline",
+                  className: cn(
+                    "text-xs",
+                    PRIORITY_CFG[selectedTask.priority].className
+                  ),
+                  children: PRIORITY_CFG[selectedTask.priority].label
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                Badge,
+                {
+                  variant: "outline",
+                  className: cn(
+                    "text-xs",
+                    STATUS_BADGE[selectedTask.status]
+                  ),
+                  children: selectedTask.status.replace("_", " ")
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(Badge, { variant: "outline", className: "text-xs capitalize", children: selectedTask.category })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm space-y-1", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: "Due Date:" }),
+                " ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium", children: selectedTask.dueDate })
+              ] }),
+              selectedTask.assignedBy && /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: "Assigned By:" }),
+                " ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-medium", children: selectedTask.assignedBy })
+              ] }),
+              selectedTask.notes && /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: "Notes:" }),
+                " ",
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: selectedTask.notes })
+              ] })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-end", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            Button,
+            {
+              variant: "outline",
+              onClick: () => setSelectedTask(null),
+              "data-ocid": "tasks.detail_close_button",
+              children: "Close"
+            }
+          ) })
+        ] })
+      }
+    )
+  ] }) }) });
+}
 const rootRoute = createRootRoute({
   component: () => /* @__PURE__ */ jsxRuntimeExports.jsx(Outlet, {})
 });
@@ -83515,6 +87526,36 @@ const activityLogsRoute = createRoute({
   path: "/activity-logs",
   component: ActivityLogsPage
 });
+const staffProfileRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/profile",
+  component: StaffProfilePage
+});
+const staffLeadsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/leads",
+  component: StaffLeadsPage
+});
+const staffTasksRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/tasks",
+  component: StaffTasksPage
+});
+const staffCustomersRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/customers",
+  component: StaffCustomersPage
+});
+const staffFollowupsRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/followups",
+  component: StaffFollowUpPage
+});
+const staffAttendanceRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/staff/attendance",
+  component: StaffAttendancePage
+});
 const routeTree = rootRoute.addChildren([
   indexRoute,
   loginRoute,
@@ -83530,7 +87571,13 @@ const routeTree = rootRoute.addChildren([
   analyticsRoute,
   notificationsRoute,
   settingsRoute,
-  activityLogsRoute
+  activityLogsRoute,
+  staffProfileRoute,
+  staffLeadsRoute,
+  staffTasksRoute,
+  staffCustomersRoute,
+  staffFollowupsRoute,
+  staffAttendanceRoute
 ]);
 const router = createRouter({ routeTree });
 function App() {
