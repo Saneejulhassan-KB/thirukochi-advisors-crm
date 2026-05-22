@@ -43953,7 +43953,7 @@ const navItems$1 = [
   },
   {
     label: "My Customers",
-    path: "/staff/customers",
+    path: "/customers",
     icon: Users,
     roles: ["staff"]
   },
@@ -76438,7 +76438,7 @@ const targetPerformanceData = [
   { week: "Week 3", assigned: 6, achieved: 5, pending: 1 },
   { week: "Week 4", assigned: 5, achieved: 3, pending: 2 }
 ];
-function StaffDashboard({ user }) {
+function StaffDashboard(_2) {
   const router2 = useRouter();
   const kpiCards2 = [
     {
@@ -76494,14 +76494,6 @@ function StaffDashboard({ user }) {
     }
   ];
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "space-y-8", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(
-      PageHeader,
-      {
-        title: `Welcome, ${user.name.split(" ")[0]}`,
-        subtitle: `${user.branchId ?? "ThiruKochi Advisors"} · ${(/* @__PURE__ */ new Date()).toLocaleDateString("en-IN", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}`,
-        badge: user.role === "staff" ? "Staff" : "Employee"
-      }
-    ),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-between", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-lg font-semibold text-foreground", children: "Task & Target Overview" }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs(

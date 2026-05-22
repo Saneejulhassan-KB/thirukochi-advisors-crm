@@ -60,7 +60,7 @@ const navItems: NavItem[] = [
   },
   {
     label: "My Customers",
-    path: "/staff/customers",
+    path: "/customers",
     icon: Users,
     roles: ["staff"],
   },

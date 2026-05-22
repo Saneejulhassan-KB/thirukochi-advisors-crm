@@ -1,6 +1,5 @@
 import { ChartWrapper, chartColors } from "@/components/shared/ChartWrapper";
 import { KPICard } from "@/components/shared/KPICard";
-import { PageHeader } from "@/components/shared/PageHeader";
 import type { AuthUser } from "@/types";
 import { useRouter } from "@tanstack/react-router";
 import {
@@ -55,7 +54,7 @@ const targetPerformanceData = [
   { week: "Week 4", assigned: 5, achieved: 3, pending: 2 },
 ];
 
-export function StaffDashboard({ user }: Props) {
+export function StaffDashboard(_: Props) {
   const router = useRouter();
 
   const kpiCards = [
@@ -114,13 +113,6 @@ export function StaffDashboard({ user }: Props) {
 
   return (
     <div className="space-y-8">
-      {/* Page Header */}
-      <PageHeader
-        title={`Welcome, ${user.name.split(" ")[0]}`}
-        subtitle={`${user.branchId ?? "ThiruKochi Advisors"} · ${new Date().toLocaleDateString("en-IN", { weekday: "long", year: "numeric", month: "long", day: "numeric" })}`}
-        badge={user.role === "staff" ? "Staff" : "Employee"}
-      />
-
       {/* Task & Target Overview Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold text-foreground">
