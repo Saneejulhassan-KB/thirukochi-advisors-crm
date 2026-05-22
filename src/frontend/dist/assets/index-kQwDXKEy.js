@@ -80721,31 +80721,13 @@ function filterByTab(notifications, tab) {
   switch (tab) {
     case "unread":
       return notifications.filter((n2) => !n2.isRead);
-    case "payments":
+    case "events_programs":
       return notifications.filter(
-        (n2) => n2.type === "payment_due" || n2.type === "overdue_alert"
-      );
-    case "attendance":
-      return notifications.filter((n2) => n2.type === "attendance_missing");
-    case "transfers":
-      return notifications.filter(
-        (n2) => n2.type === "transfer_request" || n2.type === "transfer_approval"
-      );
-    case "system":
-      return notifications.filter(
-        (n2) => n2.type === "system_alert" || n2.type === "kyc_pending"
-      );
-    case "alerts":
-      return notifications.filter(
-        (n2) => n2.priority === "critical" || n2.priority === "high"
+        (n2) => n2.type === "event" || n2.type === "program"
       );
     case "memos":
       return notifications.filter((n2) => n2.type === "memo");
-    case "programs":
-      return notifications.filter((n2) => n2.type === "program");
-    case "events":
-      return notifications.filter((n2) => n2.type === "event");
-    case "marketing":
+    case "comments":
       return notifications.filter((n2) => n2.type === "marketing_notice");
     default:
       return notifications;
@@ -80754,15 +80736,9 @@ function filterByTab(notifications, tab) {
 const TABS = [
   { id: "all", label: "All" },
   { id: "unread", label: "Unread" },
-  { id: "payments", label: "Payments" },
-  { id: "attendance", label: "Attendance" },
-  { id: "transfers", label: "Transfers" },
-  { id: "system", label: "System" },
-  { id: "alerts", label: "Alerts" },
+  { id: "events_programs", label: "Events & Programs" },
   { id: "memos", label: "Memos" },
-  { id: "programs", label: "Programs" },
-  { id: "events", label: "Events" },
-  { id: "marketing", label: "Marketing" }
+  { id: "comments", label: "Comments" }
 ];
 function NotificationItem({
   notification,

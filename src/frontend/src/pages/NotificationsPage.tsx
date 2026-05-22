@@ -31,18 +31,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useMemo, useState } from "react";
 import { toast } from "sonner";
 
-type FilterTab =
-  | "all"
-  | "unread"
-  | "payments"
-  | "attendance"
-  | "transfers"
-  | "system"
-  | "alerts"
-  | "memos"
-  | "programs"
-  | "events"
-  | "marketing";
+type FilterTab = "all" | "unread" | "events_programs" | "memos" | "comments";
 
 interface PrefRow {
   type: string;
@@ -157,31 +146,13 @@ function filterByTab(
   switch (tab) {
     case "unread":
       return notifications.filter((n) => !n.isRead);
-    case "payments":
+    case "events_programs":
       return notifications.filter(
-        (n) => n.type === "payment_due" || n.type === "overdue_alert",
-      );
-    case "attendance":
-      return notifications.filter((n) => n.type === "attendance_missing");
-    case "transfers":
-      return notifications.filter(
-        (n) => n.type === "transfer_request" || n.type === "transfer_approval",
-      );
-    case "system":
-      return notifications.filter(
-        (n) => n.type === "system_alert" || n.type === "kyc_pending",
-      );
-    case "alerts":
-      return notifications.filter(
-        (n) => n.priority === "critical" || n.priority === "high",
+        (n) => n.type === "event" || n.type === "program",
       );
     case "memos":
       return notifications.filter((n) => n.type === "memo");
-    case "programs":
-      return notifications.filter((n) => n.type === "program");
-    case "events":
-      return notifications.filter((n) => n.type === "event");
-    case "marketing":
+    case "comments":
       return notifications.filter((n) => n.type === "marketing_notice");
     default:
       return notifications;
@@ -191,15 +162,9 @@ function filterByTab(
 const TABS: { id: FilterTab; label: string }[] = [
   { id: "all", label: "All" },
   { id: "unread", label: "Unread" },
-  { id: "payments", label: "Payments" },
-  { id: "attendance", label: "Attendance" },
-  { id: "transfers", label: "Transfers" },
-  { id: "system", label: "System" },
-  { id: "alerts", label: "Alerts" },
+  { id: "events_programs", label: "Events & Programs" },
   { id: "memos", label: "Memos" },
-  { id: "programs", label: "Programs" },
-  { id: "events", label: "Events" },
-  { id: "marketing", label: "Marketing" },
+  { id: "comments", label: "Comments" },
 ];
 
 function NotificationItem({
