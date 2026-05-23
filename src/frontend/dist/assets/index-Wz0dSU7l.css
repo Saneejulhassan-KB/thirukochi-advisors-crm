@@ -755,8 +755,8 @@ video {
 .z-20 {
   z-index: 20;
 }
-.z-30 {
-  z-index: 30;
+.z-40 {
+  z-index: 40;
 }
 .z-50 {
   z-index: 50;
@@ -1199,6 +1199,9 @@ video {
 }
 .w-\[100px\] {
   width: 100px;
+}
+.w-\[260px\] {
+  width: 260px;
 }
 .w-\[400px\] {
   width: 400px;
@@ -4365,6 +4368,11 @@ video {
 
   .lg\:p-10 {
     padding: 2.5rem;
+  }
+
+  .lg\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 @media (min-width: 1280px) {

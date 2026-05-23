@@ -31,7 +31,7 @@ interface UIActions {
 }
 
 export const useUIStore = create<UIState & UIActions>()((set) => ({
-  sidebarOpen: true,
+  sidebarOpen: typeof window !== "undefined" ? window.innerWidth >= 1024 : true,
   activeModal: null,
   modalData: null,
   isLoading: false,

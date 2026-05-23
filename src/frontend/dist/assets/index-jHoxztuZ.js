@@ -43747,7 +43747,7 @@ const useNotificationStore = create()((set) => ({
   }
 }));
 const useUIStore = create()((set) => ({
-  sidebarOpen: true,
+  sidebarOpen: typeof window !== "undefined" ? window.innerWidth >= 1024 : true,
   activeModal: null,
   modalData: null,
   isLoading: false,
@@ -44052,6 +44052,19 @@ function Sidebar() {
   const filteredNav = navItems$1.filter(
     (item) => user && item.roles.includes(user.role)
   );
+  const [isMobile, setIsMobile] = reactExports.useState(
+    () => typeof window !== "undefined" ? window.innerWidth < 1024 : false
+  );
+  reactExports.useEffect(() => {
+    const check = () => {
+      const mobile = window.innerWidth < 1024;
+      setIsMobile(mobile);
+      if (mobile) setSidebarOpen(false);
+    };
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, [setSidebarOpen]);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { children: sidebarOpen && /* @__PURE__ */ jsxRuntimeExports.jsx(
       motion.div,
@@ -44067,12 +44080,14 @@ function Sidebar() {
       motion.aside,
       {
         initial: false,
-        animate: { width: sidebarOpen ? 260 : 72 },
+        animate: isMobile ? { x: sidebarOpen ? 0 : -260 } : { width: sidebarOpen ? 260 : 72 },
         transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
         className: cn(
-          "fixed top-0 left-0 z-30 h-screen flex flex-col",
+          "fixed top-0 left-0 z-40 h-screen flex flex-col",
           "bg-card border-r border-border shadow-elevated overflow-hidden",
-          "lg:relative lg:z-auto"
+          "lg:relative lg:z-auto",
+          isMobile && "w-[260px]",
+          isMobile && !sidebarOpen && "pointer-events-none"
         ),
         "data-ocid": "sidebar",
         children: [
@@ -44288,18 +44303,25 @@ function AppLayout({ children }) {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Sidebar, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 flex flex-col min-w-0 overflow-hidden transition-all duration-300", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, { breadcrumb }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("main", { className: "flex-1 overflow-y-auto", "data-ocid": "main_content", children: /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { mode: "wait", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-        motion.div,
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "main",
         {
-          initial: { opacity: 0, y: 12 },
-          animate: { opacity: 1, y: 0 },
-          exit: { opacity: 0, y: -8 },
-          transition: { duration: 0.25, ease: [0.4, 0, 0.2, 1] },
-          className: "h-full",
-          children
-        },
-        routerState.location.pathname
-      ) }) })
+          className: "flex-1 overflow-y-auto overflow-x-hidden px-3 lg:px-6",
+          "data-ocid": "main_content",
+          children: /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { mode: "wait", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            motion.div,
+            {
+              initial: { opacity: 0, y: 12 },
+              animate: { opacity: 1, y: 0 },
+              exit: { opacity: 0, y: -8 },
+              transition: { duration: 0.25, ease: [0.4, 0, 0.2, 1] },
+              className: "h-full",
+              children
+            },
+            routerState.location.pathname
+          ) })
+        }
+      )
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(AnimatePresence, { children: showTimeout && /* @__PURE__ */ jsxRuntimeExports.jsx(
       motion.div,

@@ -24,6 +24,7 @@ import {
   Users,
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import { useEffect, useState } from "react";
 
 interface NavItem {
   label: string;
@@ -163,6 +164,21 @@ export function Sidebar() {
     (item) => user && item.roles.includes(user.role),
   );
 
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth < 1024 : false,
+  );
+
+  useEffect(() => {
+    const check = () => {
+      const mobile = window.innerWidth < 1024;
+      setIsMobile(mobile);
+      if (mobile) setSidebarOpen(false);
+    };
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, [setSidebarOpen]);
+
   return (
     <>
       {/* Mobile overlay */}
@@ -181,12 +197,18 @@ export function Sidebar() {
       {/* Sidebar */}
       <motion.aside
         initial={false}
-        animate={{ width: sidebarOpen ? 260 : 72 }}
+        animate={
+          isMobile
+            ? { x: sidebarOpen ? 0 : -260 }
+            : { width: sidebarOpen ? 260 : 72 }
+        }
         transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
         className={cn(
-          "fixed top-0 left-0 z-30 h-screen flex flex-col",
+          "fixed top-0 left-0 z-40 h-screen flex flex-col",
           "bg-card border-r border-border shadow-elevated overflow-hidden",
           "lg:relative lg:z-auto",
+          isMobile && "w-[260px]",
+          isMobile && !sidebarOpen && "pointer-events-none",
         )}
         data-ocid="sidebar"
       >
