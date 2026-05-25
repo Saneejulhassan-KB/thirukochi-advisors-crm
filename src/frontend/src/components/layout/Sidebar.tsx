@@ -1,3 +1,8 @@
+import { Badge } from "@/components/ui/badge";
+import {
+  STAFF_NEW_LEADS_COUNT,
+  STAFF_PENDING_ASSIGNED_TASKS_COUNT,
+} from "@/data/staffMockData";
 import { cn } from "@/lib/utils";
 import { useAuthStore } from "@/store/authStore";
 import { useUIStore } from "@/store/uiStore";
@@ -32,6 +37,12 @@ interface NavItem {
   icon: React.ComponentType<{ className?: string }>;
   roles: Role[];
 }
+
+// Badge counts for staff sidebar nav items
+const STAFF_NAV_BADGES: Record<string, number> = {
+  "/staff/tasks": STAFF_PENDING_ASSIGNED_TASKS_COUNT,
+  "/staff/leads": STAFF_NEW_LEADS_COUNT,
+};
 
 const navItems: NavItem[] = [
   {
@@ -304,10 +315,25 @@ export function Sidebar() {
                         </motion.span>
                       )}
                     </AnimatePresence>
-                    {isActive && (
+                    {sidebarOpen && STAFF_NAV_BADGES[item.path] > 0 && (
+                      <Badge
+                        variant="destructive"
+                        className="ml-1.5 h-4 px-1.5 text-xs min-w-[16px] shrink-0"
+                        data-ocid={`sidebar.badge.${item.path.replace(/\//g, "").replace(/-/g, "_")}`}
+                      >
+                        {STAFF_NAV_BADGES[item.path]}
+                      </Badge>
+                    )}
+                    {isActive && !STAFF_NAV_BADGES[item.path] && (
                       <motion.div
                         layoutId="active-indicator"
                         className="ml-auto w-1.5 h-1.5 rounded-full bg-primary shrink-0"
+                      />
+                    )}
+                    {isActive && STAFF_NAV_BADGES[item.path] > 0 && (
+                      <motion.div
+                        layoutId="active-indicator"
+                        className="ml-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0"
                       />
                     )}
                   </Link>

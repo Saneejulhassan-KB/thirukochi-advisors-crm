@@ -43925,6 +43925,12 @@ function Navbar({ breadcrumb }) {
     }
   );
 }
+const STAFF_PENDING_ASSIGNED_TASKS_COUNT = 4;
+const STAFF_NEW_LEADS_COUNT = 4;
+const STAFF_NAV_BADGES = {
+  "/staff/tasks": STAFF_PENDING_ASSIGNED_TASKS_COUNT,
+  "/staff/leads": STAFF_NEW_LEADS_COUNT
+};
 const navItems$1 = [
   {
     label: "Dashboard",
@@ -44173,11 +44179,27 @@ function Sidebar() {
                           children: item.label
                         }
                       ) }),
-                      isActive && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                      sidebarOpen && STAFF_NAV_BADGES[item.path] > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        Badge,
+                        {
+                          variant: "destructive",
+                          className: "ml-1.5 h-4 px-1.5 text-xs min-w-[16px] shrink-0",
+                          "data-ocid": `sidebar.badge.${item.path.replace(/\//g, "").replace(/-/g, "_")}`,
+                          children: STAFF_NAV_BADGES[item.path]
+                        }
+                      ),
+                      isActive && !STAFF_NAV_BADGES[item.path] && /* @__PURE__ */ jsxRuntimeExports.jsx(
                         motion.div,
                         {
                           layoutId: "active-indicator",
                           className: "ml-auto w-1.5 h-1.5 rounded-full bg-primary shrink-0"
+                        }
+                      ),
+                      isActive && STAFF_NAV_BADGES[item.path] > 0 && /* @__PURE__ */ jsxRuntimeExports.jsx(
+                        motion.div,
+                        {
+                          layoutId: "active-indicator",
+                          className: "ml-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0"
                         }
                       )
                     ]
